@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar, { NavLink } from "@/components/navbar";
 import Footer from "@/components/footer";
+import Banner from "@/components/banner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
           <NavLink href={"/about-us"}>About us</NavLink>
         </Navbar>
         {children}
+        <Banner />
         <Footer>
           <NavLink href={"/our-services"}>Our services</NavLink>
           <NavLink href={"/case-studies"}>Case studies</NavLink>

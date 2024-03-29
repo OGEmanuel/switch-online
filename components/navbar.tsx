@@ -8,19 +8,23 @@ import { ComponentProps, ReactNode } from "react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import Logo from "./logo";
+import MenuIcon from "@/public/icons/menu-icon";
 
 const Navbar = ({ children }: { children: ReactNode }) => {
   return (
-    <nav className="px-20 py-9  flex justify-between items-center">
+    <nav className="md:px-20 p-4 md:py-9 flex justify-between items-center">
       <Logo />
-      <div className="flex gap-6 items-center">{children}</div>
+      <div className="md:flex gap-6 items-center hidden">{children}</div>
+      <Button className="md:hidden border border-[#BAD0D0] bg-white hover:bg-white p-[10px]">
+        <MenuIcon />
+      </Button>
       <Button asChild>
         <Link
           href="/"
-          className="bg-[#1E9B97] flex gap-1 items-center shadow-[0px_8px_32px_0px_rgba(0,0,0,0.05)] hover:bg-[#1E9B97] rounded-xl h-12 w-[158px]"
+          className="!bg-[#1E9B97] md:flex hidden gap-1 items-center shadow-[0px_8px_32px_0px_rgba(0,0,0,0.05)] hover:bg-[#1E9B97] rounded-xl h-12 w-[9.875rem]"
         >
           <BoltBtnIcon />
-          <span className="block font-semibold">Get in Touch</span>
+          <span className="font-semibold">Get in Touch</span>
         </Link>
       </Button>
     </nav>
@@ -37,7 +41,7 @@ export const NavLink = (
     <Link
       {...props}
       className={cn(
-        "py-[10px] px-4",
+        "py-[10px] md:px-4",
         pathname === props.href
           ? "text-[#1E9B97] font-semibold"
           : "text-[#506363] font-medium"
