@@ -9,11 +9,11 @@ const Banner = () => {
       <div className="bg-[#5AE0E6] shadow-[0px_16px_32px_0px_rgba(90,224,230,0.2)] rounded-[2rem]  md:rounded-[3rem] px-6 pb-6 pt-[15.125rem] md:p-20 relative my-6">
         <div className="flex flex-col gap-4">
           <p className="text-[#051D1C] text-[1.75rem] md:text-5xl font-extrabold">
-            Let's Talk Strategy
+            Let&apos;s Talk Strategy
           </p>
           <p className="md:text-lg text-base text-[#051E1D] max-w-[540px]">
-            Ready to take your brand to new heights? Don't hesitate to reach
-            out.
+            Ready to take your brand to new heights? Don&apos;t hesitate to
+            reach out.
           </p>
           <Button asChild>
             <Link

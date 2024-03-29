@@ -23,12 +23,12 @@ const AboutUs = () => {
         <div className="max-w-[38.375rem] text-lg">
           <p className="text-[#082828] font-semibold mb-4">ABOUT US</p>
           <p className="text-[#506363] leading-9">
-            We’re more than just another marketing agency, the world is full of
-            those. We’re passionate about delving deep into your business and
-            pushing you into digital success. With Switch, you can go to bed at
-            night knowing that your brand is not just visible, but captivating;
-            your voice is not just heard, but resonating; and your impact is not
-            just momentary, but unforgettable.
+            We&apos;re more than just another marketing agency, the world is
+            full of those. We&apos;re passionate about delving deep into your
+            business and pushing you into digital success. With Switch, you can
+            go to bed at night knowing that your brand is not just visible, but
+            captivating; your voice is not just heard, but resonating; and your
+            impact is not just momentary, but unforgettable.
           </p>
         </div>
       </div>
@@ -43,10 +43,10 @@ const AboutUs = () => {
       </div>
       <ScribbleText header="We blend creative and performance">
         <>
-          There aren't many creative agencies that understand performance and
+          There aren&apos;t many creative agencies that understand performance and
           performance agencies that understand creative. <br />
-          This is where we're different. <br />
-          Whether we're helping to grow your Social communities, deliver
+          This is where we&apos;re different. <br />
+          Whether we&apos;re helping to grow your Social communities, deliver
           performance-driven Paid Media, produce social-first Creative or
           Influencer campaigns - we craft strategies based on your brand,
           business and goals, all backed by data and insight.
@@ -66,14 +66,14 @@ const AboutUs = () => {
             Our approach hinges on outcomes, not just outputs
           </p>
           <p className="text-lg text-[#506363] leading-[1.8rem] mb-8">
-            Results are our compass, and we're not here to just tick boxes with
-            you; we're committed to making a real impact on your business.{" "}
+            Results are our compass, and we&apos;re not here to just tick boxes with
+            you; we&apos;re committed to making a real impact on your business.{" "}
             <br />
             <br />
             Our focus is sharp, targeting measurable outcomes that matter to
-            you. With us, it's not just about effort; it's about tangible
+            you. With us, it&apos;s not just about effort; it&apos;s about tangible
             results driving your success. <br />
-            The results-driven Social first agency you've been looking for.
+            The results-driven Social first agency you&apos;ve been looking for.
           </p>
           <Button asChild>
             <Link

@@ -14,8 +14,8 @@ const Footer = ({ children }: { children: ReactNode }) => {
         <div className="flex flex-col justify-between md:gap-0 gap-4 md:mb-0 mb-8">
           <Logo />
           <p className="max-w-[406px] text-[#667085]">
-            Ready to take your brand to new heights? Don't hesitate to reach
-            out.
+            Ready to take your brand to new heights? Don&apos;t hesitate to
+            reach out.
           </p>
         </div>
         <div className="flex flex-col md:items-end md:gap-0 gap-4 justify-between">
