@@ -43,8 +43,8 @@ const AboutUs = () => {
       </div>
       <ScribbleText header="We blend creative and performance">
         <>
-          There aren&apos;t many creative agencies that understand performance and
-          performance agencies that understand creative. <br />
+          There aren&apos;t many creative agencies that understand performance
+          and performance agencies that understand creative. <br />
           This is where we&apos;re different. <br />
           Whether we&apos;re helping to grow your Social communities, deliver
           performance-driven Paid Media, produce social-first Creative or
@@ -66,13 +66,13 @@ const AboutUs = () => {
             Our approach hinges on outcomes, not just outputs
           </p>
           <p className="text-lg text-[#506363] leading-[1.8rem] mb-8">
-            Results are our compass, and we&apos;re not here to just tick boxes with
-            you; we&apos;re committed to making a real impact on your business.{" "}
-            <br />
+            Results are our compass, and we&apos;re not here to just tick boxes
+            with you; we&apos;re committed to making a real impact on your
+            business. <br />
             <br />
             Our focus is sharp, targeting measurable outcomes that matter to
-            you. With us, it&apos;s not just about effort; it&apos;s about tangible
-            results driving your success. <br />
+            you. With us, it&apos;s not just about effort; it&apos;s about
+            tangible results driving your success. <br />
             The results-driven Social first agency you&apos;ve been looking for.
           </p>
           <Button asChild>
@@ -97,7 +97,7 @@ const AboutUs = () => {
             and turning them into a reality for your audience.
           </p>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between gap-8 overflow-auto">
           <TeamMember />
           <TeamMember />
           <TeamMember />
