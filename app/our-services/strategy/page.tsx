@@ -20,10 +20,10 @@ const Strategy = () => {
           <CtaRightArrow width="w-[10.875rem]" cta="Get in touch" />
         </div>
         <p className="text-2xl text-[#506363] leading-[2.4rem]">
-          There aren't many creative agencies that understand performance and
-          performance agencies that understand creative. <br />
-          This is where we're different. <br />
-          Whether we're helping to grow your Social communities, deliver
+          There aren&apos;t many creative agencies that understand performance
+          and performance agencies that understand creative. <br />
+          This is where we&apos;re different. <br />
+          Whether we&apos;re helping to grow your Social communities, deliver
           performance-driven Paid Media, produce social-first Creative or
           Influencer campaigns - we craft strategies based on your brand,
           business and goals, all backed by data and insight.
@@ -34,8 +34,8 @@ const Strategy = () => {
         title="We grow ambitious brands with Social, Paid, Creative and Influencer"
       >
         <>
-          we're more than just another marketing agency. Our passion lies in
-          delving deep into your business, ensuring your brand is not just
+          we&apos;re more than just another marketing agency. Our passion lies
+          in delving deep into your business, ensuring your brand is not just
           visible but captivating, your voice not just heard but resonating, and
           your impact not just momentary but unforgettable.
         </>
@@ -46,8 +46,8 @@ const Strategy = () => {
         title="We grow ambitious brands with Social, Paid, Creative and Influencer"
       >
         <>
-          we're more than just another marketing agency. Our passion lies in
-          delving deep into your business, ensuring your brand is not just
+          we&apos;re more than just another marketing agency. Our passion lies
+          in delving deep into your business, ensuring your brand is not just
           visible but captivating, your voice not just heard but resonating, and
           your impact not just momentary but unforgettable.
         </>
