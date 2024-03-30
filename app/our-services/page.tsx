@@ -28,6 +28,8 @@ const OurServices = () => {
       </div>
       <div className="flex flex-wrap gap-10 max-w-[77.5rem] mx-auto mb-[4.5rem]">
         <ServiceCard
+          className="max-w-[37.5rem]"
+          link="/our-services/strategy"
           title="Strategy"
           icon={<StrategyIcon />}
           description="We align sales and marketing with demand generation strategies that
@@ -51,6 +53,8 @@ const OurServices = () => {
           </ServiceListItem>
         </ServiceCard>
         <ServiceCard
+          className="max-w-[37.5rem]"
+          link="/our-services"
           title="Socials"
           icon={<ServiceSocialIcon />}
           description="We grow cult-like communities leveraging platform-specific strategies tailored for a world where every like and share counts!"
@@ -73,6 +77,8 @@ const OurServices = () => {
           </ServiceListItem>
         </ServiceCard>
         <ServiceCard
+          className="max-w-[37.5rem]"
+          link="/our-services"
           title="Influencer"
           icon={<InfluencerIcon />}
           description="We create influential campaigns to boost brand awareness and drive action through creativity and influence."
@@ -99,6 +105,8 @@ const OurServices = () => {
           </ServiceListItem>
         </ServiceCard>
         <ServiceCard
+          className="max-w-[37.5rem]"
+          link="/our-services"
           title="Creative"
           icon={<CreativeIcon />}
           description="Explore our Creative services, where strategy and imagination enhance your brand. We craft assets for Organic and Performance goals."
@@ -121,6 +129,8 @@ const OurServices = () => {
           </ServiceListItem>
         </ServiceCard>
         <ServiceCard
+          className="max-w-[37.5rem]"
+          link="/our-services"
           title="Performance"
           icon={<PerformanceIcon />}
           description="We master full-funnel Paid Media strategies for scalable brand growth, with performance-driven campaigns in Paid Social and Paid Search."
@@ -143,6 +153,8 @@ const OurServices = () => {
           </ServiceListItem>
         </ServiceCard>
         <ServiceCard
+          className="max-w-[37.5rem]"
+          link="/our-services"
           title="Content"
           icon={<ContentIcon />}
           description="Crafting stories that resonate and visuals that inspire, our Content services bring your brand's narrative to life."
@@ -165,6 +177,8 @@ const OurServices = () => {
           </ServiceListItem>
         </ServiceCard>
         <ServiceCard
+          className="max-w-[37.5rem]"
+          link="/our-services"
           title="Media"
           icon={<MediaIcon />}
           description="Position your brand for success in the digital realm with our comprehensive Media services."

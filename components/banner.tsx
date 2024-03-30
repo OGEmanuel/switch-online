@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import ArrowRightSharpIcon from "@/public/icons/arrow-right-sharp-icon";
+import Image from "next/image";
 import BannerBoltIcon from "@/public/icons/banner-bolt-icon";
 import BannerBoltMobileIcon from "@/public/icons/banner-bolt-mobile-icon";
 import BannerEllipseIcon from "@/public/icons/banner-ellipse-icon";
@@ -20,7 +21,7 @@ const Banner = () => {
           <Button asChild>
             <Link
               href="/"
-              className="!bg-[#fff] flex gap-1 items-center shadow-[0px_8px_32px_0px_rgba(0,0,0,0.05)] hover:bg-[#fff] rounded-xl h-14 w-[156px]"
+              className="!bg-[#fff] flex gap-1 items-center shadow-[0px_8px_32px_0px_rgba(0,0,0,0.05)] hover:bg-[#fff] rounded-xl h-14 w-[9.75rem]"
             >
               <span className="block text-[#082828] font-semibold">Get in</span>
               <ArrowRightSharpIcon />

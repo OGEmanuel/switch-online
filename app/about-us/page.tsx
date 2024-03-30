@@ -1,9 +1,8 @@
 import ScribbleText from "@/components/scribble-text";
-import { Button } from "@/components/ui/button";
-import ArrowRightSharpIcon from "@/public/icons/arrow-right-sharp-icon";
 import Image from "next/image";
-import Link from "next/link";
 import TeamMember from "./team-member";
+import CtaRightArrow from "@/components/ui/cta-right-arrow";
+import FeatureBox from "@/components/feature-box";
 
 const AboutUs = () => {
   return (
@@ -52,42 +51,22 @@ const AboutUs = () => {
           business and goals, all backed by data and insight.
         </>
       </ScribbleText>
-      <div className="mt-[7.5rem] bg-[#FAFAFA] px-4 md:px-20 flex items-center py-[7.5rem]">
-        <div className="w-max">
-          <Image
-            src={"/display-img-med.jpg"}
-            alt="display-img"
-            width={560}
-            height={560}
-          />
-        </div>
-        <div className="max-w-[41rem] mx-auto">
-          <p className="text-[2.5rem] font-extrabold leading-[3rem] mb-6">
-            Our approach hinges on outcomes, not just outputs
-          </p>
-          <p className="text-lg text-[#506363] leading-[1.8rem] mb-8">
-            Results are our compass, and we&apos;re not here to just tick boxes
-            with you; we&apos;re committed to making a real impact on your
-            business. <br />
-            <br />
-            Our focus is sharp, targeting measurable outcomes that matter to
-            you. With us, it&apos;s not just about effort; it&apos;s about
-            tangible results driving your success. <br />
-            The results-driven Social first agency you&apos;ve been looking for.
-          </p>
-          <Button asChild>
-            <Link
-              href="/"
-              className="!bg-[#fff] flex gap-1 items-center shadow-[0px_8px_32px_0px_rgba(0,0,0,0.05)] hover:bg-[#fff] rounded-xl h-14 w-[15.125rem] border border-[#BAD0D0]"
-            >
-              <span className="block text-[#082828] font-semibold">
-                Browse Our Services
-              </span>
-              <ArrowRightSharpIcon />
-            </Link>
-          </Button>
-        </div>
-      </div>
+      <FeatureBox
+        classes="bg-[#FAFAFA] py-[7.5rem]"
+        title="Our approach hinges on outcomes, not just outputs"
+        cta="Browse Our Services"
+      >
+        <>
+          Results are our compass, and we&apos;re not here to just tick boxes
+          with you; we&apos;re committed to making a real impact on your
+          business. <br />
+          <br />
+          Our focus is sharp, targeting measurable outcomes that matter to you.
+          With us, it&apos;s not just about effort; it&apos;s about tangible
+          results driving your success. <br />
+          The results-driven Social first agency you&apos;ve been looking for.
+        </>
+      </FeatureBox>
       <div className="py-[6.25rem] px-4 md:px-20">
         <div className="text-center w-[50rem] mx-auto mb-16">
           <p className="text-[2.5rem] font-extrabold mb-6">Meet our team</p>
