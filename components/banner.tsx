@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import ArrowRightSharpIcon from "@/public/icons/arrow-right-sharp-icon";
-import Image from "next/image";
+import BannerBoltIcon from "@/public/icons/banner-bolt-icon";
+import BannerBoltMobileIcon from "@/public/icons/banner-bolt-mobile-icon";
+import BannerEllipseIcon from "@/public/icons/banner-ellipse-icon";
 
 const Banner = () => {
   return (
@@ -26,27 +28,12 @@ const Banner = () => {
           </Button>
           <div className="absolute right-20 -top-16 md:right-32">
             <div className="w-max md:hidden">
-              <Image
-                src={"/banner-bolt-mobile.svg"}
-                alt="bolt"
-                width={165.3}
-                height={263.67}
-              />
+              <BannerBoltMobileIcon />
             </div>
             <div className="relative md:block hidden">
-              <Image
-                src={"/banner-bolt.svg"}
-                alt="bolt"
-                width={200}
-                height={333.33}
-              />
+              <BannerBoltIcon />
               <div className="absolute -left-10 w-max">
-                <Image
-                  src={"/banner-ellipse.svg"}
-                  alt="bolt"
-                  width={215}
-                  height={38}
-                />
+                <BannerEllipseIcon />
               </div>
             </div>
           </div>
