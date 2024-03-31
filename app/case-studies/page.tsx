@@ -1,3 +1,5 @@
+import InsightBox from "./insight-box";
+
 const CaseStudies = () => {
   return (
     <section className="px-4 md:px-20">
@@ -11,6 +13,41 @@ const CaseStudies = () => {
           work with fast-growth brands.
         </p>
       </div>
+      <InsightBox
+        href="/case-studies/study-one"
+        title="TrueCaller"
+        src="/display-img-no-bolt.jpg"
+      >
+        <>
+          Goal was to raise awareness of Truecaller&apos;s services among
+          Nigerian consumers, emphasising its value proposition and unique
+          features.
+        </>
+      </InsightBox>
+      <InsightBox
+        className="flex-row-reverse"
+        href="/case-studies/study-one"
+        title="TrueCaller"
+        src="/display-img-no-bolt.jpg"
+      >
+        <>
+          Goal was to raise awareness of Truecaller&apos;s services among
+          Nigerian consumers, emphasising its value proposition and unique
+          features.
+        </>
+      </InsightBox>
+      <InsightBox
+        className="pb-[7.5rem]"
+        href="/case-studies/study-one"
+        title="TrueCaller"
+        src="/display-img-med.jpg"
+      >
+        <>
+          Goal was to raise awareness of Truecaller&apos;s services among
+          Nigerian consumers, emphasising its value proposition and unique
+          features.
+        </>
+      </InsightBox>
     </section>
   );
 };

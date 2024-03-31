@@ -1,7 +1,6 @@
 import ScribbleText from "@/components/scribble-text";
 import Image from "next/image";
 import TeamMember from "./team-member";
-import CtaRightArrow from "@/components/ui/cta-right-arrow";
 import FeatureBox from "@/components/feature-box";
 
 const AboutUs = () => {

@@ -16,7 +16,7 @@ const OtherServices = () => {
   return (
     <>
       <ServiceCard
-        className="max-w-[30rem] bg-white text-left"
+        className="max-w-[30rem] bg-white"
         link="/our-services"
         title="Socials"
         icon={<ServiceSocialIcon />}
@@ -40,7 +40,7 @@ const OtherServices = () => {
         </ServiceListItem>
       </ServiceCard>
       <ServiceCard
-        className="max-w-[30rem] bg-white text-left"
+        className="max-w-[30rem] bg-white"
         link="/our-services"
         title="Influencer"
         icon={<InfluencerIcon />}
@@ -68,7 +68,7 @@ const OtherServices = () => {
         </ServiceListItem>
       </ServiceCard>
       <ServiceCard
-        className="max-w-[30rem] bg-white text-left"
+        className="max-w-[30rem] bg-white"
         link="/our-services"
         title="Creative"
         icon={<CreativeIcon />}
@@ -92,7 +92,7 @@ const OtherServices = () => {
         </ServiceListItem>
       </ServiceCard>
       <ServiceCard
-        className="max-w-[30rem] bg-white text-left"
+        className="max-w-[30rem] bg-white"
         link="/our-services"
         title="Performance"
         icon={<PerformanceIcon />}
@@ -116,7 +116,7 @@ const OtherServices = () => {
         </ServiceListItem>
       </ServiceCard>
       <ServiceCard
-        className="max-w-[30rem] bg-white text-left"
+        className="max-w-[30rem] bg-white"
         link="/our-services"
         title="Content"
         icon={<ContentIcon />}
@@ -140,7 +140,7 @@ const OtherServices = () => {
         </ServiceListItem>
       </ServiceCard>
       <ServiceCard
-        className="max-w-[30rem] bg-white text-left"
+        className="max-w-[30rem] bg-white"
         link="/our-services"
         title="Media"
         icon={<MediaIcon />}

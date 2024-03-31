@@ -33,7 +33,7 @@ const ServiceCard = ({
           {icon}
           <p>{title}</p>
         </div>
-        <p className="text-lg text-[#506363] mb-6">{description}</p>
+        <p className="text-lg text-[#506363] mb-6 text-left">{description}</p>
         <div className="border-t border-dashed border-t-[#CECECE] pt-6 flex flex-col gap-6">
           {children}
         </div>
