@@ -54,7 +54,7 @@ const Strategy = () => {
       </FeatureBox>
       <div className="bg-[#05201F] py-[7.5rem] mb-[6.25rem]">
         <div className="flex items-center justify-between px-4 md:px-20">
-          <div className="flex flex-col gap-6 mb-16">
+          <div className="flex flex-col gap-6">
             <p className="text-white font-extrabold text-[2.5rem]">
               Other Services
             </p>
@@ -66,7 +66,7 @@ const Strategy = () => {
           <BarIcon />
         </div>
         <div className="pl-4 md:pl-20 overflow-auto scrollbar">
-          <div className="flex gap-12 w-max pr-20">
+          <div className="flex gap-12 w-max pr-20 pt-16">
             <OtherServices />
           </div>
         </div>

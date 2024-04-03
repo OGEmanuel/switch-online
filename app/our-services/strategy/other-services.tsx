@@ -1,3 +1,5 @@
+"use client";
+
 import ServiceSocialIcon from "@/public/icons/service-social-icon";
 import ServiceCard from "../service-card";
 import ServiceListItem from "../service-list-item";
@@ -11,10 +13,41 @@ import PerformanceBoltIcon from "@/public/icons/performance-bolt-icon";
 import ContentIcon from "@/public/icons/content-icon";
 import StrategyBoltIcon from "@/public/icons/strategy-bolt-icon";
 import MediaIcon from "@/public/icons/media-icon";
+import StrategyIcon from "@/public/icons/strategy-icon";
+import { usePathname } from "next/navigation";
 
 const OtherServices = () => {
+  const pathname = usePathname();
+
   return (
     <>
+      {pathname === "/" && (
+        <ServiceCard
+          className="max-w-[30rem] bg-white"
+          link="/our-services/strategy"
+          title="Strategy"
+          icon={<StrategyIcon />}
+          description="We align sales and marketing with demand generation strategies that
+          drive revenue growth"
+        >
+          <ServiceListItem>
+            <StrategyBoltIcon />
+            <p>Sales audit.</p>
+          </ServiceListItem>
+          <ServiceListItem>
+            <StrategyBoltIcon />
+            <p>Go to market strategy.</p>
+          </ServiceListItem>
+          <ServiceListItem>
+            <StrategyBoltIcon />
+            <p>ICP, messaging and channel discovery.</p>
+          </ServiceListItem>
+          <ServiceListItem>
+            <StrategyBoltIcon />
+            <p>Funnel optimization.</p>
+          </ServiceListItem>
+        </ServiceCard>
+      )}
       <ServiceCard
         className="max-w-[30rem] bg-white"
         link="/our-services"
