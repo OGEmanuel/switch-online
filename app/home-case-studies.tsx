@@ -19,8 +19,9 @@ const HomeCaseStudies = () => {
           <ArrowRightSharpIcon />
         </div>
         <p className="text-lg text-[#506363]">
-          Goal was to raise awareness of Truecaller's services among Nigerian
-          consumers, emphasising its value proposition and unique features.
+          Goal was to raise awareness of Truecaller&apos;s services among
+          Nigerian consumers, emphasising its value proposition and unique
+          features.
         </p>
         <div className="flex gap-4 flex-wrap pb-[6.5rem]">
           <Insight>4 million views</Insight>

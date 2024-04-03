@@ -35,9 +35,9 @@ export default function Home() {
           cta="Browse Our Services"
         >
           <>
-            Results are our compass, and we're not here to just tick boxes with
-            you; we&apos;re committed to making a real impact on your business.{" "}
-            <br /> <br />
+            Results are our compass, and we&apos;re not here to just tick boxes
+            with you; we&apos;re committed to making a real impact on your
+            business. <br /> <br />
             Our focus is sharp, targeting measurable outcomes that matter to
             you. With us, it&apos;s not just about effort; it&apos;s about
             tangible results driving your success. <br />

@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="h-max">
         <div className="max-w-[48.5625rem] items-center mx-auto text-center flex flex-col gap-5">
           <h1 className="font-extrabold text-[3.5rem] leading-[4.2rem]">
-            Unlock Your Brand's Potential with{" "}
+            Unlock Your Brand&apos;s Potential with{" "}
             <span style={gradientStyle}>Switch.</span>
           </h1>
           <p className="text-lg text-[#485B5B] max-w-[33.8rem]">
