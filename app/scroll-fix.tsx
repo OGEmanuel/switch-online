@@ -4,11 +4,33 @@ import React, { useEffect, useRef, useState } from "react";
 import CtaRightArrow from "@/components/ui/cta-right-arrow";
 import HomeBarIcon from "@/public/icons/home-bar-icon";
 import HomeCaseStudies from "./home-case-studies";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const ScrollFix = () => {
+  useEffect(() => {
+    const galleryElement = document.querySelector(".gallery") as HTMLElement;
+    if (galleryElement) {
+      ScrollTrigger.create({
+        trigger: ".gallery",
+        start: "top top",
+        end: "bottom bottom",
+        pin: ".leftblock",
+        pinSpacing: false,
+        onUpdate: (self) => {
+          if (self.isActive) {
+            gsap.set(".leftblock", { translateY: 0 });
+          }
+        },
+      });
+    }
+  }, []);
+
   return (
-    <div className="bg-white pt-[6.25rem] px-4 md:px-20 flex justify-between items-center pb-16">
-      <div className="max-w-[35rem] 2xl:max-w-[41rem]">
+    <div className="bg-white px-4 gallery pt-[6.25rem] md:px-20 flex justify-between pb-16">
+      <div className="max-w-[35rem] 2xl:max-w-[41rem] leftblock">
         <div className="flex flex-col gap-6 mb-8">
           <HomeBarIcon />
           <p className="text-[2.5rem] font-extrabold leading-[3rem]">
@@ -26,8 +48,7 @@ const ScrollFix = () => {
           cta="All Case studies"
         />
       </div>
-      <div className="max-h-[34rem] overflow-auto scrollbar">
-        <HomeCaseStudies />
+      <div className="">
         <HomeCaseStudies />
         <HomeCaseStudies />
         <HomeCaseStudies />
