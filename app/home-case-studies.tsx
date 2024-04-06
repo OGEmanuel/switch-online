@@ -4,7 +4,7 @@ import Insight from "./case-studies/insight";
 
 const HomeCaseStudies = () => {
   return (
-    <div className="max-w-[35rem] rounded-3xl overflow-hidden">
+    <div className="max-w-[28rem] 2xl:max-w-[35rem] rounded-3xl overflow-hidden">
       <div className="flex flex-col gap-6">
         <Image
           src={"/display-img-home-med.jpg"}
@@ -12,7 +12,7 @@ const HomeCaseStudies = () => {
           width={560}
           height={260}
         />
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <p className="text-[2rem] leading-[2.4rem] font-extrabold">
             Truecaller
           </p>

@@ -3,6 +3,7 @@ import CtaRightArrow from "@/components/ui/cta-right-arrow";
 import BarIcon from "@/public/icons/bar-icon";
 import StrategyIcon from "@/public/icons/strategy-icon";
 import OtherServices from "../other-services";
+import MediaIcon from "@/public/icons/media-icon";
 
 const Strategy = () => {
   return (
@@ -10,8 +11,8 @@ const Strategy = () => {
       <div className="px-20 flex gap-16 pt-[5.9rem]">
         <div className="flex flex-col gap-6">
           <div className="flex gap-6">
-            <StrategyIcon />
-            <p className="text-5xl font-extrabold">Strategy</p>
+            <MediaIcon />
+            <p className="text-5xl font-extrabold">Media</p>
           </div>
           <p className="text-2xl text-[#082828] w-[38rem] leading-[2.4rem]">
             We specialize in Social, Paid, Creative, Influencer and Strategy and

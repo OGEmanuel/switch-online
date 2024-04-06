@@ -21,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar>
+          <NavLink href={"/"}>Home</NavLink>
           <NavLink href={"/our-services"}>Our services</NavLink>
           <NavLink href={"/case-studies"}>Case studies</NavLink>
           <NavLink href={"/about-us"}>About us</NavLink>

@@ -35,13 +35,15 @@ const Banner = () => {
               <ArrowRightSharpIcon />
             </Link>
           </Button>
-          <div className="absolute right-20 -top-16 md:right-32">
+          <div className="absolute right-20 -top-28 md:right-32">
             <div className="w-max md:hidden">
               <BannerBoltMobileIcon />
             </div>
             <div className="relative md:block hidden">
-              <BannerBoltIcon />
-              <div className="absolute -left-10 w-max">
+              <div className="animate-bounce">
+                <BannerBoltIcon />
+              </div>
+              <div className="absolute animate-scale delay-[1500ms] -bottom-20 -left-10 w-max">
                 <BannerEllipseIcon />
               </div>
             </div>

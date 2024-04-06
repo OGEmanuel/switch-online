@@ -17,7 +17,9 @@ const FeatureBox = ({
   href?: string;
 }) => {
   return (
-    <div className={`mt-[7.5rem] px-4 md:px-20 flex items-center ${classes}`}>
+    <div
+      className={`mt-[7.5rem] flex items-center justify-between gap-16 ${classes}`}
+    >
       <div className="w-max relative">
         <Image
           src={"/display-img-med.jpg"}
@@ -29,11 +31,11 @@ const FeatureBox = ({
           <BoltImgIcon />
         </div>
       </div>
-      <div className="max-w-[41rem] mx-auto">
-        <p className="text-[2.5rem] font-extrabold leading-[3rem] mb-6">
+      <div className="w-[41rem]">
+        <p className="text-[2rem] 2xl:text-[2.5rem] font-extrabold 2xl:leading-[3rem] mb-3 2xl:mb-6">
           {title}
         </p>
-        <p className="text-lg text-[#506363] leading-[1.8rem] mb-8">
+        <p className="text-base 2xl:text-lg text-[#506363] 2xl:leading-[1.8rem] mb-4 2xl:mb-8">
           {children}
         </p>
         <CtaRightArrow href={href} width="w-[15.125rem]" cta={cta} />

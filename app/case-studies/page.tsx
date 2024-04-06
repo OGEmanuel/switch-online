@@ -16,7 +16,7 @@ const CaseStudies = () => {
       <InsightBox
         href="/case-studies/study-one"
         title="TrueCaller"
-        src="/display-img-no-bolt.jpg"
+        src="/display-img-med.jpg"
       >
         <>
           Goal was to raise awareness of Truecaller&apos;s services among
@@ -28,7 +28,7 @@ const CaseStudies = () => {
         className="flex-row-reverse"
         href="/case-studies/study-one"
         title="TrueCaller"
-        src="/display-img-no-bolt.jpg"
+        src="/display-img-med.jpg"
       >
         <>
           Goal was to raise awareness of Truecaller&apos;s services among

@@ -51,7 +51,7 @@ const AboutUs = () => {
         </>
       </ScribbleText>
       <FeatureBox
-        classes="bg-[#FAFAFA] py-[7.5rem]"
+        classes="bg-[#FAFAFA] px-4 md:px-20 py-[7.5rem]"
         title="Our approach hinges on outcomes, not just outputs"
         cta="Browse Our Services"
       >

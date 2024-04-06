@@ -1,8 +1,8 @@
-import StrategyBoltIcon from "@/public/icons/strategy-bolt-icon";
-import StrategyIcon from "@/public/icons/strategy-icon";
-import ServiceListItem from "./service-list-item";
-import ServiceCard from "./service-card";
+"use client";
+
 import ServiceSocialIcon from "@/public/icons/service-social-icon";
+import ServiceCard from "./service-card";
+import ServiceListItem from "./service-list-item";
 import SocialBoltIcon from "@/public/icons/social-bolt-icon";
 import InfluencerIcon from "@/public/icons/influencer-icon";
 import InfluencerBoltIcon from "@/public/icons/influencer-bolt-icon";
@@ -11,24 +11,19 @@ import CreativeBoltIcon from "@/public/icons/creative-bolt-icon";
 import PerformanceIcon from "@/public/icons/performance-icon";
 import PerformanceBoltIcon from "@/public/icons/performance-bolt-icon";
 import ContentIcon from "@/public/icons/content-icon";
+import StrategyBoltIcon from "@/public/icons/strategy-bolt-icon";
 import MediaIcon from "@/public/icons/media-icon";
+import StrategyIcon from "@/public/icons/strategy-icon";
+import { usePathname } from "next/navigation";
 
-const OurServices = () => {
+const OtherServices = () => {
+  const pathname = usePathname();
+
   return (
-    <section className="px-4 md:px-20">
-      <div className="text-center w-[43.5rem] mx-auto flex flex-col gap-6 mb-[3.375rem]">
-        <p className="text-[#082828] font-semibold">Our Services</p>
-        <h1 className="font-extrabold text-5xl">
-          Our Range of Expert Services
-        </h1>
-        <p className="text-lg text-[#506363]">
-          We specialize in Social, Paid, Creative, Influencer and Strategy and
-          work with fast-growth brands.
-        </p>
-      </div>
-      <div className="flex flex-wrap gap-10 max-w-[77.5rem] mx-auto mb-[4.5rem]">
+    <>
+      {pathname !== "/our-services/strategy" && (
         <ServiceCard
-          className="max-w-[37.5rem]"
+          className="max-w-[30rem] bg-white"
           link="/our-services/strategy"
           title="Strategy"
           icon={<StrategyIcon />}
@@ -52,8 +47,10 @@ const OurServices = () => {
             <p>Funnel optimization.</p>
           </ServiceListItem>
         </ServiceCard>
+      )}
+      {pathname !== "/our-services/socials" && (
         <ServiceCard
-          className="max-w-[37.5rem]"
+          className="max-w-[30rem] bg-white"
           link="/our-services/socials"
           title="Socials"
           icon={<ServiceSocialIcon />}
@@ -76,8 +73,10 @@ const OurServices = () => {
             <p>Social listening and insights.</p>
           </ServiceListItem>
         </ServiceCard>
+      )}
+      {pathname !== "/our-services/influencer" && (
         <ServiceCard
-          className="max-w-[37.5rem]"
+          className="max-w-[30rem] bg-white"
           link="/our-services/influencer"
           title="Influencer"
           icon={<InfluencerIcon />}
@@ -104,8 +103,10 @@ const OurServices = () => {
             <p>Wrap reports and analysis.</p>
           </ServiceListItem>
         </ServiceCard>
+      )}
+      {pathname !== "/our-services/creative" && (
         <ServiceCard
-          className="max-w-[37.5rem]"
+          className="max-w-[30rem] bg-white"
           link="/our-services/creative"
           title="Creative"
           icon={<CreativeIcon />}
@@ -128,8 +129,10 @@ const OurServices = () => {
             <p>Motion design, animation and graphics.</p>
           </ServiceListItem>
         </ServiceCard>
+      )}
+      {pathname !== "/our-services/performance" && (
         <ServiceCard
-          className="max-w-[37.5rem]"
+          className="max-w-[30rem] bg-white"
           link="/our-services/performance"
           title="Performance"
           icon={<PerformanceIcon />}
@@ -152,8 +155,10 @@ const OurServices = () => {
             <p>Martech</p>
           </ServiceListItem>
         </ServiceCard>
+      )}
+      {pathname !== "/our-services/content" && (
         <ServiceCard
-          className="max-w-[37.5rem]"
+          className="max-w-[30rem] bg-white"
           link="/our-services/content"
           title="Content"
           icon={<ContentIcon />}
@@ -176,8 +181,10 @@ const OurServices = () => {
             <p>Press release</p>
           </ServiceListItem>
         </ServiceCard>
+      )}
+      {pathname !== "/our-services/media" && (
         <ServiceCard
-          className="max-w-[37.5rem]"
+          className="max-w-[30rem] bg-white"
           link="/our-services/media"
           title="Media"
           icon={<MediaIcon />}
@@ -200,9 +207,9 @@ const OurServices = () => {
             <p>Media reporting and analysis.</p>
           </ServiceListItem>
         </ServiceCard>
-      </div>
-    </section>
+      )}
+    </>
   );
 };
 
-export default OurServices;
+export default OtherServices;

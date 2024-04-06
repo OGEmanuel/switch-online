@@ -12,13 +12,7 @@ import HomeContentIcon from "@/public/icons/home-content-icon";
 import HomeMediaIcon from "@/public/icons/home-media-icon";
 import Values from "./values";
 import BarIcon from "@/public/icons/bar-icon";
-import OtherServices from "./our-services/strategy/other-services";
-import HomeBarIcon from "@/public/icons/home-bar-icon";
-import CtaRightArrow from "@/components/ui/cta-right-arrow";
-import ArrowRightSharpIcon from "@/public/icons/arrow-right-sharp-icon";
-import Insight from "./case-studies/insight";
-import HomeCaseStudies from "./home-case-studies";
-import { useEffect, useRef } from "react";
+import OtherServices from "./our-services/other-services";
 import ScrollFix from "./scroll-fix";
 import BoltImgIcon from "@/public/icons/bolt-img-icon";
 
@@ -26,12 +20,12 @@ export default function Home() {
   return (
     <main className="min-h-[calc(100vh-119.97px)] bg-fixed bg-[url('/icons/hero-bg-icon.svg')] bg-no-repeat bg-center pt-8">
       <Hero />
-      <div className="bg-white px-4 md:px-20">
+      <div className="bg-white relative px-4 md:px-20 before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:shadow-[0px_-10px_30px_rgba(0,0,0)]">
         <Marquee />
         <FeatureBox
           href="/our-services"
           classes="bg-white"
-          title="Our approach hinges on outcomes, not just outputs"
+          title="We grow ambitious brands with Social, Paid, Creative and Influencer"
           cta="Browse Our Services"
         >
           <>
@@ -45,12 +39,12 @@ export default function Home() {
           </>
         </FeatureBox>
         <div className="flex justify-between mt-[10.25rem] items-center pb-[7.5rem]">
-          <div className="max-w-[41rem] flex flex-col gap-20">
-            <div className="flex flex-col gap-6">
-              <p className="font-extrabold text-[2.5rem] leading-[3rem]">
+          <div className="w-[30rem] 2xl:w-[41rem] flex flex-col gap-10 2xl:gap-20">
+            <div className="flex flex-col gap-3 2xl:gap-6">
+              <p className="font-extrabold text-[2rem] 2xl:text-[2.5rem] 2xl:leading-[3rem]">
                 Result-Focused Strategies
               </p>
-              <p className="text-lg text-[#506363]">
+              <p className="text-base 2xl:text-lg text-[#506363]">
                 Our approach hinges on outcomes, not just outputs. We&apos;re
                 not here to merely tick boxes, we&apos;re here to make a real
                 impact on your business. With a sharp focus on measurable
@@ -59,11 +53,11 @@ export default function Home() {
                 results that matter to you.
               </p>
             </div>
-            <div className="flex flex-col gap-10">
+            <div className="flex flex-col gap-5 2xl:gap-10">
               <p className="text-[#082828] font-semibold text-xl">
                 Our Comprehensive Offerings
               </p>
-              <div className="flex gap-10 flex-wrap text-[#082828] text-xl">
+              <div className="flex gap-5 2xl:gap-10 flex-wrap text-[#082828] text-base 2xl:text-xl">
                 <div className="flex items-center gap-2">
                   <HomeStrategyIcon />
                   <p>Strategy</p>
@@ -155,7 +149,7 @@ export default function Home() {
       </div>
       <div className="bg-[#05201F] py-[7.5rem]">
         <div className="flex items-center justify-between px-4 md:px-20">
-          <div className="flex flex-col gap-6 mb-16">
+          <div className="flex flex-col gap-6">
             <p className="text-white font-extrabold text-[2.5rem]">
               Our Services
             </p>
@@ -166,7 +160,7 @@ export default function Home() {
           </div>
           <BarIcon />
         </div>
-        <div className="pl-4 md:pl-20 overflow-auto scrollbar">
+        <div className="pl-4 md:pl-20 overflow-auto scrollbar pt-16">
           <div className="flex gap-12 w-max pr-20">
             <OtherServices />
           </div>
