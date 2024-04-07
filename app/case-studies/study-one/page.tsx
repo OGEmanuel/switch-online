@@ -2,16 +2,19 @@ import Image from "next/image";
 import InsightBox from "../insight-box";
 import CaseStudyInsight from "./case-study-insight";
 import ScribbleText from "@/components/scribble-text";
+import display from "@/public/display-img-med.jpg";
 
 const StudyOne = () => {
   return (
-    <section className="px-4 md:px-20">
-      <div className="pt-16 max-w-[49.5625rem] mx-auto text-center flex flex-col gap-6 mb-20">
-        <p className="text-[#082828] font-semibold">TRUECALLER</p>
-        <h1 className="text-5xl font-extrabold">
+    <section className="px-4 md:px-8 lg:px-20">
+      <div className="md:pt-16 pt-10 max-w-[49.5625rem] mx-auto text-center flex flex-col gap-6 mb-20">
+        <p className="text-[#082828] text-sm md:text-base font-semibold">
+          TRUECALLER
+        </p>
+        <h1 className="md:text-5xl text-[2.5rem] font-extrabold">
           10Xed the wave on top social platforms
         </h1>
-        <div className="text-lg font-medium flex gap-4 w-max mx-auto">
+        <div className="md:text-lg text-base font-medium flex gap-4 w-max mx-auto">
           <p className="text-[#9747FF] bg-[#F5EDFF] py-[10px] px-6 rounded-[2.125rem]">
             Creative
           </p>
@@ -20,34 +23,25 @@ const StudyOne = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-between items-center">
-        <div className="max-w-[41rem] flex flex-col gap-6">
-          <p className="text-[2.5rem] font-extrabold leading-[3rem]">
-            The Client
-          </p>
-          <p className="text-lg text-[#506363]">
-            Goal was to raise awareness of Truecaller&apos;s services among
-            Nigerian consumers, emphasising its value proposition and unique
-            features.Goal was to raise awareness of Truecaller&apos;s services
-            among Nigerian consumers, emphasising its value proposition and
-            unique features.Goal was to raise awareness of Truecaller&apos;s
-            services among Nigerian consumers, emphasising its value proposition
-            and unique features.
-          </p>
-        </div>
-        <div>
-          <Image
-            src={"/display-img-no-bolt.jpg"}
-            alt="display img"
-            width={560}
-            height={560}
-          />
-        </div>
-      </div>
       <InsightBox
-        className="flex-row-reverse mb-20"
+        className="md:flex-row flex-col-reverse mb-4 md:justify-center"
+        title="The Client"
+        src={display}
+      >
+        <>
+          Goal was to raise awareness of Truecaller&apos;s services among
+          Nigerian consumers, emphasising its value proposition and unique
+          features.Goal was to raise awareness of Truecaller&apos;s services
+          among Nigerian consumers, emphasising its value proposition and unique
+          features.Goal was to raise awareness of Truecaller&apos;s services
+          among Nigerian consumers, emphasising its value proposition and unique
+          features.
+        </>
+      </InsightBox>
+      <InsightBox
+        className="md:flex-row-reverse flex-col-reverse mb-4 md:justify-center"
         title="What we did"
-        src="/display-img-no-bolt.jpg"
+        src={display}
       >
         <>
           Goal was to raise awareness of Truecaller&apos;s services among

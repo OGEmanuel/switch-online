@@ -23,7 +23,7 @@ const OtherServices = () => {
     <>
       {pathname !== "/our-services/strategy" && (
         <ServiceCard
-          className="max-w-[30rem] bg-white"
+          className="w-[18.75rem] md:w-[30rem] bg-white"
           link="/our-services/strategy"
           title="Strategy"
           icon={<StrategyIcon />}
@@ -50,7 +50,7 @@ const OtherServices = () => {
       )}
       {pathname !== "/our-services/socials" && (
         <ServiceCard
-          className="max-w-[30rem] bg-white"
+          className="w-[18.75rem] md:w-[30rem] bg-white"
           link="/our-services/socials"
           title="Socials"
           icon={<ServiceSocialIcon />}
@@ -76,7 +76,7 @@ const OtherServices = () => {
       )}
       {pathname !== "/our-services/influencer" && (
         <ServiceCard
-          className="max-w-[30rem] bg-white"
+          className="w-[18.75rem] md:w-[30rem] bg-white"
           link="/our-services/influencer"
           title="Influencer"
           icon={<InfluencerIcon />}
@@ -106,7 +106,7 @@ const OtherServices = () => {
       )}
       {pathname !== "/our-services/creative" && (
         <ServiceCard
-          className="max-w-[30rem] bg-white"
+          className="w-[18.75rem] md:w-[30rem] bg-white"
           link="/our-services/creative"
           title="Creative"
           icon={<CreativeIcon />}
@@ -132,7 +132,7 @@ const OtherServices = () => {
       )}
       {pathname !== "/our-services/performance" && (
         <ServiceCard
-          className="max-w-[30rem] bg-white"
+          className="w-[18.75rem] md:w-[30rem] bg-white"
           link="/our-services/performance"
           title="Performance"
           icon={<PerformanceIcon />}
@@ -158,7 +158,7 @@ const OtherServices = () => {
       )}
       {pathname !== "/our-services/content" && (
         <ServiceCard
-          className="max-w-[30rem] bg-white"
+          className="w-[18.75rem] md:w-[30rem] bg-white"
           link="/our-services/content"
           title="Content"
           icon={<ContentIcon />}
@@ -184,7 +184,7 @@ const OtherServices = () => {
       )}
       {pathname !== "/our-services/media" && (
         <ServiceCard
-          className="max-w-[30rem] bg-white"
+          className="w-[18.75rem] md:w-[30rem] bg-white"
           link="/our-services/media"
           title="Media"
           icon={<MediaIcon />}

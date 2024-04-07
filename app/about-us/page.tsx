@@ -2,12 +2,14 @@ import ScribbleText from "@/components/scribble-text";
 import Image from "next/image";
 import TeamMember from "./team-member";
 import FeatureBox from "@/components/feature-box";
+import display from "@/public/display-img.jpg";
+import MedDisplay from "@/public/display-img-med.jpg";
 
 const AboutUs = () => {
   return (
-    <section className="pt-[4.5rem] pb-[6.25rem]">
-      <div className="flex justify-between w-full mb-16 px-4 md:px-20">
-        <div className="text-black font-extrabold text-7xl w-max leading-[5.5rem]">
+    <section className="pt-4 lg:pt-[4.5rem] pb-[6.25rem]">
+      <div className="flex flex-col lg:flex-row justify-between lg:gap-0 gap-7 w-full mb-8 md:mb-16 px-4 md:px-8 lg:px-20">
+        <div className="text-black font-extrabold text-[2.5rem] md:text-7xl w-max md:leading-[5.5rem]">
           <p>
             Be <span className="text-[#1E9B97]">Seen.</span>
           </p>
@@ -18,7 +20,7 @@ const AboutUs = () => {
             Be <span className="text-[#5AE0E6]">Unforgettable.</span>
           </p>
         </div>
-        <div className="max-w-[38.375rem] text-lg">
+        <div className="max-w-[38.375rem] md:text-lg">
           <p className="text-[#082828] font-semibold mb-4">ABOUT US</p>
           <p className="text-[#506363] leading-9">
             We&apos;re more than just another marketing agency, the world is
@@ -30,14 +32,25 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
-      <div className="w-full mb-[7.5rem] px-4 md:px-20">
-        <Image
-          src={"/display-img.jpg"}
-          alt="display"
-          width={1280}
-          height={560}
-          className="w-full"
-        />
+      <div className="px-4 md:px-8 lg:px-20 mb-[5.5rem] md:mb-[7.5rem]">
+        <div className="md:block hidden">
+          <Image
+            src={display}
+            alt="display"
+            width={1280}
+            height={560}
+            placeholder="blur"
+          />
+        </div>
+        <div className="md:hidden w-max mx-auto">
+          <Image
+            src={MedDisplay}
+            alt="display"
+            width={358}
+            height={358}
+            placeholder="blur"
+          />
+        </div>
       </div>
       <ScribbleText header="We blend creative and performance">
         <>
@@ -51,7 +64,7 @@ const AboutUs = () => {
         </>
       </ScribbleText>
       <FeatureBox
-        classes="bg-[#FAFAFA] px-4 md:px-20 py-[7.5rem]"
+        classes="bg-[#FAFAFA] px-4 md:px-8 lg:px-20 py-[5.5rem] md:py-[7.5rem]"
         title="Our approach hinges on outcomes, not just outputs"
         cta="Browse Our Services"
       >
@@ -66,16 +79,18 @@ const AboutUs = () => {
           The results-driven Social first agency you&apos;ve been looking for.
         </>
       </FeatureBox>
-      <div className="py-[6.25rem] px-4 md:px-20">
-        <div className="text-center w-[50rem] mx-auto mb-16">
-          <p className="text-[2.5rem] font-extrabold mb-6">Meet our team</p>
-          <p className="text-lg text-[#506363] leading-[1.8rem]">
+      <div className="md:py-[6.25rem] py-16 px-4 md:px-8 lg:px-20">
+        <div className="text-center max-w-[50rem] mx-auto mb-16">
+          <p className="md:text-[2.5rem] text-[1.75rem] font-extrabold mb-6">
+            Meet our team
+          </p>
+          <p className="md:text-lg text-base text-[#506363] leading-[1.8rem]">
             Say hello to agile marketing, from strategic thinking to execution,
             planning to production, we are experts in taking compelling ideas
             and turning them into a reality for your audience.
           </p>
         </div>
-        <div className="flex justify-between gap-8 overflow-auto">
+        <div className="flex md:flex-row flex-col md:w-auto mx-auto justify-between gap-6 md:gap-8 overflow-auto">
           <TeamMember />
           <TeamMember />
           <TeamMember />

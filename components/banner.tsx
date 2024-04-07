@@ -12,10 +12,10 @@ const Banner = () => {
   const pathname = usePathname();
 
   return (
-    <div className="mt-16 px-4 md:px-20">
-      <div className="bg-[#5AE0E6] shadow-[0px_16px_32px_0px_rgba(90,224,230,0.2)] rounded-[2rem]  md:rounded-[3rem] px-6 pb-6 pt-[15.125rem] md:p-20 relative my-6">
-        <div className="flex flex-col gap-4 max-w-[540px]">
-          <p className="text-[#051D1C] text-[1.75rem] leading-[3.6rem] md:text-5xl font-extrabold">
+    <div className="mt-16 px-4 md:px-8 lg:px-20">
+      <div className="bg-[#5AE0E6] shadow-[0px_16px_32px_0px_rgba(90,224,230,0.2)] rounded-[2rem]  md:rounded-[3rem] px-6 pb-6 pt-[15.125rem] md:p-10 xl:p-20 relative my-6">
+        <div className="flex flex-col gap-4 lg:max-w-[540px] md:max-w-[420px] max-w-[540px]">
+          <p className="text-[#051D1C] text-[1.75rem] leading-[3.6rem] md:text-3xl lg:text-5xl font-extrabold">
             {pathname.toLowerCase().includes("case-studies")
               ? "Be on our next list of successful projects"
               : "Let's Talk Strategy"}
@@ -35,12 +35,12 @@ const Banner = () => {
               <ArrowRightSharpIcon />
             </Link>
           </Button>
-          <div className="absolute right-20 -top-28 md:right-32">
-            <div className="w-max md:hidden">
+          <div className="absolute right-20 -top-28 md:right-20 lg:right-32">
+            <div className="w-max xl:hidden animate-bounce">
               <BannerBoltMobileIcon />
             </div>
-            <div className="relative md:block hidden">
-              <div className="animate-bounce">
+            <div className="relative">
+              <div className="animate-bounce xl:block hidden">
                 <BannerBoltIcon />
               </div>
               <div className="absolute animate-scale delay-[1500ms] -bottom-20 -left-10 w-max">

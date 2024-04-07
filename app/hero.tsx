@@ -14,11 +14,11 @@ const Hero = () => {
     <section className="mt-[3.5rem] mb-[19.625rem] px-4 md:px-20">
       <div className="h-max">
         <div className="max-w-[48.5625rem] items-center mx-auto text-center flex flex-col gap-5">
-          <h1 className="font-extrabold text-[3.5rem] leading-[4.2rem]">
+          <h1 className="font-extrabold text-[2.5rem] md:text-[3.5rem] leading-[4.2rem]">
             Unlock Your Brand&apos;s Potential with{" "}
             <span style={gradientStyle}>Switch.</span>
           </h1>
-          <p className="text-lg text-[#485B5B] max-w-[33.8rem]">
+          <p className="md:text-lg text-[#485B5B] max-w-[33.8rem]">
             Elevate Your Brand, Captivate Your Audience, and Drive Unforgettable
             Results.
           </p>

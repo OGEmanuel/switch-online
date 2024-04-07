@@ -15,18 +15,20 @@ import MediaIcon from "@/public/icons/media-icon";
 
 const OurServices = () => {
   return (
-    <section className="px-4 md:px-20">
-      <div className="text-center w-[43.5rem] mx-auto flex flex-col gap-6 mb-[3.375rem]">
-        <p className="text-[#082828] font-semibold">Our Services</p>
-        <h1 className="font-extrabold text-5xl">
+    <section className="px-4 md:px-8 lg:px-20">
+      <div className="text-center max-w-[43.5rem] mx-auto flex flex-col gap-5 md:gap-6 mb-[3.375rem]">
+        <p className="text-[#082828] font-semibold text-sm md:text-base">
+          Our Services
+        </p>
+        <h1 className="font-extrabold text-[2.5rem] md:text-5xl">
           Our Range of Expert Services
         </h1>
-        <p className="text-lg text-[#506363]">
+        <p className="md:text-lg text-[#506363]">
           We specialize in Social, Paid, Creative, Influencer and Strategy and
           work with fast-growth brands.
         </p>
       </div>
-      <div className="flex flex-wrap gap-10 max-w-[77.5rem] mx-auto mb-[4.5rem]">
+      <div className="flex flex-wrap h-max gap-10 max-w-[77.5rem] md:justify-center xl:justify-start mx-auto mb-[10rem] xl:mb-[4.5rem]">
         <ServiceCard
           className="max-w-[37.5rem]"
           link="/our-services/strategy"

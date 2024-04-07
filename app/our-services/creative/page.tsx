@@ -4,23 +4,24 @@ import BarIcon from "@/public/icons/bar-icon";
 import StrategyIcon from "@/public/icons/strategy-icon";
 import OtherServices from "../other-services";
 import CreativeIcon from "@/public/icons/creative-icon";
+import Services from "@/components/services";
 
-const Strategy = () => {
+const Creative = () => {
   return (
     <section>
-      <div className="px-20 flex gap-16 pt-[5.9rem]">
+      <div className="px-4 md:px-8 lg:px-20 flex-wrap xl:flex-nowrap flex gap-16 pt-10 md:pt-[5.9rem]">
         <div className="flex flex-col gap-6">
-          <div className="flex gap-6">
+          <div className="flex gap-6 items-center">
             <CreativeIcon />
-            <p className="text-5xl font-extrabold">Creative</p>
+            <p className="text-3xl md:text-5xl font-extrabold">Creative</p>
           </div>
-          <p className="text-2xl text-[#082828] w-[38rem] leading-[2.4rem]">
+          <p className="md:text-2xl text-lg text-[#082828] xl:w-[38rem] leading-[2.4rem]">
             We specialize in Social, Paid, Creative, Influencer and Strategy and
             work with fast-growth brands.
           </p>
           <CtaRightArrow width="w-[10.875rem]" cta="Get in touch" />
         </div>
-        <p className="text-2xl text-[#506363] leading-[2.4rem]">
+        <p className="md:text-2xl text-lg text-[#506363] leading-[2.4rem]">
           There aren&apos;t many creative agencies that understand performance
           and performance agencies that understand creative. <br />
           This is where we&apos;re different. <br />
@@ -54,27 +55,14 @@ const Strategy = () => {
           your impact not just momentary but unforgettable.
         </>
       </FeatureBox>
-      <div className="bg-[#05201F] py-[7.5rem] mb-[6.25rem]">
-        <div className="flex items-center justify-between px-4 md:px-20">
-          <div className="flex flex-col gap-6">
-            <p className="text-white font-extrabold text-[2.5rem]">
-              Other Services
-            </p>
-            <p className="w-[33.75rem] text-[#BAD0D0]">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-              mi. Aliquam in hendrerit urna
-            </p>
-          </div>
-          <BarIcon />
-        </div>
-        <div className="pl-4 md:pl-20 overflow-auto scrollbar">
-          <div className="flex gap-12 w-max pr-20 pt-16">
-            <OtherServices />
-          </div>
-        </div>
+      <div className="md:mb-0 mb-32">
+        <Services
+          title="Our Services"
+          description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massami. Aliquam in hendrerit urna"
+        />
       </div>
     </section>
   );
 };
 
-export default Strategy;
+export default Creative;

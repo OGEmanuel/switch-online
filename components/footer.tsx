@@ -9,7 +9,7 @@ import SocialIcon from "@/public/icons/social-icon";
 
 const Footer = ({ children }: { children: ReactNode }) => {
   return (
-    <footer className="px-4 md:px-20 pt-10 md:pt-16 pb-12">
+    <footer className="px-4 md:px-8 lg:px-20 pt-10 md:pt-16 pb-12">
       <div className="flex justify-between md:flex-nowrap flex-wrap h-[100px] md:mb-16 mb-12">
         <div className="flex flex-col justify-between md:gap-0 gap-4 md:mb-0 mb-8">
           <Logo />
