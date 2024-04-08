@@ -8,11 +8,11 @@ import Services from "@/components/services";
 const Socials = () => {
   return (
     <section>
-      <div className="px-4 md:px-8 lg:px-20 flex-wrap xl:flex-nowrap flex gap-16 pt-10 md:pt-[5.9rem]">
+      <div className="px-4 md:px-8 lg:px-20 flex-wrap xl:flex-nowrap flex gap-8 pt-10 md:pt-[5.9rem]">
         <div className="flex flex-col gap-6">
           <div className="flex gap-6 items-center">
             <ServiceSocialIcon />
-            <p className="text-3xl md:text-5xl font-extrabold">Social</p>
+            <p className="text-3xl md:text-5xl font-extrabold">Socials</p>
           </div>
           <p className="md:text-2xl text-lg text-[#082828] xl:w-[38rem] leading-[2.4rem]">
             We specialize in Social, Paid, Creative, Influencer and Strategy and
@@ -20,7 +20,7 @@ const Socials = () => {
           </p>
           <CtaRightArrow width="w-[10.875rem]" cta="Get in touch" />
         </div>
-        <p className="md:text-2xl text-lg text-[#506363] leading-[2.4rem]">
+        <p className="2xl:text-2xl text-lg text-[#506363] leading-[2.4rem]">
           There aren&apos;t many creative agencies that understand performance
           and performance agencies that understand creative. <br />
           This is where we&apos;re different. <br />
@@ -31,7 +31,7 @@ const Socials = () => {
         </p>
       </div>
       <FeatureBox
-        classes="px-4 md:px-20"
+        classes="px-4 md:px-20 lg:flex-row"
         cta="Get in touch"
         title="We grow ambitious brands with Social, Paid, Creative and Influencer"
       >
@@ -43,7 +43,7 @@ const Socials = () => {
         </>
       </FeatureBox>
       <FeatureBox
-        classes="flex flex-row-reverse px-4 md:px-20 pb-[7.5rem]"
+        classes="flex lg:flex-row-reverse px-4 md:px-20 pb-[7.5rem]"
         cta="Get in touch"
         title="We grow ambitious brands with Social, Paid, Creative and Influencer"
       >

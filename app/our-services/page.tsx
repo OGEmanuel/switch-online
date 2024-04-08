@@ -28,9 +28,9 @@ const OurServices = () => {
           work with fast-growth brands.
         </p>
       </div>
-      <div className="flex flex-wrap h-max gap-10 max-w-[77.5rem] md:justify-center xl:justify-start mx-auto mb-[10rem] xl:mb-[4.5rem]">
+      <div className="flex flex-wrap h-max gap-10 max-w-[77.5rem] md:justify-center xl:justify-center mx-auto mb-[10rem] xl:mb-[4.5rem]">
         <ServiceCard
-          className="max-w-[37.5rem]"
+          className="max-w-[30.5rem]"
           link="/our-services/strategy"
           title="Strategy"
           icon={<StrategyIcon />}
@@ -55,7 +55,7 @@ const OurServices = () => {
           </ServiceListItem>
         </ServiceCard>
         <ServiceCard
-          className="max-w-[37.5rem]"
+          className="max-w-[30.5rem]"
           link="/our-services/socials"
           title="Socials"
           icon={<ServiceSocialIcon />}
@@ -79,7 +79,7 @@ const OurServices = () => {
           </ServiceListItem>
         </ServiceCard>
         <ServiceCard
-          className="max-w-[37.5rem]"
+          className="max-w-[30.5rem]"
           link="/our-services/influencer"
           title="Influencer"
           icon={<InfluencerIcon />}
@@ -107,7 +107,7 @@ const OurServices = () => {
           </ServiceListItem>
         </ServiceCard>
         <ServiceCard
-          className="max-w-[37.5rem]"
+          className="max-w-[30.5rem]"
           link="/our-services/creative"
           title="Creative"
           icon={<CreativeIcon />}
@@ -131,7 +131,7 @@ const OurServices = () => {
           </ServiceListItem>
         </ServiceCard>
         <ServiceCard
-          className="max-w-[37.5rem]"
+          className="max-w-[30.5rem]"
           link="/our-services/performance"
           title="Performance"
           icon={<PerformanceIcon />}
@@ -155,7 +155,7 @@ const OurServices = () => {
           </ServiceListItem>
         </ServiceCard>
         <ServiceCard
-          className="max-w-[37.5rem]"
+          className="max-w-[30.5rem]"
           link="/our-services/content"
           title="Content"
           icon={<ContentIcon />}
@@ -179,7 +179,7 @@ const OurServices = () => {
           </ServiceListItem>
         </ServiceCard>
         <ServiceCard
-          className="max-w-[37.5rem]"
+          className="max-w-[30.5rem]"
           link="/our-services/media"
           title="Media"
           icon={<MediaIcon />}

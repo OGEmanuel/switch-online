@@ -9,7 +9,7 @@ const AboutUs = () => {
   return (
     <section className="pt-4 lg:pt-[4.5rem] pb-[6.25rem]">
       <div className="flex flex-col lg:flex-row justify-between lg:gap-0 gap-7 w-full mb-8 md:mb-16 px-4 md:px-8 lg:px-20">
-        <div className="text-black font-extrabold text-[2.5rem] md:text-7xl w-max md:leading-[5.5rem]">
+        <div className="text-black font-extrabold text-[2.5rem] xl:text-[3.2rem] 2xl:text-7xl w-max md:leading-[5.5rem]">
           <p>
             Be <span className="text-[#1E9B97]">Seen.</span>
           </p>
@@ -64,7 +64,7 @@ const AboutUs = () => {
         </>
       </ScribbleText>
       <FeatureBox
-        classes="bg-[#FAFAFA] px-4 md:px-8 lg:px-20 py-[5.5rem] md:py-[7.5rem]"
+        classes="bg-[#FAFAFA] px-4 lg:flex-row md:px-8 lg:px-20 py-[5.5rem] md:py-[7.5rem]"
         title="Our approach hinges on outcomes, not just outputs"
         cta="Browse Our Services"
       >

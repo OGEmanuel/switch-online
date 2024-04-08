@@ -20,7 +20,7 @@ const FeatureBox = ({
 }) => {
   return (
     <div
-      className={`lg:mt-[7.5rem] mt-12 flex lg:flex-row flex-col items-center justify-between gap-4 lg:gap-16 ${classes}`}
+      className={`lg:mt-[7.5rem] mt-12 flex flex-col items-center justify-between gap-4 lg:gap-16 ${classes}`}
     >
       <div className="w-max relative">
         <div className="md:w-[560px] xl:w-[560px] xl:h-[560px] lg:w-[358px] lg:h-[358px] w-[358px] h-[358px] md:h-[560px]">
