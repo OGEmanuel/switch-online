@@ -1,19 +1,19 @@
 import { Button } from "@/components/ui/button";
 import BoltHeroIcon from "@/public/icons/bolt-hero-icon";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
-import yt from "@/public/yt.webp";
-import tao from "@/public/tao.webp";
-import facebook from "@/public/facebook.webp";
-import isbaeu from "@/public/isbaeu.webp";
-import enioluwa from "@/public/enioluwa.webp";
-import bigibet from "@/public/bigibet.webp";
-import HeroFacebookIcon from "@/public/icons/hero-facebook-icon";
-import HeroInstagramIcon from "@/public/icons/hero-instagram-icon";
-import HeroMetaIcon from "@/public/icons/hero-meta-icon";
-import HeroTiktokIcon from "@/public/icons/hero-tiktok-icon";
-import HeroXIcon from "@/public/icons/hero-x-icon";
-import HeroYtIcon from "@/public/icons/hero-yt-icon";
+// import yt from "@/public/yt.webp";
+// import tao from "@/public/tao.webp";
+// import facebook from "@/public/facebook.webp";
+// import isbaeu from "@/public/isbaeu.webp";
+// import enioluwa from "@/public/enioluwa.webp";
+// import bigibet from "@/public/bigibet.webp";
+// import HeroFacebookIcon from "@/public/icons/hero-facebook-icon";
+// import HeroInstagramIcon from "@/public/icons/hero-instagram-icon";
+// import HeroMetaIcon from "@/public/icons/hero-meta-icon";
+// import HeroTiktokIcon from "@/public/icons/hero-tiktok-icon";
+// import HeroXIcon from "@/public/icons/hero-x-icon";
+// import HeroYtIcon from "@/public/icons/hero-yt-icon";
 
 const Hero = () => {
   const gradientStyle = {
@@ -27,7 +27,7 @@ const Hero = () => {
     <section className="mt-[3.5rem] mb-[19.625rem] px-4 md:px-20 relative">
       <div className="h-max">
         <div className="max-w-[48.5625rem] items-center mx-auto text-center flex flex-col gap-5">
-          <h1 className="font-extrabold text-[2.5rem] md:text-[3.5rem] leading-[4.2rem]">
+          <h1 className="font-extrabold text-[2.5rem] md:text-[3.5rem] md:leading-[4.2rem]">
             Unlock Your Brand&apos;s Potential with{" "}
             <span style={gradientStyle}>Switch.</span>
           </h1>
@@ -48,7 +48,7 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-      <div className="absolute -top-[5.5rem] left-[9rem] xl:block hidden">
+      {/* <div className="absolute -top-[5.5rem] left-[9rem] xl:block hidden">
         <div className="relative">
           <Image
             src={facebook}
@@ -137,7 +137,7 @@ const Hero = () => {
             <HeroYtIcon />
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

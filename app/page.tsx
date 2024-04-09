@@ -98,7 +98,7 @@ export default function Home() {
                   <Insight>Domain authority score of 50</Insight>
                 </>
               }
-              description="Our Influencer Marketing team was responsible for sourcing, outreach, briefing, influencer management, content review, post-production, monitoring content, and reporting to ensure we delivered an end-to-end campaign."
+              description="We prioritized a content marketing approach and created high-quality content for our brand, focusing on match previews and game predictions. We engaged key opinion leaders who are also sport journalists to blog across high-traffic platforms with Domain Authority above 40."
             />
             <HomeCaseStudies
               href="/case-studies/oppo"
@@ -111,7 +111,7 @@ export default function Home() {
                 </>
               }
               display={oppo}
-              description="Our Influencer Marketing team was responsible for sourcing, outreach, briefing, influencer management, content review, post-production, monitoring content, and reporting to ensure we delivered an end-to-end campaign."
+              description="We recruited 2 Micro Influencers and fostered UGC content with tweets asking our audience to share the most interesting grass to grace story they ever heard of using the hashtag #LevelUp2023."
             />
           </>
         }
