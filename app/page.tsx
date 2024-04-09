@@ -22,8 +22,6 @@ export const metadata: Metadata = {
   title: "Switch Online - Home",
 };
 
-// background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 73.31%);
-
 export default function Home() {
   return (
     <main className="min-h-[calc(100vh-119.97px)] overflow-x-hidden bg-fixed md:bg-[url('/icons/hero-bg-icon.svg')] bg-[url('/hero-bg-icon-small.svg')] bg-no-repeat bg-center pt-8">
