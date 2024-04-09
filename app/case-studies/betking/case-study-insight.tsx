@@ -1,4 +1,3 @@
-import InsightSocialIcon from "@/public/icons/insight-social-icon";
 import PercentIcon from "@/public/icons/percent-icon";
 import PromotionIcon from "@/public/icons/promotion-icon";
 

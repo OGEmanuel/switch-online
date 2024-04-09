@@ -1,7 +1,6 @@
 "use client";
 
 import CtaRightArrow from "@/components/ui/cta-right-arrow";
-import Insight from "./insight";
 import Image, { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 import { usePathname } from "next/navigation";

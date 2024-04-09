@@ -1,9 +1,6 @@
 "use client";
 
-import React, { ReactNode, useEffect, useRef, useState } from "react";
-import CtaRightArrow from "@/components/ui/cta-right-arrow";
-import HomeBarIcon from "@/public/icons/home-bar-icon";
-import HomeCaseStudies from "./home-case-studies";
+import { ReactNode, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 

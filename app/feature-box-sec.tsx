@@ -1,5 +1,3 @@
-import BoltImgIcon from "@/public/icons/bolt-img-icon";
-import BoltImgIconSmall from "@/public/icons/bolt-img-icon-small";
 import HomeContentIcon from "@/public/icons/home-content-icon";
 import HomeCreativeIcon from "@/public/icons/home-creative-icon";
 import HomeInfluencerIcon from "@/public/icons/home-influencer-icon";
@@ -8,7 +6,6 @@ import HomeMediaIcon from "@/public/icons/home-media-icon";
 import HomePerformanceIcon from "@/public/icons/home-performance-icon";
 import HomeSocialIcon from "@/public/icons/home-social-icon";
 import HomeStrategyIcon from "@/public/icons/home-strategy-icon";
-import Image from "next/image";
 import display from "@/public/display-img-home-2.jpg";
 import DisplayWithBolt from "@/components/display-with-bolt";
 

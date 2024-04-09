@@ -1,7 +1,6 @@
 import Image from "next/image";
 import InsightBox from "../insight-box";
 import CaseStudyInsight from "./case-study-insight";
-import ScribbleText from "@/components/scribble-text";
 import displaySub from "@/public/display-img-truecaller-sub.jpg";
 import displayMain from "@/public/display-img-truecaller-main.jpg";
 import truecaller from "@/public/truecaller-logo.svg";
