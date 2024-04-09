@@ -90,11 +90,20 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 
-.fading-div {
-  /* width: 200px; Width of the div */
-  /* height: 200px; Height of the div */
-  background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+.scroller[data-animated="true"] {
+  overflow: hidden;
 
-  /* background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0)); Linear gradient for fading */
-  /* margin: 50px auto; Margin for centering the div */
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  flex-wrap: nowrap !important;
+  width: max-content;
 }

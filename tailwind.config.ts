@@ -78,12 +78,18 @@ const config = {
           "0%, 100%": { transform: "scaleX(1.2)" },
           "50%": { transform: "scaleX(1)" },
         },
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 2.5rem))",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         bounce: "bounce 1s infinite",
         scale: "scale 1s infinite",
+        scroll: "scroll 40s linear infinite",
       },
     },
   },

@@ -11,8 +11,6 @@ import HomePerformanceIcon from "@/public/icons/home-performance-icon";
 import HomeContentIcon from "@/public/icons/home-content-icon";
 import HomeMediaIcon from "@/public/icons/home-media-icon";
 import Values from "./values";
-import BarIcon from "@/public/icons/bar-icon";
-import OtherServices from "./our-services/other-services";
 import ScrollFix from "./scroll-fix";
 import BoltImgIcon from "@/public/icons/bolt-img-icon";
 import display from "@/public/display-img-med.jpg";
@@ -23,11 +21,11 @@ export default function Home() {
   return (
     <main className="min-h-[calc(100vh-119.97px)] overflow-x-hidden bg-fixed md:bg-[url('/icons/hero-bg-icon.svg')] bg-[url('/hero-bg-icon-small.svg')] bg-no-repeat bg-center pt-8">
       <Hero />
-      <div className="bg-white relative px-4 md:px-10 lg:px-20 before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:shadow-[0px_-10px_30px_rgba(0,0,0)]">
+      <div className="relative bg-white px-4 md:px-10 lg:px-20 before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:shadow-[0px_-10px_30px_rgba(0,0,0)]">
         <Marquee />
         <FeatureBox
           href="/our-services"
-          classes="bg-white"
+          classes="bg-white lg:flex-row"
           title="We grow ambitious brands with Social, Paid, Creative and Influencer"
           cta="Meet the team"
         >

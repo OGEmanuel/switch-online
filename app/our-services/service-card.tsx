@@ -27,7 +27,7 @@ const ServiceCard = ({
   return (
     <button
       onClick={handleClick}
-      className="hover:-translate-y-5 transition-all"
+      className="lg:hover:-translate-y-5 transition-all"
     >
       <div
         className={`p-4 md:p-6 ${className} h-full shadow-[0px_8px_24px_0px_rgba(0,0,0,0.05)] border border-[#BAD0D0] rounded-3xl`}
