@@ -10,13 +10,11 @@ import enioluwa from "@/public/enioluwa.webp";
 import bigibet from "@/public/bigibet.webp";
 import insta from "@/public/insta.webp";
 import HeroFacebookIcon from "@/public/icons/hero-facebook-icon";
-import HeroInstagramIcon from "@/public/icons/hero-instagram-icon";
+import HeroInstagramIcon from "@/public/icons/hero-instagram-icon.svg";
 import HeroMetaIcon from "@/public/icons/hero-meta-icon";
 import HeroTiktokIcon from "@/public/icons/hero-tiktok-icon";
-// import HeroXIcon from "@/public/icons/hero-x-icon";
 import HeroXIcon from "@/public/icons/hero-x-icon.svg";
-
-import HeroYtIcon from "@/public/icons/hero-yt-icon";
+import HeroYtIcon from "@/public/icons/hero-yt-icon.svg";
 
 const Hero = () => {
   const gradientStyle = {
@@ -107,7 +105,7 @@ const Hero = () => {
             unoptimized
           />
           <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-20%]">
-            {/* <HeroInstagramIcon /> */}
+            <Image src={HeroInstagramIcon} alt="Instagram" />
           </div>
         </div>
       </div>
@@ -122,7 +120,6 @@ const Hero = () => {
             unoptimized
           />
           <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-20%]">
-            {/* <HeroXIcon /> */}
             <Image src={HeroXIcon} alt="X" />
           </div>
         </div>
@@ -138,116 +135,10 @@ const Hero = () => {
             unoptimized
           />
           <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-30%]">
-            {/* <HeroYtIcon /> */}
+            <Image src={HeroYtIcon} alt="yt" />
           </div>
         </div>
       </div>
-
-      {/* <div className="absolute -top-[5.5rem] right-[12rem] xl:block hidden">
-        <div className="relative">
-          <Image
-            src={isbaeu}
-            alt="second"
-            width={120}
-            height={200}
-            className="rounded-2xl"
-            unoptimized
-          />
-          <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-20%]">
-            <HeroInstagramIcon />
-          </div>
-        </div>
-      </div> */}
-      {/* <div className="absolute -top-[5.5rem] left-[9rem] xl:block hidden">
-        <div className="relative">
-          <Image
-            src={facebook}
-            alt="first"
-            width={200}
-            height={120}
-            className="rounded-2xl"
-            unoptimized
-          />
-          <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-30%]">
-            <HeroFacebookIcon />
-          </div>
-        </div>
-      </div>
-      <div className="absolute -top-[5.5rem] right-[12rem] xl:block hidden">
-        <div className="relative">
-          <Image
-            src={isbaeu}
-            alt="second"
-            width={120}
-            height={200}
-            className="rounded-2xl"
-            unoptimized
-          />
-          <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-20%]">
-            <HeroInstagramIcon />
-          </div>
-        </div>
-      </div>
-      <div className="absolute top-[10rem] left-[2rem] xl:block hidden">
-        <div className="relative">
-          <Image
-            src={bigibet}
-            alt="third"
-            width={155}
-            height={155}
-            className="rounded-2xl"
-            unoptimized
-          />
-          <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-30%]">
-            <HeroMetaIcon />
-          </div>
-        </div>
-      </div>
-      <div className="absolute top-[15rem] left-[20rem] xl:block hidden">
-        <div className="relative">
-          <Image
-            src={enioluwa}
-            alt="first"
-            width={142}
-            height={236}
-            className="rounded-2xl"
-            unoptimized
-          />
-          <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-10%]">
-            <HeroTiktokIcon />
-          </div>
-        </div>
-      </div>
-      <div className="absolute top-[16rem] right-[18rem] xl:block hidden">
-        <div className="relative">
-          <Image
-            src={tao}
-            alt="first"
-            width={200}
-            height={200}
-            className="rounded-2xl"
-            unoptimized
-          />
-          <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-20%]">
-            <HeroXIcon />
-          </div>
-        </div>
-      </div>
-      <div className="absolute top-[10rem] right-[2rem] xl:block hidden">
-        <div className="relative">
-          <Image
-            src={yt}
-            alt="first"
-            width={190}
-            height={113}
-            className="rounded-2xl"
-            unoptimized
-          />
-          <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-30%]">
-            <HeroYtIcon />
-          </div>
-        </div>
-      </div> */}
     </section>
   );
 };
