@@ -97,7 +97,7 @@ const Hero = () => {
       <div className="absolute -top-[5.5rem] right-[12rem] xl:block hidden">
         <div className="relative">
           <Image
-            src={enioluwa}
+            src={isbaeu}
             alt="second"
             width={120}
             height={200}
