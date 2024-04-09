@@ -95,7 +95,7 @@ const AboutUs = () => {
             and turning them into a reality for your audience.
           </p>
         </div>
-        <div className="flex md:flex-row flex-col md:w-auto mx-auto items-center justify-between gap-6 md:gap-8 overflow-auto">
+        <div className="flex md:flex-row scrollbar flex-col md:w-auto mx-auto items-center justify-between gap-6 md:gap-8 overflow-auto">
           <TeamMember />
           <TeamMember />
           <TeamMember />
