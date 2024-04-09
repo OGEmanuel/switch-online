@@ -56,6 +56,7 @@ const Hero = () => {
             width={200}
             height={120}
             className="rounded-2xl"
+            unoptimized
           />
           <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-30%]">
             <HeroFacebookIcon />
@@ -70,6 +71,7 @@ const Hero = () => {
             width={120}
             height={200}
             className="rounded-2xl"
+            unoptimized
           />
           <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-20%]">
             <HeroInstagramIcon />
@@ -84,6 +86,7 @@ const Hero = () => {
             width={155}
             height={155}
             className="rounded-2xl"
+            unoptimized
           />
           <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-30%]">
             <HeroMetaIcon />
@@ -98,6 +101,7 @@ const Hero = () => {
             width={142}
             height={236}
             className="rounded-2xl"
+            unoptimized
           />
           <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-10%]">
             <HeroTiktokIcon />
@@ -112,6 +116,7 @@ const Hero = () => {
             width={200}
             height={200}
             className="rounded-2xl"
+            unoptimized
           />
           <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-20%]">
             <HeroXIcon />
@@ -126,6 +131,7 @@ const Hero = () => {
             width={190}
             height={113}
             className="rounded-2xl"
+            unoptimized
           />
           <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-30%]">
             <HeroYtIcon />
