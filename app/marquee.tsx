@@ -34,9 +34,9 @@ const Marquee = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-8 mx-auto text-center mt-[8.75rem]">
+    <div className="flex gradient flex-col gap-8 mx-auto text-center mt-[8.75rem]">
       <div className="relative">
-        <div className="bg-gradient-to-t from-transparent to-white w-full h-full absolute top-0 left-0 -z-10"></div>
+        {/* <div className="w-full h-full absolute top-0 left-0 -z-10"></div> */}
         <p className="text-[#485B5B] text-lg font-medium z-30">
           Brand that trust us
         </p>

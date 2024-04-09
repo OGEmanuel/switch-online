@@ -1,6 +1,25 @@
 import { Button } from "@/components/ui/button";
 import BoltHeroIcon from "@/public/icons/bolt-hero-icon";
+import Image from "next/image";
 import Link from "next/link";
+import first from "@/public/hero-first-img.jpg";
+import second from "@/public/hero-second-img.jpg";
+import third from "@/public/hero-third-img.jpg";
+import fourth from "@/public/hero-fourth-img.jpg";
+import fifth from "@/public/hero-fifth-img.jpg";
+import sixth from "@/public/hero-sixth-img.jpg";
+import yt from "@/public/yt.gif";
+import tao from "@/public/tao.gif";
+import facebook from "@/public/facebook.gif";
+import isbaeu from "@/public/isbaeu.gif";
+import enioluwa from "@/public/enioluwa.gif";
+import bigibet from "@/public/bigibet.gif";
+import HeroFacebookIcon from "@/public/icons/hero-facebook-icon";
+import HeroInstagramIcon from "@/public/icons/hero-instagram-icon";
+import HeroMetaIcon from "@/public/icons/hero-meta-icon";
+import HeroTiktokIcon from "@/public/icons/hero-tiktok-icon";
+import HeroXIcon from "@/public/icons/hero-x-icon";
+import HeroYtIcon from "@/public/icons/hero-yt-icon";
 
 const Hero = () => {
   const gradientStyle = {
@@ -11,7 +30,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="mt-[3.5rem] mb-[19.625rem] px-4 md:px-20">
+    <section className="mt-[3.5rem] mb-[19.625rem] px-4 md:px-20 relative">
       <div className="h-max">
         <div className="max-w-[48.5625rem] items-center mx-auto text-center flex flex-col gap-5">
           <h1 className="font-extrabold text-[2.5rem] md:text-[3.5rem] leading-[4.2rem]">
@@ -33,6 +52,90 @@ const Hero = () => {
               </span>
             </Link>
           </Button>
+        </div>
+      </div>
+      <div className="absolute -top-[5.5rem] left-[9rem] xl:block hidden">
+        <div className="relative">
+          <Image
+            src={facebook}
+            alt="first"
+            width={200}
+            height={120}
+            className="rounded-2xl"
+          />
+          <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-30%]">
+            <HeroFacebookIcon />
+          </div>
+        </div>
+      </div>
+      <div className="absolute -top-[5.5rem] right-[12rem] xl:block hidden">
+        <div className="relative">
+          <Image
+            src={isbaeu}
+            alt="second"
+            width={120}
+            height={200}
+            className="rounded-2xl"
+          />
+          <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-20%]">
+            <HeroInstagramIcon />
+          </div>
+        </div>
+      </div>
+      <div className="absolute top-[10rem] left-[2rem] xl:block hidden">
+        <div className="relative">
+          <Image
+            src={bigibet}
+            alt="third"
+            width={155}
+            height={155}
+            className="rounded-2xl"
+          />
+          <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-30%]">
+            <HeroMetaIcon />
+          </div>
+        </div>
+      </div>
+      <div className="absolute top-[15rem] left-[20rem] xl:block hidden">
+        <div className="relative">
+          <Image
+            src={enioluwa}
+            alt="first"
+            width={142}
+            height={236}
+            className="rounded-2xl"
+          />
+          <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-10%]">
+            <HeroTiktokIcon />
+          </div>
+        </div>
+      </div>
+      <div className="absolute top-[16rem] right-[18rem] xl:block hidden">
+        <div className="relative">
+          <Image
+            src={tao}
+            alt="first"
+            width={200}
+            height={200}
+            className="rounded-2xl"
+          />
+          <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-20%]">
+            <HeroXIcon />
+          </div>
+        </div>
+      </div>
+      <div className="absolute top-[10rem] right-[2rem] xl:block hidden">
+        <div className="relative">
+          <Image
+            src={yt}
+            alt="first"
+            width={190}
+            height={113}
+            className="rounded-2xl"
+          />
+          <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-30%]">
+            <HeroYtIcon />
+          </div>
         </div>
       </div>
     </section>

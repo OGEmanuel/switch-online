@@ -12,6 +12,11 @@ import PerformanceIcon from "@/public/icons/performance-icon";
 import PerformanceBoltIcon from "@/public/icons/performance-bolt-icon";
 import ContentIcon from "@/public/icons/content-icon";
 import MediaIcon from "@/public/icons/media-icon";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Switch Online - Our Services",
+};
 
 const OurServices = () => {
   return (

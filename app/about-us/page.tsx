@@ -4,6 +4,11 @@ import TeamMember from "./team-member";
 import FeatureBox from "@/components/feature-box";
 import display from "@/public/display-img.jpg";
 import MedDisplay from "@/public/display-img-med.jpg";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Switch Online - About Us",
+};
 
 const AboutUs = () => {
   return (

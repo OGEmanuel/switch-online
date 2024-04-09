@@ -1,6 +1,10 @@
 import display from "@/public/display-img-med.jpg";
 import InsightBox from "./insight-box";
-("");
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Switch Online - Case Studies",
+};
 
 const CaseStudies = () => {
   return (
