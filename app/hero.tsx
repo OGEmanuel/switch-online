@@ -78,6 +78,21 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <div className="absolute top-[15rem] left-[20rem] xl:block hidden">
+        <div className="relative">
+          <Image
+            src={enioluwa}
+            alt="first"
+            width={142}
+            height={236}
+            className="rounded-2xl"
+            unoptimized
+          />
+          <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-10%]">
+            <HeroTiktokIcon />
+          </div>
+        </div>
+      </div>
       {/* <div className="absolute -top-[5.5rem] right-[12rem] xl:block hidden">
         <div className="relative">
           <Image
