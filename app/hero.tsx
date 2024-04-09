@@ -1,19 +1,19 @@
 import { Button } from "@/components/ui/button";
 import BoltHeroIcon from "@/public/icons/bolt-hero-icon";
-// import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
-// import yt from "@/public/yt.gif";
-// import tao from "@/public/tao.gif";
-// import facebook from "@/public/facebook.gif";
-// import isbaeu from "@/public/isbaeu.gif";
-// import enioluwa from "@/public/enioluwa.gif";
-// import bigibet from "@/public/bigibet.gif";
-// import HeroFacebookIcon from "@/public/icons/hero-facebook-icon";
-// import HeroInstagramIcon from "@/public/icons/hero-instagram-icon";
-// import HeroMetaIcon from "@/public/icons/hero-meta-icon";
-// import HeroTiktokIcon from "@/public/icons/hero-tiktok-icon";
-// import HeroXIcon from "@/public/icons/hero-x-icon";
-// import HeroYtIcon from "@/public/icons/hero-yt-icon";
+import yt from "@/public/yt.gif";
+import tao from "@/public/tao.gif";
+import facebook from "@/public/facebook.gif";
+import isbaeu from "@/public/isbaeu.gif";
+import enioluwa from "@/public/enioluwa.gif";
+import bigibet from "@/public/bigibet.gif";
+import HeroFacebookIcon from "@/public/icons/hero-facebook-icon";
+import HeroInstagramIcon from "@/public/icons/hero-instagram-icon";
+import HeroMetaIcon from "@/public/icons/hero-meta-icon";
+import HeroTiktokIcon from "@/public/icons/hero-tiktok-icon";
+import HeroXIcon from "@/public/icons/hero-x-icon";
+import HeroYtIcon from "@/public/icons/hero-yt-icon";
 
 const Hero = () => {
   const gradientStyle = {
@@ -48,7 +48,7 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-      {/* <div className="absolute -top-[5.5rem] left-[9rem] xl:block hidden">
+      <div className="absolute -top-[5.5rem] left-[9rem] xl:block hidden">
         <div className="relative">
           <Image
             src={facebook}
@@ -137,7 +137,7 @@ const Hero = () => {
             <HeroYtIcon />
           </div>
         </div>
-      </div> */}
+      </div>
     </section>
   );
 };

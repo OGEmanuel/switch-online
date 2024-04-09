@@ -2,7 +2,7 @@ import Values from "./values";
 
 const WhatDrivesUs = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white px-4 md:px-8 lg:px-20">
       <div className="max-w-[37.625rem] mx-auto text-center flex flex-col gap-4 mb-10">
         <p className="text-[#082828] text-[1.75rem] md:text-[2.5rem] font-extrabold leading-[3rem]">
           What drives us

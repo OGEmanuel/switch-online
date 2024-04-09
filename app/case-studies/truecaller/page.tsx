@@ -12,7 +12,7 @@ const Truecaller = () => {
         <div className="w-max mx-auto">
           <Image src={truecaller} alt="truecaller" />
         </div>
-        <h1 className="md:text-5xl text-[2.5rem] leading-[3.6rem] font-extrabold">
+        <h1 className="md:text-5xl text-[2rem] leading-[3.6rem] font-extrabold">
           Influencer Campaign for Truecaller Generated 192K App Installs
         </h1>
         <div className="md:text-lg text-base font-medium flex gap-4 w-max mx-auto">
@@ -22,18 +22,18 @@ const Truecaller = () => {
         </div>
       </div>
       <div className="flex justify-between mb-16 flex-wrap gap-4">
-        <div>
-          <p className="text-[2.5rem] font-semibold">
+        <div className="md:text-[2.5rem] text-[1.75rem]">
+          <p className="font-semibold">
             Client: <span className="font-extrabold">Truecaller</span>
           </p>
-          <p className="text-[2.5rem] font-semibold">
+          <p className="font-semibold">
             Year: <span className="font-extrabold">2023-2024</span>
           </p>
-          <p className="text-[2.5rem] font-semibold">
+          <p className="font-semibold">
             Industry: <span className="font-extrabold">Software</span>
           </p>
         </div>
-        <div className="text-lg max-w-[38rem]">
+        <div className="md:text-lg text-base max-w-[38rem]">
           <p className="text-[#506363]">
             Trusted and used by over 374 million people worldwide, Truecaller is
             a free smartphone application that identifies calls and SMS, enables

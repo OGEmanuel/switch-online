@@ -12,7 +12,7 @@ const Oppo = () => {
         <div className="w-max mx-auto">
           <Image src={oppo} alt="oppo" />
         </div>
-        <h1 className="md:text-5xl text-[2.5rem] leading-[3.6rem] font-extrabold">
+        <h1 className="md:text-5xl text-[2rem] leading-[3.6rem] font-extrabold">
           Delivered 5K preorders & 106M Impressions for smartphone brand
         </h1>
         <div className="md:text-lg text-base font-medium flex gap-4 w-max mx-auto">
@@ -22,21 +22,21 @@ const Oppo = () => {
         </div>
       </div>
       <div className="flex justify-between flex-wrap mb-16 gap-4">
-        <div>
-          <p className="text-[2.5rem] font-semibold">
+        <div className="md:text-[2.5rem] text-[1.75rem]">
+          <p className="font-semibold">
             Client:{" "}
             <span className="font-extrabold block 2xl:inline">
               OPPO (Duo Libra)
             </span>
           </p>
-          <p className="text-[2.5rem] font-semibold">
+          <p className="font-semibold">
             Year: <span className="font-extrabold">2023</span>
           </p>
-          <p className="text-[2.5rem] font-semibold">
+          <p className="font-semibold">
             Industry: <span className="font-extrabold">Electronics</span>
           </p>
         </div>
-        <div className="text-lg max-w-[38rem]">
+        <div className="md:text-lg text-base max-w-[38rem]">
           <p className="text-[#506363]">
             OPPO is a consumer electronics and mobile communications company
             known for manufacturing smartphones, Blu-ray players, and other
