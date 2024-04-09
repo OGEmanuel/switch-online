@@ -8,6 +8,7 @@ import facebook from "@/public/facebook.webp";
 import isbaeu from "@/public/isbaeu.webp";
 import enioluwa from "@/public/enioluwa.webp";
 import bigibet from "@/public/bigibet.webp";
+import insta from "@/public/insta.webp";
 import HeroFacebookIcon from "@/public/icons/hero-facebook-icon";
 import HeroInstagramIcon from "@/public/icons/hero-instagram-icon";
 import HeroMetaIcon from "@/public/icons/hero-meta-icon";
@@ -91,6 +92,19 @@ const Hero = () => {
           <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-10%]">
             <HeroTiktokIcon />
           </div>
+        </div>
+      </div>
+      <div className="relative">
+        <Image
+          src={insta}
+          alt="second"
+          width={120}
+          height={200}
+          className="rounded-2xl"
+          unoptimized
+        />
+        <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-20%]">
+          <HeroInstagramIcon />
         </div>
       </div>
 
