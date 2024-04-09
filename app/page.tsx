@@ -11,6 +11,9 @@ import HomeBarIcon from "@/public/icons/home-bar-icon";
 import CtaRightArrow from "@/components/ui/cta-right-arrow";
 import HomeCaseStudies from "./home-case-studies";
 import firstTruecaller from "@/public/truecaller-img-1.jpg";
+import betKing from "@/public/display-img-betking-main.jpg";
+import oppo from "@/public/display-img-oppo-main.jpg";
+import Insight from "./case-studies/insight";
 
 export const metadata: Metadata = {
   title: "Switch Online - Home",
@@ -73,15 +76,41 @@ export default function Home() {
         right={
           <>
             <HomeCaseStudies
+              href="/case-studies/truecaller"
+              name="Truecaller"
+              insight={
+                <>
+                  <Insight>192K App Installs</Insight>
+                  <Insight>275 million Impressions</Insight>
+                  <Insight>4M Video views</Insight>
+                </>
+              }
               display={firstTruecaller}
               description="Our Influencer Marketing team was responsible for sourcing, outreach, briefing, influencer management, content review, post-production, monitoring content, and reporting to ensure we delivered an end-to-end campaign."
             />
             <HomeCaseStudies
-              display={firstTruecaller}
+              href="/case-studies/betking"
+              name="Betking"
+              display={betKing}
+              insight={
+                <>
+                  <Insight>7,225 Backlinks</Insight>
+                  <Insight>Domain authority score of 50</Insight>
+                </>
+              }
               description="Our Influencer Marketing team was responsible for sourcing, outreach, briefing, influencer management, content review, post-production, monitoring content, and reporting to ensure we delivered an end-to-end campaign."
             />
             <HomeCaseStudies
-              display={firstTruecaller}
+              href="/case-studies/oppo"
+              name="Oppo"
+              insight={
+                <>
+                  <Insight>5K Pre-order</Insight>
+                  <Insight>130M Total Impressions</Insight>
+                  <Insight>32K Mentions</Insight>
+                </>
+              }
+              display={oppo}
               description="Our Influencer Marketing team was responsible for sourcing, outreach, briefing, influencer management, content review, post-production, monitoring content, and reporting to ensure we delivered an end-to-end campaign."
             />
           </>
