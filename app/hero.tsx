@@ -48,7 +48,7 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-      <div className="absolute -top-[5.5rem] left-[9rem] xl:block hidden">
+      {/* <div className="absolute -top-[5.5rem] left-[9rem] xl:block hidden">
         <div className="relative">
           <Image
             src={facebook}
@@ -137,7 +137,7 @@ const Hero = () => {
             <HeroYtIcon />
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
