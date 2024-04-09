@@ -13,7 +13,9 @@ import HeroFacebookIcon from "@/public/icons/hero-facebook-icon";
 import HeroInstagramIcon from "@/public/icons/hero-instagram-icon";
 import HeroMetaIcon from "@/public/icons/hero-meta-icon";
 import HeroTiktokIcon from "@/public/icons/hero-tiktok-icon";
-import HeroXIcon from "@/public/icons/hero-x-icon";
+// import HeroXIcon from "@/public/icons/hero-x-icon";
+import HeroXIcon from "@/public/icons/hero-x-icon.svg";
+
 import HeroYtIcon from "@/public/icons/hero-yt-icon";
 
 const Hero = () => {
@@ -121,6 +123,7 @@ const Hero = () => {
           />
           <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-20%]">
             {/* <HeroXIcon /> */}
+            <Image src={HeroXIcon} alt="X" />
           </div>
         </div>
       </div>
