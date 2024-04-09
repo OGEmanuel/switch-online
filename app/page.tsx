@@ -27,7 +27,7 @@ export default function Home() {
         <Marquee />
         <FeatureBox
           display={firstDisplay}
-          href="/our-services"
+          href="/about-us"
           classes="bg-white lg:flex-row"
           title="We grow ambitious brands with Social, Paid, Creative and Influencer"
           cta="Meet the team"

@@ -4,7 +4,7 @@ import Image, { StaticImageData } from "next/image";
 
 const DisplayWithBolt = ({ display }: { display: StaticImageData }) => {
   return (
-    <div className="w-max relative">
+    <div className="relative md:w-[560px] xl:w-[560px] xl:h-[560px] lg:w-[358px] lg:h-[358px] w-[358px] h-[358px] md:h-[560px] ">
       <div className="md:w-[560px] xl:w-[560px] xl:h-[560px] lg:w-[358px] lg:h-[358px] w-[358px] h-[358px] md:h-[560px]">
         <Image src={display} alt="display-img" fill placeholder="blur" />
       </div>
