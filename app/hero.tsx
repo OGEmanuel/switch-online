@@ -63,7 +63,22 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="absolute -top-[5.5rem] right-[12rem] xl:block hidden">
+      <div className="absolute top-[10rem] left-[2rem] xl:block hidden">
+        <div className="relative">
+          <Image
+            src={bigibet}
+            alt="third"
+            width={155}
+            height={155}
+            className="rounded-2xl"
+            unoptimized
+          />
+          <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-30%]">
+            <HeroMetaIcon />
+          </div>
+        </div>
+      </div>
+      {/* <div className="absolute -top-[5.5rem] right-[12rem] xl:block hidden">
         <div className="relative">
           <Image
             src={isbaeu}
@@ -77,7 +92,7 @@ const Hero = () => {
             <HeroInstagramIcon />
           </div>
         </div>
-      </div>
+      </div> */}
       {/* <div className="absolute -top-[5.5rem] left-[9rem] xl:block hidden">
         <div className="relative">
           <Image
