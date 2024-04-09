@@ -48,6 +48,21 @@ const Hero = () => {
           </Button>
         </div>
       </div>
+      <div className="absolute -top-[5.5rem] left-[9rem] xl:block hidden">
+        <div className="relative">
+          <Image
+            src={facebook}
+            alt="first"
+            width={200}
+            height={120}
+            className="rounded-2xl"
+            unoptimized
+          />
+          <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-30%]">
+            <HeroFacebookIcon />
+          </div>
+        </div>
+      </div>
       {/* <div className="absolute -top-[5.5rem] left-[9rem] xl:block hidden">
         <div className="relative">
           <Image
