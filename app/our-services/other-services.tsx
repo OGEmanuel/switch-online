@@ -186,7 +186,7 @@ const OtherServices = () => {
         <ServiceCard
           className="w-[18.75rem] md:w-[30rem] bg-white"
           link="/our-services/media"
-          title="Media"
+          title="OOH"
           icon={<MediaIcon />}
           description="Position your brand for success in the digital realm with our comprehensive Media services."
         >

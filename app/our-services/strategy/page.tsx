@@ -1,59 +1,45 @@
-import FeatureBox from "@/components/feature-box";
-import CtaRightArrow from "@/components/ui/cta-right-arrow";
-import BarIcon from "@/public/icons/bar-icon";
 import StrategyIcon from "@/public/icons/strategy-icon";
-import OtherServices from "../other-services";
 import Services from "@/components/services";
+import ScrollFix from "@/app/scroll-fix";
+import DisplayWithBolt from "@/components/display-with-bolt";
+import display from "@/public/display-img-strategy.jpg";
+import ServiceDetailsCard from "../service-details-card";
 
 const Strategy = () => {
   return (
     <section>
-      <div className="px-4 md:px-8 lg:px-20 flex-wrap xl:flex-nowrap flex gap-8 pt-10 md:pt-[5.9rem]">
-        <div className="flex flex-col gap-6">
-          <div className="flex gap-6 items-center">
+      <div className="px-4 md:px-8 lg:px-20 flex-wrap xl:flex-nowrap flex gap-8 pt-10">
+        <div className="flex flex-col gap-6 w-max mx-auto">
+          <div className="flex gap-6 items-center w-max mx-auto">
             <StrategyIcon />
             <p className="text-3xl md:text-5xl font-extrabold">Strategy</p>
           </div>
-          <p className="md:text-2xl text-lg text-[#082828] xl:w-[38rem] leading-[2.4rem]">
-            We specialize in Social, Paid, Creative, Influencer and Strategy and
-            work with fast-growth brands.
+          <p className="md:text-2xl text-lg text-[#082828] max-w-[47.5rem] text-center leading-[2.4rem]">
+            We are not just strategic, our approach ensures that your sales and
+            marketing deliver revenue growth.
           </p>
-          <CtaRightArrow width="w-[10.875rem]" cta="Get in touch" />
         </div>
-        <p className="2xl:text-2xl text-lg text-[#506363] leading-[2.4rem]">
-          There aren&apos;t many creative agencies that understand performance
-          and performance agencies that understand creative. <br />
-          This is where we&apos;re different. <br />
-          Whether we&apos;re helping to grow your Social communities, deliver
-          performance-driven Paid Media, produce social-first Creative or
-          Influencer campaigns - we craft strategies based on your brand,
-          business and goals, all backed by data and insight.
-        </p>
       </div>
-      <FeatureBox
-        classes="px-4 md:px-20 lg:flex-row"
-        cta="Get in touch"
-        title="We grow ambitious brands with Social, Paid, Creative and Influencer"
-      >
-        <>
-          we&apos;re more than just another marketing agency. Our passion lies
-          in delving deep into your business, ensuring your brand is not just
-          visible but captivating, your voice not just heard but resonating, and
-          your impact not just momentary but unforgettable.
-        </>
-      </FeatureBox>
-      <FeatureBox
-        classes="flex lg:flex-row-reverse px-4 md:px-20 pb-[7.5rem]"
-        cta="Get in touch"
-        title="We grow ambitious brands with Social, Paid, Creative and Influencer"
-      >
-        <>
-          we&apos;re more than just another marketing agency. Our passion lies
-          in delving deep into your business, ensuring your brand is not just
-          visible but captivating, your voice not just heard but resonating, and
-          your impact not just momentary but unforgettable.
-        </>
-      </FeatureBox>
+      <ScrollFix
+        className="max-w-[35rem]"
+        left={<DisplayWithBolt display={display} />}
+        right={
+          <div className="flex flex-col gap-[2rem] md:gap-[5.5rem]">
+            <ServiceDetailsCard
+              title="Holistic Revenue-Driven Approach"
+              description="We integrate sales and marketing efforts for holistic revenue growth. Our strategies attract, engage, and nurture prospects, maximizing opportunities and delivering tangible bottom-line results."
+            />
+            <ServiceDetailsCard
+              title="Data-Driven Insights and Analysis"
+              description="We use advanced analytics and market intelligence to deeply understand your audience, industry trends, and competition. This drives targeted demand generation strategies for measurable results, from lead identification to optimized conversion rates."
+            />
+            <ServiceDetailsCard
+              title="Agile and Adaptive Execution"
+              description="In a fast-paced business world, agility is crucial. We constantly monitor, analyze, and refine strategies for maximum effectiveness. Whether adjusting messaging, optimizing ad spend, or exploring new tactics, our agile approach ensures dynamic demand generation aligned with your revenue goals."
+            />
+          </div>
+        }
+      />
       <div className="md:mb-0 mb-32">
         <Services
           title="Our Services"

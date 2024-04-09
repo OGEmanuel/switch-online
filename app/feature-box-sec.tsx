@@ -9,7 +9,8 @@ import HomePerformanceIcon from "@/public/icons/home-performance-icon";
 import HomeSocialIcon from "@/public/icons/home-social-icon";
 import HomeStrategyIcon from "@/public/icons/home-strategy-icon";
 import Image from "next/image";
-import display from "@/public/display-img-med.jpg";
+import display from "@/public/display-img-home-2.jpg";
+import DisplayWithBolt from "@/components/display-with-bolt";
 
 const FeatureBoxSec = () => {
   return (
@@ -67,17 +68,7 @@ const FeatureBoxSec = () => {
           </div>
         </div>
       </div>
-      <div className="w-max relative">
-        <div className="md:w-[560px] xl:w-[560px] xl:h-[560px] lg:w-[358px] lg:h-[358px] w-[358px] h-[358px] md:h-[560px]">
-          <Image src={display} alt="display-img" fill placeholder="blur" />
-        </div>
-        <div className="absolute md:hidden -top-8 -right-4">
-          <BoltImgIconSmall />
-        </div>
-        <div className="absolute md:block hidden -top-8 -right-4">
-          <BoltImgIcon />
-        </div>
-      </div>
+      <DisplayWithBolt display={display} />
     </div>
   );
 };

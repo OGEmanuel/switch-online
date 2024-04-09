@@ -1,8 +1,7 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import CtaRightArrow from "./ui/cta-right-arrow";
 import { ReactNode } from "react";
 import BoltImgIcon from "@/public/icons/bolt-img-icon";
-import display from "../public/display-img-med.jpg";
 import BoltImgIconSmall from "@/public/icons/bolt-img-icon-small";
 
 const FeatureBox = ({
@@ -11,7 +10,9 @@ const FeatureBox = ({
   cta,
   classes,
   href,
+  display
 }: {
+  display: StaticImageData;
   title: string;
   children: ReactNode;
   cta: string;

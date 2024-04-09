@@ -186,7 +186,7 @@ const OurServices = () => {
         <ServiceCard
           className="max-w-[30.5rem]"
           link="/our-services/media"
-          title="Media"
+          title="OOH"
           icon={<MediaIcon />}
           description="Position your brand for success in the digital realm with our comprehensive Media services."
         >

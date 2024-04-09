@@ -2,8 +2,10 @@ import ScribbleText from "@/components/scribble-text";
 import Image from "next/image";
 import TeamMember from "./team-member";
 import FeatureBox from "@/components/feature-box";
-import display from "@/public/display-img.jpg";
-import MedDisplay from "@/public/display-img-med.jpg";
+import display from "@/public/display-img-about-1.jpg";
+import displaySec from "@/public/display-img-about-2.jpg";
+import displayMed from "@/public/display-img-about-1-med.jpg";
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -49,7 +51,7 @@ const AboutUs = () => {
         </div>
         <div className="md:hidden w-max mx-auto">
           <Image
-            src={MedDisplay}
+            src={displayMed}
             alt="display"
             width={358}
             height={358}
@@ -69,6 +71,8 @@ const AboutUs = () => {
         </>
       </ScribbleText>
       <FeatureBox
+        href="/our-services"
+        display={displaySec}
         classes="bg-[#FAFAFA] px-4 lg:flex-row md:px-8 lg:px-20 py-[5.5rem] md:py-[7.5rem]"
         title="Our approach hinges on outcomes, not just outputs"
         cta="Browse Our Services"

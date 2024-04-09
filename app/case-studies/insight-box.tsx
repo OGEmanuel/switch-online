@@ -12,12 +12,14 @@ const InsightBox = ({
   title,
   src,
   href,
+  insights,
 }: {
   className?: string;
   children: ReactNode;
   title: string;
   src: StaticImageData;
   href?: string;
+  insights?: ReactNode;
 }) => {
   const pathname = usePathname();
 
@@ -30,16 +32,14 @@ const InsightBox = ({
           {title}
         </p>
         <p className="text-lg text-[#506363] mb-8">{children}</p>
-        {pathname !== "/case-studies/study-one" && (
-          <>
-            <div className="flex gap-4 flex-wrap mb-8">
-              <Insight>4 million views</Insight>
-              <Insight>2 million engagements</Insight>
-              <Insight>Average IG ER 10.75%</Insight>
-            </div>
-            <CtaRightArrow href={href} width="" cta="View case study" />
-          </>
-        )}
+        {pathname !== "/case-studies/truecaller" &&
+          pathname !== "/case-studies/betking" &&
+          pathname !== "/case-studies/oppo" && (
+            <>
+              <div className="flex gap-4 flex-wrap mb-8">{insights}</div>
+              <CtaRightArrow href={href} width="" cta="View case study" />
+            </>
+          )}
       </div>
 
       <div>
