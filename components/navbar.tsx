@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import Logo from "./logo";
 import MenuIcon from "@/public/icons/menu-icon";
+import { SheetSide } from "./ui/mobile-sidebar";
 
 const Navbar = ({ children }: { children: ReactNode }) => {
   return (
@@ -16,9 +17,9 @@ const Navbar = ({ children }: { children: ReactNode }) => {
       <div className="md:flex gap-6 items-center hidden md:text-sm lg:text-base">
         {children}
       </div>
-      <Button className="md:hidden border border-[#BAD0D0] bg-white hover:bg-white p-[10px]">
-        <MenuIcon />
-      </Button>
+      <div className="md:hidden">
+        <SheetSide />
+      </div>
       <Button asChild>
         <Link
           href="/"
