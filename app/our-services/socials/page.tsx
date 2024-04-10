@@ -40,7 +40,7 @@ const Socials = () => {
           </div>
         }
       />
-      <div className="md:mb-0 mb-32 md:mt-20">
+      <div className="md:mb-0 mb-32">
         <Services
           title="Our Services"
           description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massami. Aliquam in hendrerit urna"
