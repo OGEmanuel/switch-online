@@ -44,7 +44,11 @@ export const NavLink = (
       {...props}
       className={cn(
         "py-[10px] lg:px-4",
-        pathname.includes(`${props.href}`)
+        pathname.length === 1 && props.href.toString().length === 1
+          ? "text-[#1E9B97] font-semibold"
+          : pathname.length > 1 &&
+            props.href.toString().length > 1 &&
+            pathname.includes(`${props.href}`)
           ? "text-[#1E9B97] font-semibold"
           : "text-[#506363] font-medium"
       )}

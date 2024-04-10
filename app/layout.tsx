@@ -12,22 +12,10 @@ export const metadata: Metadata = {
   title: "Switch Online",
   description: "Unlock Your Brand's Potential with Switch.",
   openGraph: {
-    images: [
-      {
-        url: ogImage.src,
-        width: ogImage.width,
-        height: ogImage.height,
-      },
-    ],
+    images: "https://i.ibb.co/JzbCZ8q/switch-online-home.png",
   },
   twitter: {
-    images: [
-      {
-        url: ogImage.src,
-        width: ogImage.width,
-        height: ogImage.height,
-      },
-    ],
+    images: "https://i.ibb.co/JzbCZ8q/switch-online-home.png",
   },
 };
 
