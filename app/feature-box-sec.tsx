@@ -26,9 +26,12 @@ const FeatureBoxSec = () => {
           </p>
         </div>
         <div className="flex flex-col gap-6 2xl:gap-10">
-          <p className="text-[#082828] font-semibold text-base md:text-xl">
-            Our Comprehensive Offerings
-          </p>
+          <div className="flex items-center gap-4">
+            <p className="text-[#082828] font-semibold text-base md:text-xl">
+              Our Comprehensive Offerings
+            </p>
+            <hr className="border border-dashed border-[#CECECE] h-[1px] flex-grow" />
+          </div>
           <div className="flex gap-5 2xl:gap-10 flex-wrap text-[#082828] text-base 2xl:text-xl">
             <div className="flex items-center gap-2">
               <HomeStrategyIcon />

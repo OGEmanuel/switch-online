@@ -34,7 +34,7 @@ const HomeCaseStudies = ({
             </p>
             <ArrowRightSharpIcon />
           </div>
-          <p className="lg:text-lg text-[#506363] max-h-[3.5rem] overflow-hidden text-ellipsis after:content-['...']">
+          <p className="lg:text-lg text-[#506363] whitespace-nowrap overflow-hidden text-ellipsis">
             {description}
           </p>
           <div className="flex gap-4 flex-wrap pb-[3rem] lg:pb-[6.5rem]">

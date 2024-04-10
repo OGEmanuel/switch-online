@@ -8,7 +8,6 @@ import facebook from "@/public/facebook.webp";
 import isbaeu from "@/public/isbaeu.webp";
 import enioluwa from "@/public/enioluwa.webp";
 import bigibet from "@/public/bigibet.webp";
-import insta from "@/public/insta.webp";
 import HeroFacebookIcon from "@/public/icons/hero-facebook-icon";
 import HeroInstagramIcon from "@/public/icons/hero-instagram-icon.svg";
 import HeroMetaIcon from "@/public/icons/hero-meta-icon";
@@ -24,11 +23,14 @@ const Hero = () => {
     WebkitTextFillColor: "transparent",
   };
 
+  const blurDataURL =
+    "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkMAYAADkANVKH3ScAAAAASUVORK5CYII=";
+
   return (
-    <section className="mt-[3.5rem] mb-[19.625rem] px-4 md:px-20 relative">
+    <section className="mt-[5rem] mb-[19.625rem] px-4 md:px-20 relative">
       <div className="h-max">
         <div className="max-w-[48.5625rem] items-center mx-auto text-center flex flex-col gap-5">
-          <h1 className="font-extrabold text-[2.5rem] md:text-[3.5rem] md:leading-[4.2rem]">
+          <h1 className="font-extrabold text-[2.5rem] md:text-[3rem] w-auto md:w-[35rem] 2xl:w-auto 2xl:text-[3.5rem] 2xl:leading-[4.2rem]">
             Unlock Your Brand&apos;s Potential with{" "}
             <span style={gradientStyle}>Switch.</span>
           </h1>
@@ -49,15 +51,17 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-      <div className="absolute -top-[5.5rem] left-[9rem] xl:block hidden">
+      <div className="absolute -top-[6.5rem] xl:left-[12rem] 2xl:left-[15rem] xl:block hidden">
         <div className="relative">
           <Image
             src={facebook}
             alt="first"
             width={200}
             height={120}
-            className="rounded-2xl"
+            className="rounded-2xl border border-[rgba(0,0,0,0.1)]"
             unoptimized
+            placeholder="blur"
+            blurDataURL={blurDataURL}
           />
           <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-30%]">
             <HeroFacebookIcon />
@@ -71,8 +75,10 @@ const Hero = () => {
             alt="third"
             width={155}
             height={155}
-            className="rounded-2xl"
+            className="rounded-2xl border border-[rgba(0,0,0,0.1)]"
             unoptimized
+            placeholder="blur"
+            blurDataURL={blurDataURL}
           />
           <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-30%]">
             <HeroMetaIcon />
@@ -86,26 +92,35 @@ const Hero = () => {
             alt="first"
             width={142}
             height={236}
-            className="rounded-2xl"
+            className="rounded-2xl border border-[rgba(0,0,0,0.1)]"
             unoptimized
+            placeholder="blur"
+            blurDataURL={blurDataURL}
           />
           <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-10%]">
             <HeroTiktokIcon />
           </div>
         </div>
       </div>
-      <div className="absolute -top-[5.5rem] right-[12rem] xl:block hidden">
+      <div className="absolute -top-[7rem] right-[15rem] xl:block hidden">
         <div className="relative">
           <Image
             src={isbaeu}
             alt="second"
             width={120}
             height={200}
-            className="rounded-2xl"
+            className="rounded-2xl border border-[rgba(0,0,0,0.1)]"
             unoptimized
+            placeholder="blur"
+            blurDataURL={blurDataURL}
           />
           <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-20%]">
-            <Image src={HeroInstagramIcon} alt="Instagram" />
+            <Image
+              src={HeroInstagramIcon}
+              alt="Instagram"
+              placeholder="blur"
+              blurDataURL={blurDataURL}
+            />
           </div>
         </div>
       </div>
@@ -116,11 +131,18 @@ const Hero = () => {
             alt="first"
             width={200}
             height={200}
-            className="rounded-2xl"
+            className="rounded-2xl border border-[rgba(0,0,0,0.1)]"
             unoptimized
+            placeholder="blur"
+            blurDataURL={blurDataURL}
           />
           <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-20%]">
-            <Image src={HeroXIcon} alt="X" />
+            <Image
+              src={HeroXIcon}
+              alt="X"
+              placeholder="blur"
+              blurDataURL={blurDataURL}
+            />
           </div>
         </div>
       </div>
@@ -131,11 +153,18 @@ const Hero = () => {
             alt="first"
             width={190}
             height={113}
-            className="rounded-2xl"
+            className="rounded-2xl border border-[rgba(0,0,0,0.1)]"
             unoptimized
+            placeholder="blur"
+            blurDataURL={blurDataURL}
           />
           <div className="absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-30%]">
-            <Image src={HeroYtIcon} alt="yt" />
+            <Image
+              src={HeroYtIcon}
+              alt="yt"
+              placeholder="blur"
+              blurDataURL={blurDataURL}
+            />
           </div>
         </div>
       </div>
