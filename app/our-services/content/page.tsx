@@ -41,7 +41,7 @@ const Strategy = () => {
           </div>
         }
       />
-      <div className="md:mb-0 mb-32">
+      <div className="md:mb-0 mb-32 md:mt-20">
         <Services
           title="Our Services"
           description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massami. Aliquam in hendrerit urna"
