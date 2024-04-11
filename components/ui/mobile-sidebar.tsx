@@ -15,11 +15,11 @@ export function SheetSide() {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button className="md:hidden border border-[#BAD0D0] bg-white hover:bg-white p-[10px]">
+        <Button className="md:hidden bg-white hover:bg-white">
           <MenuIcon />
         </Button>
       </SheetTrigger>
-      <SheetContent side={"left"} className="w-full p-4 bg-[#FFFFFFE5]">
+      <SheetContent side={"top"} className="w-full p-4 h-full bg-[#FFFFFFE5]">
         <SheetHeader className="flex-row justify-between items-center">
           <button onClick={() => setOpen(!open)}>
             <Logo />
