@@ -2,12 +2,7 @@
 
 import MenuIcon from "@/public/icons/menu-icon";
 import { Button } from "./button";
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTrigger,
-} from "./sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "./sheet";
 import Logo from "../logo";
 import CancelIcon from "@/public/icons/cancel-icon";
 import { NavLink } from "../navbar";
