@@ -6,7 +6,7 @@ import oppo from "@/public/oppo-logo.svg";
 import CaseStudyHeader from "../case-study-header";
 import ClientDetails from "../client-details";
 import CaseStudyInsight from "../case-study-insight";
-import displayOppo from "@/public/display-img-oppo-smalldd.jpg";
+import displayOppo from "@/public/display-img-oppo-small.jpg";
 
 const goals = [
   { id: "1", goal: "Foster 5,000 pre-orders of the OPPO Reno 8." },
