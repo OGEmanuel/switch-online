@@ -26,7 +26,7 @@ const FeatureBox = ({
         <DisplayWithBolt display={display} />
       </div>
       <div className="flex-grow">
-        <p className="md:text-[2rem] lg:text-[1.75rem] text-[1.75rem] xl:text-[2.5rem] font-extrabold 2xl:leading-[3rem] mb-3 2xl:mb-6">
+        <p className="md:text-[2rem] lg:text-[1.75rem] text-[1.75rem] xl:text-[2.5rem] font-extrabold xl:leading-[3rem] mb-3 2xl:mb-6">
           {title}
         </p>
         <p className="text-base 2xl:text-lg text-[#506363] 2xl:leading-[1.8rem] mb-4 2xl:mb-8">

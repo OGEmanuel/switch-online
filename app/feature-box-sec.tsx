@@ -14,7 +14,7 @@ const FeatureBoxSec = () => {
     <div className="flex bg-white justify-between lg:gap-16 gap-4 lg:pt-[10.25rem] pt-[4.625rem] flex-col-reverse lg:flex-row items-center pb-[7.5rem] mx-auto max-w-[1440px]">
       <div className="flex flex-col gap-8 md:gap-10 2xl:gap-20 flex-grow">
         <div className="flex flex-col gap-3 2xl:gap-6">
-          <p className="font-extrabold lg:text-[1.75rem] text-[1.75rem] md:text-[2rem] xl:text-[2.5rem] 2xl:leading-[3rem]">
+          <p className="font-extrabold lg:text-[1.75rem] text-[1.75rem] md:text-[2rem] xl:text-[2.5rem] xl:leading-[3rem]">
             Result-Focused Strategies
           </p>
           <p className="text-base 2xl:text-lg text-[#506363]">

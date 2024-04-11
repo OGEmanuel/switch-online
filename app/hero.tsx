@@ -16,13 +16,6 @@ import HeroXIcon from "@/public/icons/hero-x-icon.svg";
 import HeroYtIcon from "@/public/icons/hero-yt-icon.svg";
 
 const Hero = () => {
-  const gradientStyle = {
-    background:
-      "linear-gradient(0deg, #5AE0E6, #5AE0E6), linear-gradient(93.17deg, rgba(0, 0, 0, 0) 36.02%, rgba(0, 0, 0, 0.2) 67.48%)",
-    WebkitBackgroundClip: "text",
-    WebkitTextFillColor: "transparent",
-  };
-
   const blurDataURL =
     "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkMAYAADkANVKH3ScAAAAASUVORK5CYII=";
 
@@ -30,9 +23,9 @@ const Hero = () => {
     <section className="mt-[5rem] mb-[19.625rem] px-4 md:px-20 relative max-w-[1440px] mx-auto">
       <div className="h-max">
         <div className="max-w-[48.5625rem] items-center mx-auto text-center flex flex-col gap-5">
-          <h1 className="font-extrabold text-[2.5rem] md:text-[3rem] w-auto md:w-[35rem] 2xl:w-auto 2xl:text-[3.5rem] 2xl:leading-[4.2rem]">
+          <h1 className="font-extrabold text-[2.5rem] md:text-[3rem] w-auto md:w-[35rem] md:leading-[3.6rem] 2xl:w-auto 2xl:text-[3.5rem] 2xl:leading-[4.2rem]">
             Unlock Your Brand&apos;s Potential with{" "}
-            <span style={gradientStyle}>Switch.</span>
+            <span className="text-[#48B3B8]">Switch.</span>
           </h1>
           <p className="md:text-lg text-[#485B5B] max-w-[33.8rem]">
             Elevate Your Brand, Captivate Your Audience, and Drive Unforgettable
