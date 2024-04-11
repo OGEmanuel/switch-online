@@ -6,6 +6,7 @@ import truecaller from "@/public/truecaller-logo.svg";
 import CaseStudyHeader from "../case-study-header";
 import ClientDetails from "../client-details";
 import CaseStudyInsight from "../case-study-insight";
+import displayTruecaller from "@/public/display-img-truecaller.jpg";
 
 const goals = [
   { id: "1", goal: "100k installs" },
@@ -34,9 +35,13 @@ const Truecaller = () => {
             with more efficient messaging capabilities and more!"
         goals={goals}
       />
-      <div className="mb-10">
+      <div className="mb-10 md:block hidden">
         <Image src={displayMain} alt="main display" placeholder="blur" />
       </div>
+      <div className="mb-10 md:hidden">
+        <Image src={displayTruecaller} alt="main display" placeholder="blur" />
+      </div>
+
       <InsightBox
         className="lg:flex-row-reverse flex-col-reverse mb-4 md:justify-center"
         title="What we did"

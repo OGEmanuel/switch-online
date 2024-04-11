@@ -18,7 +18,7 @@ const CaseStudies = () => {
           CASE STUDIES
         </p>
         <h1 className="md:text-5xl text-[2.5rem] font-extrabold">
-          Our results keep the herd happy
+          We work with brands across multiple industries and verticals
         </h1>
         <p className="md:text-2xl text-[#506363]">
           We specialize in Social, Paid, Creative, Influencer and Strategy and

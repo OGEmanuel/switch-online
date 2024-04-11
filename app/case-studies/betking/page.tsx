@@ -6,6 +6,7 @@ import betking from "@/public/betking-logo.svg";
 import CaseStudyHeader from "../case-study-header";
 import ClientDetails from "../client-details";
 import CaseStudyInsight from "../case-study-insight";
+import displayBetking from "@/public/display-img-betking.jpg";
 
 const goals = [
   { id: "1", goal: "Get 3,000 backlinks" },
@@ -35,8 +36,11 @@ const Betking = () => {
         closer to the sports and games they love."
         goals={goals}
       />
-      <div className="mb-10">
+      <div className="mb-10 md:block hidden">
         <Image src={displayMain} alt="main display" placeholder="blur" />
+      </div>
+      <div className="mb-10 md:hidden">
+        <Image src={displayBetking} alt="main display" placeholder="blur" />
       </div>
       <InsightBox
         className="lg:flex-row-reverse flex-col-reverse mb-4 md:justify-center"

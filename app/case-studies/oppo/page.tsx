@@ -6,6 +6,7 @@ import oppo from "@/public/oppo-logo.svg";
 import CaseStudyHeader from "../case-study-header";
 import ClientDetails from "../client-details";
 import CaseStudyInsight from "../case-study-insight";
+import displayOppo from "@/public/display-img-oppo-smalldd.jpg";
 
 const goals = [
   { id: "1", goal: "Foster 5,000 pre-orders of the OPPO Reno 8." },
@@ -43,8 +44,11 @@ const Oppo = () => {
         camera quality in its smartphones."
         goals={goals}
       />
-      <div className="mb-10">
+      <div className="mb-10 md:block hidden">
         <Image src={displayMain} alt="main display" placeholder="blur" />
+      </div>
+      <div className="mb-10 md:hidden">
+        <Image src={displayOppo} alt="main display" placeholder="blur" />
       </div>
       <InsightBox
         className="lg:flex-row-reverse flex-col-reverse mb-4 md:justify-center"
