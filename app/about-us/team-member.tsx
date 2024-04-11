@@ -1,15 +1,11 @@
 import Image from "next/image";
+import display from "@/public/display-img-small.jpg";
 
 const TeamMember = () => {
   return (
     <div className="w-max">
       <div className="w-max mb-6">
-        <Image
-          src={"/display-img-small.jpg"}
-          alt="display"
-          width={296}
-          height={240}
-        />
+        <Image src={display} alt="display" placeholder="blur" />
       </div>
       <div className="text-center">
         <p className="font-extrabold text-xl">Akintomiwa Johnson</p>

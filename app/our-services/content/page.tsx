@@ -1,9 +1,7 @@
 import ContentIcon from "@/public/icons/content-icon";
-import Services from "@/components/services";
-import ScrollFix from "@/app/scroll-fix";
-import DisplayWithBolt from "@/components/display-with-bolt";
 import ServiceDetailsCard from "../service-details-card";
 import display from "@/public/display-img-content.jpg";
+import ScrollFixServices from "../scroll-fix-services";
 
 const Strategy = () => {
   return (
@@ -21,32 +19,20 @@ const Strategy = () => {
           </p>
         </div>
       </div>
-      <ScrollFix
-        className="max-w-[35rem]"
-        left={<DisplayWithBolt display={display} />}
-        right={
-          <div className="flex flex-col gap-[2rem] md:gap-[5.5rem]">
-            <ServiceDetailsCard
-              title="Immersive Storytelling Experiences"
-              description="At our core, we're storytellers who understand the power of narrative. In every piece of content - be it a blog post, social media campaign, or video production - we craft immersive storytelling experiences. From the hero's journey to testimonials, we use storytelling techniques to create authentic connections and drive meaningful engagement."
-            />
-            <ServiceDetailsCard
-              title="Brand Narrative Development"
-              description="Your brand is more than just a logo; it's a living story. We collaborate with you to uncover its essence, identify key narratives, and develop a cohesive storytelling strategy. From showcasing your origin to sharing customer success stories, we craft narratives that capture your essence and resonate with your audience."
-            />
-            <ServiceDetailsCard
-              title="Story-driven Content Marketing"
-              description="Storytelling extends beyond content creation, influencing our entire marketing strategy. We use storytelling principles to guide content distribution, audience targeting, and engagement tactics, ensuring your brand narrative is always prominent. Through various channels like blogs, social media, emails, and videos, we build trust, foster connections, and drive action."
-            />
-          </div>
-        }
-      />
-      <div className="md:mb-0 mb-32 md:mt-20">
-        <Services
-          title="Our Services"
-          description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massami. Aliquam in hendrerit urna"
+      <ScrollFixServices display={display}>
+        <ServiceDetailsCard
+          title="Immersive Storytelling Experiences"
+          description="At our core, we're storytellers who understand the power of narrative. In every piece of content - be it a blog post, social media campaign, or video production - we craft immersive storytelling experiences. From the hero's journey to testimonials, we use storytelling techniques to create authentic connections and drive meaningful engagement."
         />
-      </div>
+        <ServiceDetailsCard
+          title="Brand Narrative Development"
+          description="Your brand is more than just a logo; it's a living story. We collaborate with you to uncover its essence, identify key narratives, and develop a cohesive storytelling strategy. From showcasing your origin to sharing customer success stories, we craft narratives that capture your essence and resonate with your audience."
+        />
+        <ServiceDetailsCard
+          title="Story-driven Content Marketing"
+          description="Storytelling extends beyond content creation, influencing our entire marketing strategy. We use storytelling principles to guide content distribution, audience targeting, and engagement tactics, ensuring your brand narrative is always prominent. Through various channels like blogs, social media, emails, and videos, we build trust, foster connections, and drive action."
+        />
+      </ScrollFixServices>
     </section>
   );
 };

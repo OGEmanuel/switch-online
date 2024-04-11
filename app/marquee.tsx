@@ -2,6 +2,11 @@
 
 import Image from "next/image";
 import { useEffect, useRef } from "react";
+import truecaller from "@/public/truecaller-marquee-logo.svg";
+import betking from "@/public/betking-marquee-logo.svg";
+import oppo from "@/public/oppo-marquee-logo.svg";
+import duo from "@/public/duo-marquee-logo.svg";
+import shuttlers from "@/public/shuttlers-marquee-logo.svg";
 
 const Marquee = () => {
   const scrollersRef = useRef<HTMLDivElement>(null);
@@ -34,9 +39,8 @@ const Marquee = () => {
   }, []);
 
   return (
-    <div className="flex gradient flex-col gap-8 mx-auto text-center mt-[8.75rem]">
+    <div className="flex gradient flex-col gap-8 mx-auto text-center mt-[8.75rem] max-w-[1440px]">
       <div className="relative">
-        {/* <div className="w-full h-full absolute top-0 left-0 -z-10"></div> */}
         <p className="text-[#485B5B] text-lg font-medium z-30">
           Brand that trust us
         </p>
@@ -46,27 +50,11 @@ const Marquee = () => {
           ref={scrollerInnerRef}
           className={`flex flex-wrap gap-20 mx-auto py-4 scroller__inner`}
         >
-          <Image
-            src={"/easyjet-holidays.png"}
-            alt="logo"
-            width={112}
-            height={64}
-          />
-          <Image src={"/premier-inn.png"} alt="logo" width={112} height={64} />
-          <Image
-            src={"/passenger-logo.png"}
-            alt="logo"
-            width={112}
-            height={64}
-          />
-          <Image
-            src={"/carpetright-logo.png"}
-            alt="logo"
-            width={112}
-            height={64}
-          />
-          <Image src={"/blog-mecca.png"} alt="logo" width={112} height={64} />
-          <Image src={"/uniql-logo.png"} alt="logo" width={112} height={64} />
+          <Image src={truecaller} alt="logo" />
+          <Image src={betking} alt="logo" />
+          <Image src={oppo} alt="logo" />
+          <Image src={duo} alt="logo" />
+          <Image src={shuttlers} alt="logo" />
         </div>
       </div>
     </div>

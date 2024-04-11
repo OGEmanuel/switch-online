@@ -27,7 +27,7 @@ const Hero = () => {
     "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkMAYAADkANVKH3ScAAAAASUVORK5CYII=";
 
   return (
-    <section className="mt-[5rem] mb-[19.625rem] px-4 md:px-20 relative">
+    <section className="mt-[5rem] mb-[19.625rem] px-4 md:px-20 relative max-w-[1440px] mx-auto">
       <div className="h-max">
         <div className="max-w-[48.5625rem] items-center mx-auto text-center flex flex-col gap-5">
           <h1 className="font-extrabold text-[2.5rem] md:text-[3rem] w-auto md:w-[35rem] 2xl:w-auto 2xl:text-[3.5rem] 2xl:leading-[4.2rem]">

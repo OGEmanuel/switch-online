@@ -1,8 +1,7 @@
-import Image, { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
 import CtaRightArrow from "./ui/cta-right-arrow";
 import { ReactNode } from "react";
-import BoltImgIcon from "@/public/icons/bolt-img-icon";
-import BoltImgIconSmall from "@/public/icons/bolt-img-icon-small";
+import DisplayWithBolt from "./display-with-bolt";
 
 const FeatureBox = ({
   title,
@@ -10,7 +9,7 @@ const FeatureBox = ({
   cta,
   classes,
   href,
-  display
+  display,
 }: {
   display: StaticImageData;
   title: string;
@@ -21,20 +20,12 @@ const FeatureBox = ({
 }) => {
   return (
     <div
-      className={`lg:pt-[7.5rem] pt-12 flex flex-col items-center justify-between gap-4 lg:gap-16 ${classes}`}
+      className={`lg:pt-[7.5rem] pt-12 flex flex-col items-center justify-between gap-4 lg:gap-16 ${classes} mx-auto max-w-[1440px]`}
     >
-      <div className="w-max relative">
-        <div className="md:w-[560px] xl:w-[560px] xl:h-[560px] lg:w-[358px] lg:h-[358px] w-[358px] h-[358px] md:h-[560px]">
-          <Image src={display} alt="display-img" fill placeholder="blur" />
-        </div>
-        <div className="absolute md:hidden -top-8 -right-4">
-          <BoltImgIconSmall />
-        </div>
-        <div className="absolute md:block hidden -top-8 -right-4">
-          <BoltImgIcon />
-        </div>
+      <div className="lg:flex-shrink-0">
+        <DisplayWithBolt display={display} />
       </div>
-      <div className="lg:max-w-[41rem] md:max-w-[35rem] max-w-[30rem] mx-auto">
+      <div className="flex-grow">
         <p className="md:text-[2rem] lg:text-[1.75rem] text-[1.75rem] xl:text-[2.5rem] font-extrabold 2xl:leading-[3rem] mb-3 2xl:mb-6">
           {title}
         </p>

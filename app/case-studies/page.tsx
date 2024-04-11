@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const CaseStudies = () => {
   return (
-    <section className="px-4 md:px-8 lg:px-20">
+    <>
       <div className="lg:mt-[6.25rem] mt-10 mb-6 max-w-[50rem] flex flex-col gap-6">
         <p className="text-[#082828] md:text-base text-sm font-semibold">
           CASE STUDIES
@@ -84,7 +84,7 @@ const CaseStudies = () => {
           they ever heard of using the hashtag #LevelUp2023.
         </>
       </InsightBox>
-    </section>
+    </>
   );
 };
 

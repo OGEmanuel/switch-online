@@ -24,9 +24,9 @@ const InsightBox = ({
 
   return (
     <div
-      className={`flex flex-wrap lg:flex-nowrap gap-4 md:gap-16 items-center justify-between pt-4 md:pt-16 lg:pt-[7.5rem] ${className}`}
+      className={`flex flex-wrap lg:flex-nowrap gap-4 md:gap-16 items-center justify-between pt-10 md:pt-16 lg:pt-[7.5rem] ${className}`}
     >
-      <div className="max-w-[41rem] md:max-w-[560px] xl:max-w-[41rem]">
+      <div className="">
         <p className="md:text-[2.5rem] text-[1.75rem] font-extrabold leading-[3rem] mb-6">
           {title}
         </p>
@@ -41,14 +41,8 @@ const InsightBox = ({
           )}
       </div>
 
-      <div>
-        <Image
-          src={src}
-          alt="display img"
-          placeholder="blur"
-          width={560}
-          height={560}
-        />
+      <div className="xl:w-max lg:flex-shrink-0">
+        <Image src={src} alt="display img" placeholder="blur" />
       </div>
     </div>
   );

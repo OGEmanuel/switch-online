@@ -5,11 +5,11 @@ import Link from "next/link";
 import TwitterIcon from "@/public/icons/twitter-icon";
 import LinkedInIcon from "@/public/icons/linkedIn-icon";
 import FacebookIcon from "@/public/icons/facebook-icon";
-import SocialIcon from "@/public/icons/social-icon";
+import InstagramIcon from "@/public/icons/instagram-icon";
 
 const Footer = ({ children }: { children: ReactNode }) => {
   return (
-    <footer className="px-4 md:px-8 lg:px-20 pt-10 md:pt-16 pb-12">
+    <footer className="px-4 md:px-8 lg:px-20 pt-10 md:pt-16 pb-12 mx-auto max-w-[1440px]">
       <div className="flex justify-between md:flex-nowrap flex-wrap h-[100px] md:mb-16 mb-12">
         <div className="flex flex-col justify-between md:gap-0 gap-4 md:mb-0 mb-8">
           <Logo />
@@ -32,9 +32,14 @@ const Footer = ({ children }: { children: ReactNode }) => {
             <Button variant="link" className="md:px-4 px-0">
               <FacebookIcon />
             </Button>
-            <Button variant="link" className="md:px-4 px-0">
-              <SocialIcon />
-            </Button>
+            <Link
+              href={
+                "https://www.instagram.com/heyswitchco?igsh=MWRwbGFsMjZ6cHV1eA%3D%3D&utm_source=qr"
+              }
+              className="p-2"
+            >
+              <InstagramIcon />
+            </Link>
           </div>
         </div>
       </div>

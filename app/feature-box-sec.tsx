@@ -11,8 +11,8 @@ import DisplayWithBolt from "@/components/display-with-bolt";
 
 const FeatureBoxSec = () => {
   return (
-    <div className="flex bg-white justify-between lg:gap-10 gap-4 lg:pt-[10.25rem] pt-[4.625rem] flex-col-reverse lg:flex-row items-center pb-[7.5rem]">
-      <div className="xl:max-w-[41rem] md:max-w-[35rem] lg:max-w-[30rem] max-w-[30rem] flex flex-col gap-8 md:gap-10 2xl:gap-20">
+    <div className="flex bg-white justify-between lg:gap-16 gap-4 lg:pt-[10.25rem] pt-[4.625rem] flex-col-reverse lg:flex-row items-center pb-[7.5rem] mx-auto max-w-[1440px]">
+      <div className="flex flex-col gap-8 md:gap-10 2xl:gap-20 flex-grow">
         <div className="flex flex-col gap-3 2xl:gap-6">
           <p className="font-extrabold lg:text-[1.75rem] text-[1.75rem] md:text-[2rem] xl:text-[2.5rem] 2xl:leading-[3rem]">
             Result-Focused Strategies
@@ -68,7 +68,9 @@ const FeatureBoxSec = () => {
           </div>
         </div>
       </div>
-      <DisplayWithBolt display={display} />
+      <div className="lg:flex-shrink-0">
+        <DisplayWithBolt display={display} />
+      </div>
     </div>
   );
 };

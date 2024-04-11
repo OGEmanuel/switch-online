@@ -4,7 +4,6 @@ import "./globals.css";
 import Navbar, { NavLink } from "@/components/navbar";
 import Footer from "@/components/footer";
 import Banner from "@/components/banner";
-import ogImage from "@/public/switch-online-home.png";
 
 const inter = Inter({ subsets: ["latin"] });
 

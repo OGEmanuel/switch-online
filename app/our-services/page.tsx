@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 const OurServices = () => {
   return (
-    <section className="px-4 md:px-8 lg:px-20">
+    <section className="mx-auto max-w-[1440px] px-4 md:px-8 lg:px-20">
       <div className="text-center max-w-[43.5rem] mx-auto flex flex-col gap-5 md:gap-6 mb-[3.375rem]">
         <p className="text-[#082828] font-semibold text-sm md:text-base">
           Our Services
@@ -33,7 +33,7 @@ const OurServices = () => {
           work with fast-growth brands.
         </p>
       </div>
-      <div className="flex flex-wrap h-max gap-10 max-w-[77.5rem] md:justify-center xl:justify-center mx-auto mb-[10rem] xl:mb-[4.5rem]">
+      <div className="flex flex-wrap h-max gap-10 max-w-[77.5rem] justify-center xl:justify-center mx-auto mb-[10rem] xl:mb-[4.5rem]">
         <ServiceCard
           className="max-w-[30.5rem]"
           link="/our-services/strategy"

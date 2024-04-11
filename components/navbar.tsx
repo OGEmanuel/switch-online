@@ -7,12 +7,11 @@ import { ComponentProps, ReactNode } from "react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import Logo from "./logo";
-import MenuIcon from "@/public/icons/menu-icon";
 import { SheetSide } from "./ui/mobile-sidebar";
 
 const Navbar = ({ children }: { children: ReactNode }) => {
   return (
-    <nav className="lg:px-20 p-4 lg:py-9 flex justify-between items-center">
+    <nav className="lg:px-20 p-4 lg:py-9 flex justify-between items-center max-w-[1440px] mx-auto">
       <Logo />
       <div className="md:flex gap-6 items-center hidden md:text-sm lg:text-base">
         {children}

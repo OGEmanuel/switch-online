@@ -4,15 +4,15 @@ import Image, { StaticImageData } from "next/image";
 
 const DisplayWithBolt = ({ display }: { display: StaticImageData }) => {
   return (
-    <div className="relative">
-      <div className="">
+    <div className="xl:w-max">
+      <div className="max-w-[35rem] mx-auto relative">
         <Image src={display} alt="display-img" placeholder="blur" />
-      </div>
-      <div className="absolute md:hidden -top-8 -right-4">
-        <BoltImgIconSmall />
-      </div>
-      <div className="absolute md:block hidden -top-8 -right-4">
-        <BoltImgIcon />
+        <div className="absolute md:hidden -top-8 -right-4">
+          <BoltImgIconSmall />
+        </div>
+        <div className="absolute md:block hidden -top-8 -right-4">
+          <BoltImgIcon />
+        </div>
       </div>
     </div>
   );

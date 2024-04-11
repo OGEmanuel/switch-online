@@ -10,13 +10,15 @@ const ScrollFix = ({
   left,
   right,
   className,
+  classNameRight,
 }: {
   left: ReactNode;
   right: ReactNode;
   className?: string;
+  classNameRight?: string;
 }) => {
   useEffect(() => {
-    const isMobile = window.innerWidth <= 840; // Adjust the threshold as needed
+    const isMobile = window.innerWidth <= 1024;
 
     if (!isMobile) {
       const galleryElement = document.querySelector(".gallery") as HTMLElement;
@@ -38,13 +40,9 @@ const ScrollFix = ({
   }, []);
 
   return (
-    <div className="bg-white px-4 gallery pt-12 lg:pt-[6.25rem] relative md:px-8 lg:px-20 flex lg:flex-row flex-col md:gap-6 lg:gap-0 justify-between pb-16 overflow-hidden">
-      <div
-        className={`max-w-[35rem] ${className} mx-auto 2xl:max-w-[41rem] leftblock mb-12 md:mb-0`}
-      >
-        {left}
-      </div>
-      <div className="w-max mx-auto">{right}</div>
+    <div className="bg-white px-4 gallery pt-12 lg:pt-[6.25rem] relative md:px-8 lg:px-20 flex lg:flex-row flex-col md:gap-6 lg:gap-16 justify-between pb-16 overflow-hidden mx-auto max-w-[1440px]">
+      <div className={`${className} leftblock mb-12`}>{left}</div>
+      <div className={classNameRight}>{right}</div>
     </div>
   );
 };

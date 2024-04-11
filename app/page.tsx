@@ -10,7 +10,7 @@ import firstDisplay from "@/public/display-img-home-1.jpg";
 import HomeBarIcon from "@/public/icons/home-bar-icon";
 import CtaRightArrow from "@/components/ui/cta-right-arrow";
 import HomeCaseStudies from "./home-case-studies";
-import firstTruecaller from "@/public/truecaller-img-1.jpg";
+import firstTruecaller from "@/public/display-img-truecaller-main.jpg";
 import betKing from "@/public/display-img-betking-main.jpg";
 import oppo from "@/public/display-img-oppo-main.jpg";
 import Insight from "./case-studies/insight";
@@ -47,10 +47,11 @@ export default function Home() {
       <WhatDrivesUs />
       <Services
         title="Our Services"
-        description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massami. Aliquam in hendrerit urna"
+        description="Discover our comprehensive range of services designed to elevate your brand and drive results."
       />
       <ScrollFix
-        className="md:max-w-[23rem]"
+        className="flex-grow"
+        classNameRight="xl:w-[35rem]"
         left={
           <>
             <div className="flex flex-col gap-6 mb-8">
@@ -61,9 +62,8 @@ export default function Home() {
                 Our recent Case studies
               </p>
               <p className="text-[#506363] lg:text-lg">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et
-                massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                Discover our comprehensive range of services designed to elevate
+                your brand and drive results.
               </p>
             </div>
             <CtaRightArrow
