@@ -23,7 +23,7 @@ const ScrollFixServices = ({
           </div>
         }
       />
-      <div className="md:mb-0 mb-32">
+      <div className="md:mb-0 mb-32 md:mt-20">
         <Services
           title="Our Services"
           description="Discover our comprehensive range of services designed to elevate your brand and drive results."
