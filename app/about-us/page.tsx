@@ -4,7 +4,6 @@ import TeamMember from "./team-member";
 import FeatureBox from "@/components/feature-box";
 import display from "@/public/display-img-about-1.jpg";
 import displaySec from "@/public/display-img-about-2.jpg";
-
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -44,15 +43,6 @@ const AboutUs = () => {
             <Image src={display} alt="display" placeholder="blur" />
           </div>
         </div>
-        {/* <div className="md:hidden w-max mx-auto">
-          <Image
-            src={displayMed}
-            alt="display"
-            width={358}
-            height={358}
-            placeholder="blur"
-          />
-        </div> */}
       </div>
       <ScribbleText header="We blend creative and performance">
         <>
@@ -65,7 +55,7 @@ const AboutUs = () => {
           business and goals, all backed by data and insight.
         </>
       </ScribbleText>
-      <div className="bg-[#FAFAFA]">
+      <div className="bg-[#FAFAFA] mt-[7.5rem]">
         <FeatureBox
           href="/our-services"
           display={displaySec}
