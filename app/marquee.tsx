@@ -42,7 +42,7 @@ const Marquee = () => {
     <div className="flex gradient flex-col gap-8 mx-auto text-center mt-[8.75rem] max-w-[1440px]">
       <div className="relative">
         <p className="text-[#485B5B] text-lg font-medium z-30">
-          Brand that trust us
+          Brands that trust us
         </p>
       </div>
       <div ref={scrollersRef} className="scroller max-w-[1144px]">
