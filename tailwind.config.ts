@@ -80,7 +80,7 @@ const config = {
         },
         scroll: {
           to: {
-            transform: "translate(calc(-50% - 2.5rem))",
+            transform: "translate(calc(-50% - 3.75rem))",
           },
         },
       },

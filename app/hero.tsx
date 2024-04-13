@@ -64,7 +64,7 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-      <div className="absolute -top-[6.5rem] xl:left-[12rem] 2xl:left-[15rem] xl:block">
+      <div className="absolute -top-[6.5rem] xl:left-[12rem] 2xl:left-[15rem] xl:block hidden">
         <div className="relative">
           <Image
             src={facebook}

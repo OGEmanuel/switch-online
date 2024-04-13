@@ -45,10 +45,10 @@ const Marquee = () => {
           Brands that trust us
         </p>
       </div>
-      <div ref={scrollersRef} className="scroller max-w-[1144px]">
+      <div ref={scrollersRef} className="scroller mx-auto max-w-[1144px]">
         <div
           ref={scrollerInnerRef}
-          className={`flex flex-wrap gap-20 mx-auto py-4 scroller__inner`}
+          className={`flex flex-wrap gap-[7.5rem] mx-auto py-4 scroller__inner`}
         >
           <Image src={truecaller} alt="logo" />
           <Image src={betking} alt="logo" />

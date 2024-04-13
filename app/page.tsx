@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="min-h-[calc(100vh-119.97px)] overflow-x-hidden bg-fixed md:bg-[url('/icons/hero-bg-icon.svg')] bg-[url('/hero-bg-icon-small.svg')] bg-no-repeat bg-center pt-8">
+    <main className="overflow-x-hidden bg-fixed md:bg-[url('/icons/hero-bg-icon.svg')] bg-[url('/hero-bg-icon-small.svg')] bg-no-repeat bg-center pt-8">
       <Hero />
       <div className="relative px-4 md:px-10 lg:px-20">
         <Marquee />
