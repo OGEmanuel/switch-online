@@ -16,13 +16,25 @@ import HeroMetaIcon from "@/public/icons/hero-meta-icon";
 import HeroTiktokIcon from "@/public/icons/hero-tiktok-icon";
 import HeroXIcon from "@/public/icons/hero-x-icon.svg";
 import HeroYtIcon from "@/public/icons/hero-yt-icon.svg";
-import { useEffect } from "react";
-import gsap from "gsap";
+// import { useEffect } from "react";
+// import gsap from "gsap";
+// import { preloadGifs } from "@/lib/utils";
 
 const Hero = () => {
-  useEffect(() => {
-    gsap.to(".floaters", { stagger: 0.2, y: 0, duration: 0.5 });
-  }, []);
+  // useEffect(() => {
+  //   preloadGifs()
+  //     .then(() => {
+  //       gsap.to(".floaters", {
+  //         stagger: 0.2,
+  //         y: 0,
+  //         duration: 0.5,
+  //         ease: "power2.inOut",
+  //       });
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error preloading GIFs:", error);
+  //     });
+  // }, []);
 
   const blurDataURL =
     "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkMAYAADkANVKH3ScAAAAASUVORK5CYII=";
@@ -52,7 +64,7 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-      <div className="absolute -top-[6.5rem] xl:left-[12rem] 2xl:left-[15rem] xl:block hidden floaters -translate-y-[40rem]">
+      <div className="absolute -top-[6.5rem] xl:left-[12rem] 2xl:left-[15rem] xl:block hidden floaters -translate-y-[40rem] will-change-transform">
         <div className="relative">
           <Image
             src={facebook}
@@ -69,7 +81,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="absolute top-[10rem] left-[2rem] xl:block hidden floaters -translate-y-[40rem]">
+      <div className="absolute top-[10rem] left-[2rem] xl:block hidden floaters -translate-y-[40rem] will-change-transform">
         <div className="relative">
           <Image
             src={bigibet}
@@ -86,7 +98,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="absolute top-[15rem] left-[20rem] xl:block hidden floaters -translate-y-[40rem]">
+      <div className="absolute top-[15rem] left-[20rem] xl:block hidden floaters -translate-y-[40rem] will-change-transform">
         <div className="relative">
           <Image
             src={enioluwa}
@@ -103,7 +115,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="absolute -top-[7rem] right-[15rem] xl:block hidden floaters -translate-y-[40rem]">
+      <div className="absolute -top-[7rem] right-[15rem] xl:block hidden floaters -translate-y-[40rem] will-change-transform">
         <div className="relative">
           <Image
             src={isbaeu}
@@ -125,7 +137,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="absolute top-[16rem] right-[18rem] xl:block hidden floaters -translate-y-[40rem]">
+      <div className="absolute top-[16rem] right-[18rem] xl:block hidden floaters -translate-y-[40rem] will-change-transform">
         <div className="relative">
           <Image
             src={tao}
@@ -147,7 +159,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="absolute top-[10rem] right-[2rem] xl:block hidden floaters -translate-y-[40rem]">
+      <div className="absolute top-[10rem] right-[2rem] xl:block hidden floaters -translate-y-[40rem] will-change-transform">
         <div className="relative">
           <Image
             src={yt}
