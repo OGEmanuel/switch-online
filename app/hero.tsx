@@ -64,7 +64,7 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-      <div className="absolute -top-[6.5rem] xl:left-[12rem] 2xl:left-[15rem] xl:block hidden floaters -translate-y-[40rem] will-change-transform">
+      <div className="absolute -top-[6.5rem] xl:left-[12rem] 2xl:left-[15rem] xl:block">
         <div className="relative">
           <Image
             src={facebook}
@@ -81,7 +81,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="absolute top-[10rem] left-[2rem] xl:block hidden floaters -translate-y-[40rem] will-change-transform">
+      <div className="absolute top-[10rem] left-[2rem] xl:block hidden">
         <div className="relative">
           <Image
             src={bigibet}
@@ -98,7 +98,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="absolute top-[15rem] left-[20rem] xl:block hidden floaters -translate-y-[40rem] will-change-transform">
+      <div className="absolute top-[15rem] left-[20rem] xl:block hidden">
         <div className="relative">
           <Image
             src={enioluwa}
@@ -115,7 +115,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="absolute -top-[7rem] right-[15rem] xl:block hidden floaters -translate-y-[40rem] will-change-transform">
+      <div className="absolute -top-[7rem] right-[15rem] xl:block hidden">
         <div className="relative">
           <Image
             src={isbaeu}
@@ -137,7 +137,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="absolute top-[16rem] right-[18rem] xl:block hidden floaters -translate-y-[40rem] will-change-transform">
+      <div className="absolute top-[16rem] right-[18rem] xl:block hidden">
         <div className="relative">
           <Image
             src={tao}
@@ -159,7 +159,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="absolute top-[10rem] right-[2rem] xl:block hidden floaters -translate-y-[40rem] will-change-transform">
+      <div className="absolute top-[10rem] right-[2rem] xl:block hidden">
         <div className="relative">
           <Image
             src={yt}
