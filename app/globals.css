@@ -76,7 +76,6 @@
 }
 
 body {
-  /* max-width: 1440px; */
   margin: 0 auto;
 }
 
@@ -110,4 +109,9 @@ body {
 
 .gradient {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+}
+
+.reveal {
+  transform: translateY(10rem);
+  opacity: 0;
 }

@@ -83,6 +83,18 @@ const config = {
             transform: "translate(calc(-50% - 3.75rem))",
           },
         },
+        fadeIn: {
+          // "0%": { transform: "translateY(100%)", opacity: "0" },
+          // "90%": { transform: "translateY(0%)", opacity: "1" },
+          from: {
+            transform: "scale(0)",
+            opacity: "0",
+          },
+          to: {
+            transform: "scale(1)",
+            opacity: "1",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -90,6 +102,7 @@ const config = {
         bounce: "bounce 1s infinite",
         scale: "scale 1s infinite",
         scroll: "scroll 40s linear infinite",
+        fadeIn: "fadeIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)",
       },
     },
   },

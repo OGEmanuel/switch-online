@@ -1,3 +1,5 @@
+"use client";
+
 import HomeContentIcon from "@/public/icons/home-content-icon";
 import HomeCreativeIcon from "@/public/icons/home-creative-icon";
 import HomeInfluencerIcon from "@/public/icons/home-influencer-icon";
@@ -8,15 +10,44 @@ import HomeSocialIcon from "@/public/icons/home-social-icon";
 import HomeStrategyIcon from "@/public/icons/home-strategy-icon";
 import display from "@/public/display-img-home-2.jpg";
 import DisplayWithBolt from "@/components/display-with-bolt";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from "react";
+gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
 
 const FeatureBoxSec = () => {
+  // const revealRef = useRef<HTMLDivElement | null>(null);
+
+  // useGSAP(() => {
+  //   if (revealRef.current) {
+  //     ScrollTrigger.create({
+  //       trigger: revealRef.current,
+  //       start: "top center",
+  //       onEnter: () => {
+  //         gsap.to(".reveal", {
+  //           y: 0,
+  //           opacity: 1,
+  //           duration: 0.5,
+  //           stagger: 0.5,
+  //           ease: "power2.out",
+  //         });
+  //       },
+  //       markers: true,
+  //     });
+  //   }
+  // });
   return (
-    <div className="flex bg-white justify-between lg:gap-16 gap-4 lg:pt-[10.25rem] pt-[4.625rem] flex-col-reverse lg:flex-row items-center pb-[7.5rem] mx-auto max-w-[1440px]">
+    <div
+      // ref={revealRef}
+      className="flex bg-white justify-between lg:gap-16 gap-4 lg:pt-[10.25rem] pt-[4.625rem] flex-col-reverse lg:flex-row items-center pb-[7.5rem] mx-auto max-w-[1440px]"
+    >
       <div className="flex flex-col gap-8 md:gap-10 2xl:gap-20 flex-grow">
         <div className="flex flex-col gap-3 2xl:gap-6">
-          <p className="font-extrabold lg:text-[1.75rem] text-[1.75rem] md:text-[2rem] xl:text-[2.5rem] xl:leading-[3rem]">
+          <h2 className="font-extrabold lg:text-[1.75rem] text-[1.75rem] md:text-[2rem] xl:text-[2.5rem] xl:leading-[3rem]">
             Result-Focused Strategies
-          </p>
+          </h2>
           <p className="text-base 2xl:text-lg text-[#506363]">
             Our approach hinges on outcomes, not just outputs. We&apos;re not
             here to merely tick boxes, we&apos;re here to make a real impact on

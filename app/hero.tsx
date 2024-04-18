@@ -16,45 +16,58 @@ import HeroMetaIcon from "@/public/icons/hero-meta-icon";
 import HeroTiktokIcon from "@/public/icons/hero-tiktok-icon";
 import HeroXIcon from "@/public/icons/hero-x-icon.svg";
 import HeroYtIcon from "@/public/icons/hero-yt-icon.svg";
-// import { useEffect } from "react";
-// import gsap from "gsap";
-// import { preloadGifs } from "@/lib/utils";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from "react";
+gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
-  // useEffect(() => {
-  //   preloadGifs()
-  //     .then(() => {
-  //       gsap.to(".floaters", {
-  //         stagger: 0.2,
-  //         y: 0,
-  //         duration: 0.5,
-  //         ease: "power2.inOut",
-  //       });
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error preloading GIFs:", error);
-  //     });
-  // }, []);
+  const revealRef = useRef<HTMLTableSectionElement | null>(null);
+
+  useGSAP(() => {
+    if (revealRef.current) {
+      ScrollTrigger.create({
+        trigger: revealRef.current,
+        start: "top center", // Change this according to your needs
+        onEnter: () => {
+          gsap.to(".reveal", {
+            y: 0,
+            opacity: 1,
+            duration: 0.5,
+            stagger: 0.5,
+            ease: "power2.out",
+          });
+        },
+      });
+    }
+  });
 
   const blurDataURL =
     "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkMAYAADkANVKH3ScAAAAASUVORK5CYII=";
 
   return (
-    <section className="mt-[5rem] mb-[19.625rem] px-4 md:px-20 relative max-w-[1440px] mx-auto">
+    <section
+      ref={revealRef}
+      className="mt-[5rem] mb-[19.625rem] px-4 md:px-20 relative max-w-[1440px] mx-auto"
+    >
       <div className="h-max">
         <div className="max-w-[48.5625rem] items-center mx-auto text-center flex flex-col gap-5">
-          <h1 className="font-extrabold text-[2.5rem] md:text-[3rem] w-auto md:w-[35rem] md:leading-[3.6rem] 2xl:w-auto 2xl:text-[3.5rem] 2xl:leading-[4.2rem]">
-            Unlock Your Brand&apos;s Potential with{" "}
-            <span className="text-[#48B3B8]">Switch.</span>
+          <h1 className="font-extrabold text-[2.5rem] md:text-[3rem] w-auto md:w-[35rem] md:leading-[3.6rem] 2xl:w-auto 2xl:text-[3.5rem] 2xl:leading-[4.2rem] reveal">
+            <span className="reveal">Unlock Your Brand&apos;s </span>
+            <span className="reveal">
+              Potential with <span className="text-[#48B3B8]">Switch.</span>
+            </span>
           </h1>
-          <p className="md:text-lg text-[#485B5B] max-w-[33.8rem]">
+          <p className="md:text-lg text-[#485B5B] max-w-[33.8rem] reveal">
             Elevate Your Brand, Captivate Your Audience, and Drive Unforgettable
             Results.
           </p>
           <Button asChild>
             <Link
               href={"/"}
-              className={`!bg-[#fff] flex gap-1 items-center shadow-[0px_8px_32px_0px_rgba(0,0,0,0.05)] hover:bg-[#fff] rounded-xl h-14 w-[9.875rem] border border-[#BAD0D0]`}
+              className={`!bg-[#fff] flex gap-1 items-center shadow-[0px_8px_32px_0px_rgba(0,0,0,0.05)] hover:bg-[#fff] rounded-xl h-14 w-[9.875rem] border border-[#BAD0D0] reveal`}
             >
               <BoltHeroIcon />
               <span className="block text-[#082828] font-semibold">
@@ -64,7 +77,10 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-      <div className="absolute -top-[6.5rem] xl:left-[12rem] 2xl:left-[15rem] xl:block hidden">
+      <div
+        // ref={containerRef}
+        className="absolute -top-[6.5rem] xl:left-[12rem] 2xl:left-[15rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom"
+      >
         <div className="relative">
           <Image
             src={facebook}
@@ -81,7 +97,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="absolute top-[10rem] left-[2rem] xl:block hidden">
+      <div
+        // ref={containerRef}
+        className="absolute top-[10rem] left-[2rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom"
+      >
         <div className="relative">
           <Image
             src={bigibet}
@@ -98,7 +117,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="absolute top-[15rem] left-[20rem] xl:block hidden">
+      <div
+        // ref={containerRef}
+        className="absolute top-[15rem] left-[20rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom"
+      >
         <div className="relative">
           <Image
             src={enioluwa}
@@ -115,7 +137,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="absolute -top-[7rem] right-[15rem] xl:block hidden">
+      <div
+        // ref={containerRef}
+        className="absolute -top-[7rem] right-[15rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom"
+      >
         <div className="relative">
           <Image
             src={isbaeu}
@@ -137,7 +162,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="absolute top-[16rem] right-[18rem] xl:block hidden">
+      <div
+        // ref={containerRef}
+        className="absolute top-[16rem] right-[18rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom"
+      >
         <div className="relative">
           <Image
             src={tao}
@@ -159,7 +187,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="absolute top-[10rem] right-[2rem] xl:block hidden">
+      <div
+        // ref={containerRef}
+        className="absolute top-[10rem] right-[2rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom"
+      >
         <div className="relative">
           <Image
             src={yt}

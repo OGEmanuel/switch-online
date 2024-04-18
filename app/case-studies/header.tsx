@@ -1,21 +1,15 @@
 "use client";
 
-import ScribbleIcon from "@/public/icons/scribble-icon";
-import { ReactNode, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from "react";
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
-const ScribbleText = ({
-  children,
-  header,
-}: {
-  children: ReactNode;
-  header: string;
-}) => {
+const Header = () => {
   // const revealRef = useRef<HTMLDivElement | null>(null);
+
   // useGSAP(() => {
   //   if (revealRef.current) {
   //     ScrollTrigger.create({
@@ -38,19 +32,20 @@ const ScribbleText = ({
   return (
     <div
       // ref={revealRef}
-      className="text-center max-w-[30rem] px-0 md:px-8 lg:px-0 md:max-w-[50rem] mx-auto relative z-10"
+      className="lg:mt-[6.25rem] mt-10 mb-6 max-w-[50rem] flex flex-col gap-6"
     >
-      <p className="text-black text-[2rem] md:text-5xl font-extrabold mb-7 md:mb-8 md:leading-[3.6rem]">
-        {header}
+      <p className="text-[#082828] md:text-base text-sm font-semibold">
+        CASE STUDIES
       </p>
-      <p className="text-[#506363] text-base md:text-2xl md:leading-[2.4rem]">
-        {children}
+      <h1 className="md:text-5xl text-[2.5rem] font-extrabold">
+        We work with brands across multiple industries and verticals
+      </h1>
+      <p className="md:text-2xl text-[#506363]">
+        We specialize in Social, Paid, Creative, Influencer and Strategy and
+        work with fast-growth brands.
       </p>
-      <div className="absolute top-0 left-[50%] -translate-x-[50%] -z-10">
-        <ScribbleIcon />
-      </div>
     </div>
   );
 };
 
-export default ScribbleText;
+export default Header;

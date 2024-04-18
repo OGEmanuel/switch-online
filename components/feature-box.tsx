@@ -1,7 +1,14 @@
+"use client";
+
 import { StaticImageData } from "next/image";
 import CtaRightArrow from "./ui/cta-right-arrow";
-import { ReactNode } from "react";
+import { ReactNode, useRef } from "react";
 import DisplayWithBolt from "./display-with-bolt";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
 
 const FeatureBox = ({
   title,
@@ -18,18 +25,40 @@ const FeatureBox = ({
   classes?: string;
   href?: string;
 }) => {
+  // const revealRef = useRef<HTMLDivElement | null>(null);
+
+  // useGSAP(() => {
+  //   if (revealRef.current) {
+  //     ScrollTrigger.create({
+  //       trigger: revealRef.current,
+  //       start: "top center", // Change this according to your needs
+  //       onEnter: () => {
+  //         gsap.to(".reveal", {
+  //           y: 0,
+  //           opacity: 1,
+  //           duration: 2,
+  //           stagger: 0.5,
+  //           ease: "power2.out",
+  //         });
+  //       },
+  //       markers: true,
+  //     });
+  //   }
+  // });
+
   return (
     <div
-      className={`lg:pt-[7.5rem] pt-12 flex flex-col items-center justify-between gap-4 lg:gap-16 ${classes} mx-auto max-w-[1440px]`}
+      // ref={revealRef}
+      className={`lg:pt-[7.5rem] pt-12 flex flex-col items-center justify-between gap-4 lg:gap-16 ${classes} mx-auto max-w-[1440px] overflow-hidden`}
     >
       <div className="lg:flex-shrink-0">
         <DisplayWithBolt display={display} />
       </div>
-      <div className="flex-grow">
-        <p className="md:text-[2rem] lg:text-[1.75rem] text-[1.75rem] xl:text-[2.5rem] font-extrabold xl:leading-[3rem] mb-3 2xl:mb-6">
+      <div className="flex-grow scroll-reveal">
+        <h2 className="md:text-[2rem] lg:text-[1.75rem] text-[1.75rem] xl:text-[2.5rem] font-extrabold xl:leading-[3rem] mb-3 2xl:mb-6">
           {title}
-        </p>
-        <p className="text-base 2xl:text-lg text-[#506363] 2xl:leading-[1.8rem] mb-4 2xl:mb-8">
+        </h2>
+        <p className="text-base 2xl:text-lg text-[#506363] 2xl:leading-[1.8rem] mb-4 2xl:mb-8 reveal">
           {children}
         </p>
         <CtaRightArrow

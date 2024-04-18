@@ -13,6 +13,7 @@ import PerformanceBoltIcon from "@/public/icons/performance-bolt-icon";
 import ContentIcon from "@/public/icons/content-icon";
 import MediaIcon from "@/public/icons/media-icon";
 import { Metadata } from "next";
+import Header from "./header";
 
 export const metadata: Metadata = {
   title: "Switch Online - Our Services",
@@ -21,18 +22,7 @@ export const metadata: Metadata = {
 const OurServices = () => {
   return (
     <section className="mx-auto max-w-[1440px] px-4 md:px-8 lg:px-20">
-      <div className="text-center max-w-[43.5rem] mx-auto flex flex-col gap-5 md:gap-6 mb-[3.375rem]">
-        <p className="text-[#082828] font-semibold text-sm md:text-base">
-          Our Services
-        </p>
-        <h1 className="font-extrabold text-[2.5rem] md:text-5xl">
-          Our Range of Expert Services
-        </h1>
-        <p className="md:text-lg text-[#506363]">
-          We specialize in Social, Paid, Creative, Influencer and Strategy and
-          work with fast-growth brands.
-        </p>
-      </div>
+      <Header />
       <div className="flex flex-wrap h-max gap-10 max-w-[77.5rem] justify-center xl:justify-center mx-auto mb-[10rem] xl:mb-[4.5rem]">
         <ServiceCard
           className="max-w-[30.5rem]"
