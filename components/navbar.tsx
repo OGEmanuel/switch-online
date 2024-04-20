@@ -21,8 +21,8 @@ const Navbar = ({ children }: { children: ReactNode }) => {
       </div>
       <Button asChild>
         <Link
-          href="/"
-          className="!bg-[#1E9B97] md:flex hidden gap-1 items-center shadow-[0px_8px_32px_0px_rgba(0,0,0,0.05)] hover:bg-[#1E9B97] rounded-xl lg:h-12 md:h-10 h-12 w-[9.875rem]"
+          href="/get-in-touch"
+          className="!bg-[#1E9B97] md:flex hidden gap-1 items-center shadow-[0px_8px_32px_0px_rgba(0,0,0,0.05)] hover:!bg-[rgb(30,130,151)] rounded-xl lg:h-14 md:h-10 h-12 w-[9.875rem] transition-all"
         >
           <BoltBtnIcon />
           <span className="font-semibold">Get in Touch</span>

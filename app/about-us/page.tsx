@@ -1,6 +1,5 @@
 import ScribbleText from "@/components/scribble-text";
 import Image from "next/image";
-import TeamMember from "./team-member";
 import FeatureBox from "@/components/feature-box";
 import display from "@/public/display-img-about-1.jpg";
 import displaySec from "@/public/display-img-about-2.jpg";
@@ -28,7 +27,7 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
-      <div className="px-4 md:px-8 lg:px-20 mb-[5.5rem] md:mb-[7.5rem]">
+      <div className="px-4 md:px-8 lg:px-20 mb-[5.5rem] md:mb-[7.5rem] z-20">
         <div className="mx-auto max-w-[1440px]">
           <div className="flex justify-center">
             <Image src={display} alt="display" placeholder="blur" />
@@ -66,24 +65,6 @@ const AboutUs = () => {
           </>
         </FeatureBox>
       </div>
-      {/* <div className="md:py-[6.25rem] py-16 px-4 md:px-8 lg:px-20 mx-auto max-w-[1440px]">
-        <div className="text-center max-w-[50rem] mx-auto mb-16">
-          <p className="md:text-[2.5rem] text-[1.75rem] font-extrabold mb-6">
-            Meet our team
-          </p>
-          <p className="md:text-lg text-base text-[#506363] leading-[1.8rem]">
-            Say hello to agile marketing, from strategic thinking to execution,
-            planning to production, we are experts in taking compelling ideas
-            and turning them into a reality for your audience.
-          </p>
-        </div>
-        <div className="flex md:flex-row scrollbar flex-col md:w-auto mx-auto items-center justify-between gap-6 md:gap-8 overflow-auto">
-          <TeamMember />
-          <TeamMember />
-          <TeamMember />
-          <TeamMember />
-        </div>
-      </div> */}
     </section>
   );
 };

@@ -19,8 +19,8 @@ const Header = () => {
           gsap.to(".reveal", {
             y: 0,
             opacity: 1,
-            duration: 2,
-            stagger: 0.5,
+            duration: 0.7,
+            stagger: 0.3,
             ease: "power2.out",
           });
         },
@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <div
       ref={revealRef}
-      className="text-black font-extrabold text-[2.5rem] leading-[3rem] md:text-7xl xl:w-[39rem] md:leading-[5.5rem]"
+      className="text-black font-extrabold z-10 text-[2.5rem] leading-[3rem] md:text-7xl xl:w-[39rem] md:leading-[5.5rem]"
     >
       <p className="reveal">
         Be <span className="text-[#1E9B97]">Seen.</span>

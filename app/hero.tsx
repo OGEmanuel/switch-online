@@ -30,13 +30,13 @@ const Hero = () => {
     if (revealRef.current) {
       ScrollTrigger.create({
         trigger: revealRef.current,
-        start: "top center", // Change this according to your needs
+        start: "top center",
         onEnter: () => {
           gsap.to(".reveal", {
             y: 0,
             opacity: 1,
-            duration: 0.5,
-            stagger: 0.5,
+            duration: 0.9,
+            stagger: 0.2,
             ease: "power2.out",
           });
         },
@@ -55,8 +55,8 @@ const Hero = () => {
       <div className="h-max">
         <div className="max-w-[48.5625rem] items-center mx-auto text-center flex flex-col gap-5">
           <h1 className="font-extrabold text-[2.5rem] md:text-[3rem] w-auto md:w-[35rem] md:leading-[3.6rem] 2xl:w-auto 2xl:text-[3.5rem] 2xl:leading-[4.2rem] reveal">
-            <span className="reveal">Unlock Your Brand&apos;s </span>
-            <span className="reveal">
+            <span className="">Unlock Your Brand&apos;s </span>
+            <span className="">
               Potential with <span className="text-[#48B3B8]">Switch.</span>
             </span>
           </h1>
@@ -66,8 +66,8 @@ const Hero = () => {
           </p>
           <Button asChild>
             <Link
-              href={"/"}
-              className={`!bg-[#fff] flex gap-1 items-center shadow-[0px_8px_32px_0px_rgba(0,0,0,0.05)] hover:bg-[#fff] rounded-xl h-14 w-[9.875rem] border border-[#BAD0D0] reveal`}
+              href={"/get-in-touch"}
+              className={`!bg-[#fff] flex gap-1 items-center shadow-[0px_8px_32px_0px_rgba(0,0,0,0.05)] hover:!bg-[#F8F8F8] rounded-xl h-14 w-[9.875rem] border border-[#BAD0D0] reveal`}
             >
               <BoltHeroIcon />
               <span className="block text-[#082828] font-semibold">
@@ -78,7 +78,6 @@ const Hero = () => {
         </div>
       </div>
       <div
-        // ref={containerRef}
         className="absolute -top-[6.5rem] xl:left-[12rem] 2xl:left-[15rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom"
       >
         <div className="relative">
@@ -98,7 +97,6 @@ const Hero = () => {
         </div>
       </div>
       <div
-        // ref={containerRef}
         className="absolute top-[10rem] left-[2rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom"
       >
         <div className="relative">
@@ -118,7 +116,6 @@ const Hero = () => {
         </div>
       </div>
       <div
-        // ref={containerRef}
         className="absolute top-[15rem] left-[20rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom"
       >
         <div className="relative">
@@ -138,7 +135,6 @@ const Hero = () => {
         </div>
       </div>
       <div
-        // ref={containerRef}
         className="absolute -top-[7rem] right-[15rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom"
       >
         <div className="relative">
@@ -163,7 +159,6 @@ const Hero = () => {
         </div>
       </div>
       <div
-        // ref={containerRef}
         className="absolute top-[16rem] right-[18rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom"
       >
         <div className="relative">
@@ -188,7 +183,6 @@ const Hero = () => {
         </div>
       </div>
       <div
-        // ref={containerRef}
         className="absolute top-[10rem] right-[2rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom"
       >
         <div className="relative">

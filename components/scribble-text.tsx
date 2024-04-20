@@ -1,12 +1,5 @@
-"use client";
-
 import ScribbleIcon from "@/public/icons/scribble-icon";
-import { ReactNode, useRef } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(useGSAP);
-gsap.registerPlugin(ScrollTrigger);
+import { ReactNode } from "react";
 
 const ScribbleText = ({
   children,
@@ -15,29 +8,8 @@ const ScribbleText = ({
   children: ReactNode;
   header: string;
 }) => {
-  // const revealRef = useRef<HTMLDivElement | null>(null);
-  // useGSAP(() => {
-  //   if (revealRef.current) {
-  //     ScrollTrigger.create({
-  //       trigger: revealRef.current,
-  //       start: "top center", // Change this according to your needs
-  //       onEnter: () => {
-  //         gsap.to(".reveal", {
-  //           y: 0,
-  //           opacity: 1,
-  //           duration: 0.5,
-  //           stagger: 0.5,
-  //           ease: "power2.out",
-  //         });
-  //       },
-  //       markers: true,
-  //     });
-  //   }
-  // });
-
   return (
     <div
-      // ref={revealRef}
       className="text-center max-w-[30rem] px-0 md:px-8 lg:px-0 md:max-w-[50rem] mx-auto relative z-10"
     >
       <p className="text-black text-[2rem] md:text-5xl font-extrabold mb-7 md:mb-8 md:leading-[3.6rem]">

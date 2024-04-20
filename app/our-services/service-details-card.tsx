@@ -15,7 +15,11 @@ const ServiceDetailsCard = ({
         </p>
         <p className="text-base md:text-lg text-[#506363]">{description}</p>
       </div>
-      <CtaRightArrow width="w-[10.875rem]" cta="Get in touch" />
+      <CtaRightArrow
+        width="w-[10.875rem]"
+        cta="Get in touch"
+        href="/get-in-touch"
+      />
     </div>
   );
 };

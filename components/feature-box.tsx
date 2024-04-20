@@ -1,14 +1,7 @@
-"use client";
-
 import { StaticImageData } from "next/image";
 import CtaRightArrow from "./ui/cta-right-arrow";
-import { ReactNode, useRef } from "react";
+import { ReactNode } from "react";
 import DisplayWithBolt from "./display-with-bolt";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(useGSAP);
-gsap.registerPlugin(ScrollTrigger);
 
 const FeatureBox = ({
   title,
@@ -25,30 +18,8 @@ const FeatureBox = ({
   classes?: string;
   href?: string;
 }) => {
-  // const revealRef = useRef<HTMLDivElement | null>(null);
-
-  // useGSAP(() => {
-  //   if (revealRef.current) {
-  //     ScrollTrigger.create({
-  //       trigger: revealRef.current,
-  //       start: "top center", // Change this according to your needs
-  //       onEnter: () => {
-  //         gsap.to(".reveal", {
-  //           y: 0,
-  //           opacity: 1,
-  //           duration: 2,
-  //           stagger: 0.5,
-  //           ease: "power2.out",
-  //         });
-  //       },
-  //       markers: true,
-  //     });
-  //   }
-  // });
-
   return (
     <div
-      // ref={revealRef}
       className={`lg:pt-[7.5rem] pt-12 flex flex-col items-center justify-between gap-4 lg:gap-16 ${classes} mx-auto max-w-[1440px] overflow-hidden`}
     >
       <div className="lg:flex-shrink-0">
