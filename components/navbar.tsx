@@ -10,7 +10,6 @@ import Logo from "./logo";
 import { SheetSide } from "./ui/mobile-sidebar";
 import { useThemeContext } from "@/context";
 import DarkModeIcon from "@/public/icons/dark-mode-icon";
-import LightModeIcon from "@/public/icons/light-mode-icon";
 import BrightIcon from "@/public/icons/bright-icon";
 
 const Navbar = ({ children }: { children: ReactNode }) => {
