@@ -78,7 +78,7 @@ export function SheetSide() {
           <Button asChild>
             <Link
               onClick={() => setOpen(!open)}
-              href="/"
+              href="/get-in-touch"
               className="!bg-[#1E9B97] flex gap-1 items-center shadow-[0px_8px_32px_0px_rgba(0,0,0,0.05)] hover:bg-[#1E9B97] rounded-xl lg:h-12 md:h-10 h-12 w-[9.875rem]"
             >
               <BoltBtnIcon />
