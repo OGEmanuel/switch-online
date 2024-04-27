@@ -70,7 +70,7 @@ const Marquee = () => {
 
   return (
     <div
-      className={`flex flex-col gap-8 mx-auto text-center mt-[8.75rem] max-w-[1440px] ${
+      className={`flex flex-col gap-8 mx-auto text-center mt-[8.75rem] max-w-[1440px] px-4 md:px-10 lg:px-20 ${
         theme === "dark" ? "darkGradient" : "gradient"
       }`}
     >

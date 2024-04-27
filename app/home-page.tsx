@@ -29,11 +29,7 @@ const HomePage = () => {
       }`}
     >
       <Hero />
-      <div
-        className={`relative px-4 md:px-10 lg:px-20 ${
-          theme === "dark" ? "bg-[#020F0F]" : ""
-        }`}
-      >
+      <div className={`relative`}>
         <Marquee />
         <FeatureBox
           display={firstDisplay}

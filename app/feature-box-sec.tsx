@@ -15,7 +15,7 @@ const FeatureBoxSec = () => {
 
   return (
     <div
-      className={`flex justify-between lg:gap-16 gap-4 lg:pt-[10.25rem] pt-[4.625rem] flex-col-reverse lg:flex-row items-center pb-[7.5rem] mx-auto max-w-[1440px] ${
+      className={`flex justify-between lg:gap-16 gap-4 lg:pt-[10.25rem] pt-[4.625rem] flex-col-reverse lg:flex-row items-center pb-[7.5rem] mx-auto max-w-[1440px] px-4 md:px-10 lg:px-20 ${
         theme === "dark" ? "bg-[#020F0F]" : "bg-white"
       }`}
     >
