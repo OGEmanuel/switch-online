@@ -31,7 +31,7 @@ const CaseStudyInsight = ({
         <div
           className={`border shadow-[0px_8px_24px_0px_rgba(0,0,0,0.05)] rounded-3xl p-6 flex flex-col gap-4 w-full ${
             theme === "dark"
-              ? "text-white border-[#506363]"
+              ? "text-white border-[#506363] bg-[#6C8585]"
               : "border-[#BAD0D0]"
           }`}
         >

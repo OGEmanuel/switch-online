@@ -12,7 +12,6 @@ import { ControllerFieldState, ControllerRenderProps } from "react-hook-form";
 import { useThemeContext } from "@/context";
 
 interface Props {
-  className?: string;
   field?: ControllerRenderProps<any, any>;
   fieldState?: ControllerFieldState;
   validated?: boolean;
@@ -20,23 +19,15 @@ interface Props {
   label: ReactNode;
   placeholder?: string;
   value?: string;
-  onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
-  disabled?: boolean;
-  maxLength?: number;
 }
 
 export default function TextInput({
-  className = "",
   type = "text",
   label,
   placeholder,
   field,
   fieldState,
   validated,
-  value,
-  onChange,
-  disabled,
-  maxLength,
 }: Props) {
   const { theme } = useThemeContext();
 
@@ -46,7 +37,7 @@ export default function TextInput({
         "field and fieldState prop is required when validated is set to true"
       );
     }
-  }, []);
+  }, [validated, field, fieldState]);
 
   return (
     <FormItem>

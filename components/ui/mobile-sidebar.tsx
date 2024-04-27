@@ -32,7 +32,12 @@ export function SheetSide() {
           <MenuIcon />
         </button>
       </SheetTrigger>
-      <SheetContent side={"top"} className="w-full p-4 h-full bg-[#FFFFFFE5]">
+      <SheetContent
+        side={"top"}
+        className={`w-full p-4 h-full ${
+          theme === "dark" ? "bg-[#0F1B1B]" : "bg-[#FFFFFFE5]"
+        }`}
+      >
         <SheetHeader className="flex-row justify-between items-center">
           <button onClick={() => setOpen(!open)}>
             <Logo />
@@ -56,6 +61,9 @@ export function SheetSide() {
         </SheetHeader>
 
         <div className="pt-12 w-max mx-auto font-medium text-2xl text-[#506363] flex flex-col gap-[2.125rem] text-center">
+          <NavLink onClick={() => setOpen(!open)} href={"/"}>
+            Home
+          </NavLink>
           <NavLink onClick={() => setOpen(!open)} href={"/our-services"}>
             Our services
           </NavLink>

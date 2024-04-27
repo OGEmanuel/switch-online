@@ -6,7 +6,7 @@ const WhatDrivesUs = () => {
 
   return (
     <div
-      className={`px-4 md:px-8 lg:px-20 lg:pt-[7.5rem] ${
+      className={`px-4 md:px-8 lg:px-20 pt-[7.5rem] ${
         theme === "dark" ? "bg-[#05201F]" : "bg-[#FAFAFA]"
       }`}
     >
