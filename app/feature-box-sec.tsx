@@ -8,16 +8,31 @@ import HomeSocialIcon from "@/public/icons/home-social-icon";
 import HomeStrategyIcon from "@/public/icons/home-strategy-icon";
 import display from "@/public/display-img-home-2.jpg";
 import DisplayWithBolt from "@/components/display-with-bolt";
+import { useThemeContext } from "@/context";
 
 const FeatureBoxSec = () => {
+  const { theme } = useThemeContext();
+
   return (
-    <div className="flex bg-white justify-between lg:gap-16 gap-4 lg:pt-[10.25rem] pt-[4.625rem] flex-col-reverse lg:flex-row items-center pb-[7.5rem] mx-auto max-w-[1440px]">
+    <div
+      className={`flex justify-between lg:gap-16 gap-4 lg:pt-[10.25rem] pt-[4.625rem] flex-col-reverse lg:flex-row items-center pb-[7.5rem] mx-auto max-w-[1440px] ${
+        theme === "dark" ? "bg-[#020F0F]" : "bg-white"
+      }`}
+    >
       <div className="flex flex-col gap-8 md:gap-10 2xl:gap-20 flex-grow">
         <div className="flex flex-col gap-3 2xl:gap-6">
-          <h2 className="font-extrabold lg:text-[1.75rem] text-[1.75rem] md:text-[2rem] xl:text-[2.5rem] xl:leading-[3rem]">
+          <h2
+            className={`font-extrabold lg:text-[1.75rem] text-[1.75rem] md:text-[2rem] xl:text-[2.5rem] xl:leading-[3rem] ${
+              theme === "dark" ? "text-white" : ""
+            }`}
+          >
             Result-Focused Strategies
           </h2>
-          <p className="text-base 2xl:text-lg text-[#506363]">
+          <p
+            className={`text-base 2xl:text-lg ${
+              theme === "dark" ? "text-[#BAD0D0]" : "text-[#506363]"
+            }`}
+          >
             Our approach hinges on outcomes, not just outputs. We&apos;re not
             here to merely tick boxes, we&apos;re here to make a real impact on
             your business. With a sharp focus on measurable outcomes, we ensure
@@ -25,14 +40,20 @@ const FeatureBoxSec = () => {
             effort; it&apos;s about delivering results that matter to you.
           </p>
         </div>
-        <div className="flex flex-col gap-6 2xl:gap-10">
-          <div className="flex items-center gap-4">
-            <p className="text-[#082828] font-semibold text-base md:text-xl">
+        <div
+          className={`flex flex-col gap-6 2xl:gap-10 ${
+            theme === "dark" ? "text-white" : "text-[#082828]"
+          }`}
+        >
+          <div className={`flex items-center gap-4`}>
+            <p className="font-semibold text-base md:text-xl">
               Our Comprehensive Offerings
             </p>
             <hr className="border border-dashed border-[#CECECE] h-[1px] flex-grow" />
           </div>
-          <div className="flex gap-5 2xl:gap-10 flex-wrap text-[#082828] text-base 2xl:text-xl">
+          <div
+            className={`flex gap-5 2xl:gap-10 flex-wrap text-base 2xl:text-xl`}
+          >
             <div className="flex items-center gap-2">
               <HomeStrategyIcon />
               <p>Strategy</p>

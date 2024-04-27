@@ -1,23 +1,24 @@
+"use client";
+
 import StrategyIcon from "@/public/icons/strategy-icon";
 import display from "@/public/display-img-strategy.jpg";
 import ServiceDetailsCard from "../service-details-card";
 import ScrollFixServices from "../scroll-fix-services";
+import ServicesHeader from "../services-header";
+import { useThemeContext } from "@/context";
 
 const Strategy = () => {
+  const { theme } = useThemeContext();
+
   return (
-    <section>
-      <div className="px-4 md:px-8 lg:px-20 flex-wrap xl:flex-nowrap flex gap-8 pt-10">
-        <div className="flex flex-col gap-6 w-max mx-auto">
-          <div className="flex gap-6 items-center w-max mx-auto">
-            <StrategyIcon />
-            <p className="text-3xl md:text-5xl font-extrabold">Strategy</p>
-          </div>
-          <p className="md:text-2xl text-lg text-[#082828] max-w-[47.5rem] text-center leading-[2.4rem]">
-            We are not just strategic, our approach ensures that your sales and
-            marketing deliver revenue growth.
-          </p>
-        </div>
-      </div>
+    <section className={`${theme === "dark" ? "bg-[#020F0F]" : ""}`}>
+      <ServicesHeader
+        title="Strategy"
+        description="We are not just strategic, our approach ensures that your sales and
+            marketing deliver revenue growth."
+      >
+        <StrategyIcon />
+      </ServicesHeader>
       <ScrollFixServices display={display}>
         <ServiceDetailsCard
           title="Holistic Revenue-Driven Approach"

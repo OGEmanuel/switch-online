@@ -4,11 +4,13 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
+import { useThemeContext } from "@/context";
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 const ThankYou = () => {
   const revealRef = useRef<HTMLTableSectionElement | null>(null);
+  const { theme } = useThemeContext();
 
   useGSAP(() => {
     if (revealRef.current) {
@@ -31,12 +33,20 @@ const ThankYou = () => {
   return (
     <section
       ref={revealRef}
-      className="text-center max-w-[38rem] mx-auto mt-[2.5rem] flex flex-col gap-6"
+      className="text-center max-w-[38rem] mx-auto pt-[2.5rem] flex flex-col gap-6 h-screen"
     >
-      <h1 className="xl:text-[4.25rem] text-3xl font-extrabold xl:leading-[5rem] reveal">
+      <h1
+        className={`xl:text-[4.25rem] text-3xl font-extrabold xl:leading-[5rem] reveal ${
+          theme === "dark" ? "text-white" : ""
+        }`}
+      >
         Thank you for reaching out!
       </h1>
-      <p className="text-lg text-[#506363] reveal">
+      <p
+        className={`text-lg reveal 
+      ${theme === "dark" ? "text-[#BAD0D0]" : "text-[#506363]"}
+      `}
+      >
         We&apos;ll get back to you shortly.
       </p>
     </section>

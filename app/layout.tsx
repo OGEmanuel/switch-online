@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar, { NavLink } from "@/components/navbar";
 import Footer from "@/components/footer";
 import Banner from "@/components/banner";
+import ThemeContextProvider from "@/context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,19 +27,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar>
-          <NavLink href={"/"}>Home</NavLink>
-          <NavLink href={"/our-services"}>Our services</NavLink>
-          <NavLink href={"/case-studies"}>Case studies</NavLink>
-          <NavLink href={"/about-us"}>About us</NavLink>
-        </Navbar>
-        {children}
-        <Banner />
-        <Footer>
-          <NavLink href={"/our-services"}>Our services</NavLink>
-          <NavLink href={"/case-studies"}>Case studies</NavLink>
-          <NavLink href={"/about-us"}>About us</NavLink>
-        </Footer>
+        <ThemeContextProvider>
+          <Navbar>
+            <NavLink href={"/"}>Home</NavLink>
+            <NavLink href={"/our-services"}>Our services</NavLink>
+            <NavLink href={"/case-studies"}>Case studies</NavLink>
+            <NavLink href={"/about-us"}>About us</NavLink>
+          </Navbar>
+          {children}
+          <Banner />
+          <Footer>
+            <NavLink href={"/our-services"}>Our services</NavLink>
+            <NavLink href={"/case-studies"}>Case studies</NavLink>
+            <NavLink href={"/about-us"}>About us</NavLink>
+          </Footer>
+        </ThemeContextProvider>
       </body>
     </html>
   );

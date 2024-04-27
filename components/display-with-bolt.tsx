@@ -6,7 +6,12 @@ const DisplayWithBolt = ({ display }: { display: StaticImageData }) => {
   return (
     <div className="xl:w-max">
       <div className="max-w-[35rem] mx-auto relative">
-        <Image src={display} alt="display-img" placeholder="blur" />
+        <Image
+          src={display}
+          alt="display-img"
+          placeholder="blur"
+          className="rounded-3xl"
+        />
         <div className="absolute md:hidden -top-8 -right-4">
           <BoltImgIconSmall />
         </div>

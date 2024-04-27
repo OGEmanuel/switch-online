@@ -36,10 +36,20 @@ const Truecaller = () => {
         goals={goals}
       />
       <div className="mb-10 md:block hidden">
-        <Image src={displayMain} alt="main display" placeholder="blur" />
+        <Image
+          src={displayMain}
+          alt="main display"
+          placeholder="blur"
+          className="rounded-3xl"
+        />
       </div>
       <div className="mb-10 md:hidden">
-        <Image src={displayTruecaller} alt="main display" placeholder="blur" />
+        <Image
+          src={displayTruecaller}
+          alt="main display"
+          placeholder="blur"
+          className="rounded-3xl"
+        />
       </div>
 
       <InsightBox

@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import InsightBox from "../insight-box";
 import displaySub from "@/public/display-img-betking-sub.jpg";
@@ -7,6 +9,8 @@ import CaseStudyHeader from "../case-study-header";
 import ClientDetails from "../client-details";
 import CaseStudyInsight from "../case-study-insight";
 import displayBetking from "@/public/display-img-betking.jpg";
+import betkingDark from "@/public/betking-marquee-logo-dark.svg";
+import { useThemeContext } from "@/context";
 
 const goals = [
   { id: "1", goal: "Get 3,000 backlinks" },
@@ -17,10 +21,12 @@ const goals = [
 ];
 
 const Betking = () => {
+  const { theme } = useThemeContext();
+
   return (
     <section className="">
       <CaseStudyHeader
-        logo={betking}
+        logo={theme === "dark" ? betkingDark : betking}
         title="Boosted Backlinks by 250% and Raised Domain Authority to 50 for Real
         Money Gaming Brand"
         tag1="Blog Posting"
@@ -37,10 +43,20 @@ const Betking = () => {
         goals={goals}
       />
       <div className="mb-10 md:block hidden">
-        <Image src={displayMain} alt="main display" placeholder="blur" />
+        <Image
+          src={displayMain}
+          alt="main display"
+          placeholder="blur"
+          className="rounded-3xl"
+        />
       </div>
       <div className="mb-10 md:hidden">
-        <Image src={displayBetking} alt="main display" placeholder="blur" />
+        <Image
+          src={displayBetking}
+          alt="main display"
+          placeholder="blur"
+          className="rounded-3xl"
+        />
       </div>
       <InsightBox
         className="lg:flex-row-reverse flex-col-reverse mb-4 md:justify-center"

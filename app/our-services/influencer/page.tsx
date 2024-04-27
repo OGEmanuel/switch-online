@@ -1,23 +1,24 @@
+"use client";
+
 import InfluencerIcon from "@/public/icons/influencer-icon";
 import ServiceDetailsCard from "../service-details-card";
 import display from "@/public/display-img-influencer.jpg";
 import ScrollFixServices from "../scroll-fix-services";
+import { useThemeContext } from "@/context";
+import ServicesHeader from "../services-header";
 
 const Influencer = () => {
+  const { theme } = useThemeContext();
+
   return (
-    <section>
-      <div className="px-4 md:px-8 lg:px-20 flex-wrap xl:flex-nowrap flex gap-8 pt-10">
-        <div className="flex flex-col gap-6 w-max mx-auto">
-          <div className="flex gap-6 items-center w-max mx-auto">
-            <InfluencerIcon />
-            <p className="text-3xl md:text-5xl font-extrabold">Influencer</p>
-          </div>
-          <p className="md:text-2xl text-lg text-[#082828] max-w-[47.5rem] text-center leading-[2.4rem]">
-            We create influential campaigns to boost brand awareness and drive
-            action through creativity and influence.
-          </p>
-        </div>
-      </div>
+    <section className={`${theme === "dark" ? "bg-[#020F0F]" : ""}`}>
+      <ServicesHeader
+        title="Influencer"
+        description="We create influential campaigns to boost brand awareness and drive
+        action through creativity and influence."
+      >
+        <InfluencerIcon />
+      </ServicesHeader>
       <ScrollFixServices display={display}>
         <ServiceDetailsCard
           title="Human-Centered Influencer Strategy"

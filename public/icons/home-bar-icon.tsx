@@ -1,4 +1,4 @@
-const HomeBarIcon = () => {
+const HomeBarIcon = ({ fill }: { fill: string }) => {
   return (
     <svg
       width="96"
@@ -7,14 +7,14 @@ const HomeBarIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect y="0.5" width="40" height="10" rx="5" fill="#115E5B" />
+      <rect y="0.5" width="40" height="10" rx="5" fill={fill} />
       <rect
         x="48"
         y="0.5"
         width="20"
         height="10"
         rx="5"
-        fill="#115E5B"
+        fill={fill}
         fillOpacity="0.2"
       />
       <rect
@@ -23,7 +23,7 @@ const HomeBarIcon = () => {
         width="20"
         height="10"
         rx="5"
-        fill="#115E5B"
+        fill={fill}
         fillOpacity="0.2"
       />
     </svg>

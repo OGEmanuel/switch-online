@@ -4,11 +4,13 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
+import { useThemeContext } from "@/context";
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 const Header = () => {
   const revealRef = useRef<HTMLDivElement | null>(null);
+  const { theme } = useThemeContext();
 
   useGSAP(() => {
     if (revealRef.current) {
@@ -31,7 +33,9 @@ const Header = () => {
   return (
     <div
       ref={revealRef}
-      className="text-black font-extrabold z-10 text-[2.5rem] leading-[3rem] md:text-7xl xl:w-[39rem] md:leading-[5.5rem]"
+      className={`font-extrabold z-10 text-[2.5rem] leading-[3rem] md:text-7xl xl:w-[39rem] md:leading-[5.5rem] ${
+        theme === "dark" ? "text-white" : ""
+      }`}
     >
       <p className="reveal">
         Be <span className="text-[#1E9B97]">Seen.</span>

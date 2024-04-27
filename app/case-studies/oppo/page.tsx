@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import InsightBox from "../insight-box";
 import displaySub from "@/public/display-img-oppo-sub.jpg";
@@ -7,6 +9,8 @@ import CaseStudyHeader from "../case-study-header";
 import ClientDetails from "../client-details";
 import CaseStudyInsight from "../case-study-insight";
 import displayOppo from "@/public/display-img-oppo-small.jpg";
+import oppoDark from "@/public/oppo-marquee-logo-dark.svg";
+import { useThemeContext } from "@/context";
 
 const goals = [
   { id: "1", goal: "Foster 5,000 pre-orders of the OPPO Reno 8." },
@@ -25,10 +29,12 @@ const goals = [
 ];
 
 const Oppo = () => {
+  const { theme } = useThemeContext();
+
   return (
     <section className="">
       <CaseStudyHeader
-        logo={oppo}
+        logo={theme === "dark" ? oppoDark : oppo}
         title="Delivered 5K preorders & 106M Impressions for smartphone brand"
         tag2="Influencer Marketing"
       />
@@ -45,10 +51,20 @@ const Oppo = () => {
         goals={goals}
       />
       <div className="mb-10 md:block hidden">
-        <Image src={displayMain} alt="main display" placeholder="blur" />
+        <Image
+          src={displayMain}
+          alt="main display"
+          placeholder="blur"
+          className="rounded-3xl"
+        />
       </div>
       <div className="mb-10 md:hidden">
-        <Image src={displayOppo} alt="main display" placeholder="blur" />
+        <Image
+          src={displayOppo}
+          alt="main display"
+          placeholder="blur"
+          className="rounded-3xl"
+        />
       </div>
       <InsightBox
         className="lg:flex-row-reverse flex-col-reverse mb-4 md:justify-center"

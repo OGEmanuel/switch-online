@@ -1,8 +1,14 @@
+"use client";
+
+import { useThemeContext } from "@/context";
 import InsightSocialIcon from "@/public/icons/insight-social-icon";
 import PercentIcon from "@/public/icons/percent-icon";
 import PromotionIcon from "@/public/icons/promotion-icon";
 
-type CaseStudy = { metric: string; insight: string };
+interface CaseStudy {
+  metric: string;
+  insight: string;
+}
 
 type Social = CaseStudy;
 type Promotion = CaseStudy;
@@ -17,10 +23,18 @@ const CaseStudyInsight = ({
   promotion?: Promotion;
   percent?: Percent;
 }) => {
+  const { theme } = useThemeContext();
+
   return (
-    <div className="flex flex-wrap lg:flex-nowrap gap-6 mb-[9.25rem] lg:max-w-none md:max-w-[560px] md:mt-20 mx-auto">
+    <div className="flex flex-wrap lg:flex-nowrap gap-6 pb-[9.25rem] lg:max-w-none md:max-w-[560px] md:mt-20 mx-auto">
       {social && (
-        <div className="border border-[#BAD0D0] shadow-[0px_8px_24px_0px_rgba(0,0,0,0.05)] rounded-3xl p-6 flex flex-col gap-4 w-full">
+        <div
+          className={`border shadow-[0px_8px_24px_0px_rgba(0,0,0,0.05)] rounded-3xl p-6 flex flex-col gap-4 w-full ${
+            theme === "dark"
+              ? "text-white border-[#506363]"
+              : "border-[#BAD0D0]"
+          }`}
+        >
           <InsightSocialIcon />
           <p className="font-semibold lg:text-[2rem] xl:text-[4rem] text-[4rem] leading-[4.8rem]">
             {social.metric}

@@ -1,24 +1,25 @@
+"use client";
+
 import ContentIcon from "@/public/icons/content-icon";
 import ServiceDetailsCard from "../service-details-card";
 import display from "@/public/display-img-content.jpg";
 import ScrollFixServices from "../scroll-fix-services";
+import { useThemeContext } from "@/context";
+import ServicesHeader from "../services-header";
 
 const Strategy = () => {
+  const { theme } = useThemeContext();
+
   return (
-    <section>
-      <div className="px-4 md:px-8 lg:px-20 flex-wrap xl:flex-nowrap flex gap-8 pt-10">
-        <div className="flex flex-col gap-6 w-max mx-auto">
-          <div className="flex gap-6 items-center w-max mx-auto">
-            <ContentIcon />
-            <p className="text-3xl md:text-5xl font-extrabold">Content</p>
-          </div>
-          <p className="md:text-2xl text-lg text-[#082828] max-w-[47.5rem] text-center leading-[2.4rem]">
-            Storytelling is at the heart of everything we do.. We believe that
-            behind every successful brand is a compelling story waiting to be
-            told.
-          </p>
-        </div>
-      </div>
+    <section className={`${theme === "dark" ? "bg-[#020F0F]" : ""}`}>
+      <ServicesHeader
+        title="Content"
+        description="Storytelling is at the heart of everything we do.. We believe that
+        behind every successful brand is a compelling story waiting to be
+        told."
+      >
+        <ContentIcon />
+      </ServicesHeader>
       <ScrollFixServices display={display}>
         <ServiceDetailsCard
           title="Immersive Storytelling Experiences"

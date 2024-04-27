@@ -1,23 +1,24 @@
+"use client";
+
 import ServiceSocialIcon from "@/public/icons/service-social-icon";
 import ServiceDetailsCard from "../service-details-card";
 import display from "@/public/display-img-about-2.jpg";
 import ScrollFixServices from "../scroll-fix-services";
+import { useThemeContext } from "@/context";
+import ServicesHeader from "../services-header";
 
 const Socials = () => {
+  const { theme } = useThemeContext();
+
   return (
-    <section>
-      <div className="px-4 md:px-8 lg:px-20 flex-wrap xl:flex-nowrap flex gap-8 pt-10">
-        <div className="flex flex-col gap-6 w-max mx-auto">
-          <div className="flex gap-6 items-center w-max mx-auto">
-            <ServiceSocialIcon />
-            <p className="text-3xl md:text-5xl font-extrabold">Socials</p>
-          </div>
-          <p className="md:text-2xl text-lg text-[#082828] max-w-[47.5rem] text-center leading-[2.4rem]">
-            We grow cult-like communities leveraging platform-specific
-            strategies tailored for a world where every like and share counts!
-          </p>
-        </div>
-      </div>
+    <section className={`${theme === "dark" ? "bg-[#020F0F]" : ""}`}>
+      <ServicesHeader
+        title="Socials"
+        description="We grow cult-like communities leveraging platform-specific
+        strategies tailored for a world where every like and share counts!"
+      >
+        <ServiceSocialIcon />
+      </ServicesHeader>
       <ScrollFixServices display={display}>
         <ServiceDetailsCard
           title="Social-First Strategies"

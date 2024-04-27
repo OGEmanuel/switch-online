@@ -20,10 +20,12 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
+import { useThemeContext } from "@/context";
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
+  const { theme } = useThemeContext();
   const revealRef = useRef<HTMLTableSectionElement | null>(null);
 
   useGSAP(() => {
@@ -50,17 +52,23 @@ const Hero = () => {
   return (
     <section
       ref={revealRef}
-      className="mt-[5rem] mb-[19.625rem] px-4 md:px-20 relative max-w-[1440px] mx-auto"
+      className={`mt-[5rem] mb-[19.625rem] px-4 md:px-20 relative max-w-[1440px] mx-auto`}
     >
       <div className="h-max">
         <div className="max-w-[48.5625rem] items-center mx-auto text-center flex flex-col gap-5">
           <h1 className="font-extrabold text-[2.5rem] md:text-[3rem] w-auto md:w-[35rem] md:leading-[3.6rem] 2xl:w-auto 2xl:text-[3.5rem] 2xl:leading-[4.2rem] reveal">
-            <span className="">Unlock Your Brand&apos;s </span>
-            <span className="">
+            <span className={`${theme === "dark" ? "text-white" : ""}`}>
+              Unlock Your Brand&apos;s{" "}
+            </span>
+            <span className={`${theme === "dark" ? "text-white" : ""}`}>
               Potential with <span className="text-[#48B3B8]">Switch.</span>
             </span>
           </h1>
-          <p className="md:text-lg text-[#485B5B] max-w-[33.8rem] reveal">
+          <p
+            className={`${
+              theme === "dark" ? "text-[#BAD0D0]" : "text-[#485B5B]"
+            } md:text-lg max-w-[33.8rem] reveal`}
+          >
             Elevate Your Brand, Captivate Your Audience, and Drive Unforgettable
             Results.
           </p>
@@ -77,9 +85,7 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-      <div
-        className="absolute -top-[6.5rem] xl:left-[12rem] 2xl:left-[15rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom"
-      >
+      <div className="absolute -top-[6.5rem] xl:left-[12rem] 2xl:left-[15rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom">
         <div className="relative">
           <Image
             src={facebook}
@@ -96,9 +102,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div
-        className="absolute top-[10rem] left-[2rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom"
-      >
+      <div className="absolute top-[10rem] left-[2rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom">
         <div className="relative">
           <Image
             src={bigibet}
@@ -115,9 +119,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div
-        className="absolute top-[15rem] left-[20rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom"
-      >
+      <div className="absolute top-[15rem] left-[20rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom">
         <div className="relative">
           <Image
             src={enioluwa}
@@ -134,9 +136,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div
-        className="absolute -top-[7rem] right-[15rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom"
-      >
+      <div className="absolute -top-[7rem] right-[15rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom">
         <div className="relative">
           <Image
             src={isbaeu}
@@ -158,9 +158,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div
-        className="absolute top-[16rem] right-[18rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom"
-      >
+      <div className="absolute top-[16rem] right-[18rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom">
         <div className="relative">
           <Image
             src={tao}
@@ -182,9 +180,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div
-        className="absolute top-[10rem] right-[2rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom"
-      >
+      <div className="absolute top-[10rem] right-[2rem] xl:block hidden will-change-transform animate-fadeIn origin-bottom">
         <div className="relative">
           <Image
             src={yt}

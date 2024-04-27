@@ -25,6 +25,7 @@ import EnvelopeIcon from "@/public/icons/envelope-icon";
 import { Textarea } from "@/components/ui/textarea";
 import MessageIcon from "@/public/icons/message-icon";
 import { Loader2 } from "lucide-react";
+import { useThemeContext } from "@/context";
 
 const FormSchema = z.object({
   companyName: z.string().min(2, {
@@ -44,6 +45,8 @@ const FormSchema = z.object({
 });
 
 export function ContactForm({ onSetPage }: { onSetPage: () => void }) {
+  const { theme } = useThemeContext();
+
   const [loading, setLoading] = useState(false);
 
   const form = useForm<z.infer<typeof FormSchema>>({
@@ -57,8 +60,16 @@ export function ContactForm({ onSetPage }: { onSetPage: () => void }) {
     },
   });
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Smooth scrolling animation
+    });
+  };
+
   async function onSubmit(data: z.infer<typeof FormSchema>) {
     setLoading(true);
+    scrollToTop();
 
     try {
       await axios.post("https://formspree.io/f/xzbnygev", data);
@@ -86,7 +97,9 @@ export function ContactForm({ onSetPage }: { onSetPage: () => void }) {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="space-y-7 bg-[#F8F8F8] rounded-3xl p-8"
+        className={`space-y-7 rounded-3xl p-8 ${
+          theme === "dark" ? "bg-[#0F1B1B]" : "bg-[#F8F8F8]"
+        }`}
       >
         <FormField
           control={form.control}
@@ -96,7 +109,9 @@ export function ContactForm({ onSetPage }: { onSetPage: () => void }) {
               placeholder="Enter company name"
               label={
                 <>
-                  <BriefIcon />
+                  <BriefIcon
+                    fill={`${theme === "dark" ? "#BAD0D0" : "#506363"}`}
+                  />
                   Company name
                 </>
               }
@@ -113,7 +128,9 @@ export function ContactForm({ onSetPage }: { onSetPage: () => void }) {
               placeholder="Enter name"
               label={
                 <>
-                  <PersonIcon />
+                  <PersonIcon
+                    fill={`${theme === "dark" ? "#BAD0D0" : "#506363"}`}
+                  />
                   Name
                 </>
               }
@@ -124,9 +141,11 @@ export function ContactForm({ onSetPage }: { onSetPage: () => void }) {
         />
         <fieldset className={"space-y-2"}>
           <label
-            className={`flex items-center gap-[6px] text-[#506363] font-medium`}
+            className={`flex items-center gap-[6px] font-medium ${
+              theme === "dark" ? "text-[#BAD0D0]" : "text-[#506363]"
+            }`}
           >
-            <PhoneIcon />
+            <PhoneIcon fill={`${theme === "dark" ? "#BAD0D0" : "#506363"}`} />
             Phone number
           </label>
           <Controller
@@ -134,7 +153,11 @@ export function ContactForm({ onSetPage }: { onSetPage: () => void }) {
             control={form.control}
             render={({ field }) => (
               <PhoneInput
-                inputClass="!w-full !py-2 !rounded-xl !h-auto"
+                inputClass={`!w-full !py-2 !rounded-xl !h-auto ${
+                  theme === "dark"
+                    ? "!border-[#5B6464] !text-[#6C8585] !bg-[#FFFFFF1A]"
+                    : "!border-[#D7DBDB]"
+                }`}
                 dropdownClass="!rounded-xl"
                 country={"ng"}
                 value={field.value}
@@ -163,7 +186,9 @@ export function ContactForm({ onSetPage }: { onSetPage: () => void }) {
               type="email"
               label={
                 <>
-                  <EnvelopeIcon />
+                  <EnvelopeIcon
+                    fill={`${theme === "dark" ? "#BAD0D0" : "#506363"}`}
+                  />
                   Email address
                 </>
               }
@@ -177,16 +202,31 @@ export function ContactForm({ onSetPage }: { onSetPage: () => void }) {
           name="message"
           render={({ field, fieldState }) => (
             <FormItem>
-              <FormLabel className="flex items-center text-base gap-[6px] text-[#506363] font-medium">
-                <MessageIcon />
+              <FormLabel
+                className={`flex items-center text-base gap-[6px] font-medium ${
+                  theme === "dark" ? "text-[#BAD0D0]" : "text-[#506363]"
+                }`}
+              >
+                <MessageIcon
+                  fill={`${theme === "dark" ? "#BAD0D0" : "#506363"}`}
+                />
                 Message
               </FormLabel>
               <FormControl>
                 <Textarea
                   rows={7}
                   placeholder="How can we help you?"
-                  className={`border resize-none p-4 placeholder:text-[#98A2B3] rounded-xl ${
-                    fieldState?.invalid ? "border-red-500" : "border-[#D7DBDB]"
+                  className={`border resize-none p-4 placeholder:text-[#98A2B3] rounded-xl
+                  ${theme === "dark" ? "!text-[#6C8585] !bg-[#FFFFFF1A]" : ""}
+                  
+                  ${
+                    fieldState?.invalid
+                      ? "border-red-500"
+                      : `${
+                          theme === "dark"
+                            ? "!border-[#5B6464]"
+                            : "border-[#D7DBDB]"
+                        }`
                   }`}
                   {...field}
                 />
