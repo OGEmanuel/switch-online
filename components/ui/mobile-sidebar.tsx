@@ -10,7 +10,6 @@ import Link from "next/link";
 import BoltBtnIcon from "@/public/icons/bolt-btn-icon";
 import { useState } from "react";
 import { useThemeContext } from "@/context";
-import LightModeIcon from "@/public/icons/light-mode-icon";
 import DarkModeIcon from "@/public/icons/dark-mode-icon";
 import BrightIcon from "@/public/icons/bright-icon";
 
