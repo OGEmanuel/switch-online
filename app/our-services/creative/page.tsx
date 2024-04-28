@@ -2,7 +2,7 @@
 
 import CreativeIcon from "@/public/icons/creative-icon";
 import ServiceDetailsCard from "../service-details-card";
-import display from "@/public/display-img-influencer.jpg";
+import display from "@/public/display-img-creative.jpg";
 import ScrollFixServices from "../scroll-fix-services";
 import { useThemeContext } from "@/context";
 import ServicesHeader from "../services-header";
