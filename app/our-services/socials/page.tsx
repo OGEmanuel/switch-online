@@ -2,7 +2,7 @@
 
 import ServiceSocialIcon from "@/public/icons/service-social-icon";
 import ServiceDetailsCard from "../service-details-card";
-import display from "@/public/display-img-about-2.jpg";
+import display from "@/public/display-img-social.jpg";
 import ScrollFixServices from "../scroll-fix-services";
 import { useThemeContext } from "@/context";
 import ServicesHeader from "../services-header";

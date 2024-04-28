@@ -9,6 +9,7 @@ import HomeStrategyIcon from "@/public/icons/home-strategy-icon";
 import display from "@/public/display-img-home-2.jpg";
 import DisplayWithBolt from "@/components/display-with-bolt";
 import { useThemeContext } from "@/context";
+import CtaRightArrow from "@/components/ui/cta-right-arrow";
 
 const FeatureBoxSec = () => {
   const { theme } = useThemeContext();
@@ -88,6 +89,11 @@ const FeatureBoxSec = () => {
             </div>
           </div>
         </div>
+        <CtaRightArrow
+          href={"/our-services"}
+          width="w-[12rem] md:w-[15.125rem]"
+          cta={"Our Services"}
+        />
       </div>
       <div className="lg:flex-shrink-0">
         <DisplayWithBolt display={display} />

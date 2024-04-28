@@ -8,7 +8,7 @@ import oppo from "@/public/oppo-logo.svg";
 import CaseStudyHeader from "../case-study-header";
 import ClientDetails from "../client-details";
 import CaseStudyInsight from "../case-study-insight";
-import displayOppo from "@/public/display-img-oppo-small.jpg";
+import displayOppo from "@/public/display-img-oppo.jpg";
 import oppoDark from "@/public/oppo-marquee-logo-dark.svg";
 import { useThemeContext } from "@/context";
 

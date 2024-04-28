@@ -14,21 +14,13 @@ const Services = ({
   const { theme } = useThemeContext();
 
   return (
-    <div className={`${theme === "dark" ? "bg-[#5AE0E6]" : "bg-[#05201F]"}`}>
+    <div className={`${theme === "dark" ? "bg-black" : "bg-[#05201F]"}`}>
       <div className="mx-auto max-w-[1440px] py-12 lg:py-[7.5rem]">
         <div className="flex items-center justify-between px-4 md:px-8 lg:px-20">
           <div className="flex flex-col gap-6">
+            <p className={`font-extrabold text-[2.5rem] text-white`}>{title}</p>
             <p
-              className={`font-extrabold text-[2.5rem] ${
-                theme === "dark" ? "text-black" : "text-white"
-              }`}
-            >
-              {title}
-            </p>
-            <p
-              className={`lg:max-w-[33.75rem] md:max-w-[27rem] max-w-[33.75rem] ${
-                theme === "dark" ? "text-[#051E1D]" : "text-[#BAD0D0]"
-              }`}
+              className={`lg:max-w-[33.75rem] md:max-w-[27rem] max-w-[33.75rem] text-[#BAD0D0]`}
             >
               {description}
             </p>

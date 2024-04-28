@@ -114,9 +114,9 @@ const AboutUsHomePage = () => {
         </div>
         <div className="flex md:flex-row scrollbar flex-col md:w-auto mx-auto items-center justify-between gap-6 md:gap-8 overflow-auto">
           <TeamMember
-            display={arti}
-            name="Arti Weng Tzu-ting"
-            role="Director of People"
+            display={tomiwa}
+            name="Tomiwa Aghedo"
+            role="Director of Business"
           />
           <TeamMember
             display={bertha}
@@ -129,9 +129,9 @@ const AboutUsHomePage = () => {
             role="Director of Campaigns"
           />
           <TeamMember
-            display={tomiwa}
-            name="Tomiwa Aghedo"
-            role="Director of Business"
+            display={arti}
+            name="Arti Weng Tzu-ting"
+            role="Director of People"
           />
         </div>
       </div>

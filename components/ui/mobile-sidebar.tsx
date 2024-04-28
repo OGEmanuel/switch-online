@@ -35,7 +35,7 @@ export function SheetSide() {
       <SheetContent
         side={"top"}
         className={`w-full p-4 h-full ${
-          theme === "dark" ? "bg-[#0F1B1B]" : "bg-[#FFFFFFE5]"
+          theme === "dark" ? "bg-[#0F1B1B]" : "bg-[#fffffff2]"
         }`}
       >
         <SheetHeader className="flex-row justify-between items-center">
@@ -79,10 +79,10 @@ export function SheetSide() {
             <Link
               onClick={() => setOpen(!open)}
               href="/get-in-touch"
-              className="!bg-[#1E9B97] flex gap-1 items-center shadow-[0px_8px_32px_0px_rgba(0,0,0,0.05)] hover:bg-[#1E9B97] rounded-xl lg:h-12 md:h-10 h-12 w-[9.875rem]"
+              className="!bg-[#5AE0E6] flex gap-1 items-center shadow-[0px_8px_32px_0px_rgba(0,0,0,0.05)] hover:bg-[#1E9B97] rounded-xl lg:h-12 md:h-10 h-12 w-[9.875rem]"
             >
               <BoltBtnIcon />
-              <span className="font-semibold">Get in Touch</span>
+              <span className="font-semibold text-[#020F0F]">Get in Touch</span>
             </Link>
           </Button>
         </div>
