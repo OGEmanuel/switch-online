@@ -72,7 +72,7 @@ export function ContactForm({ onSetPage }: { onSetPage: () => void }) {
     scrollToTop();
 
     try {
-      await axios.post("https://formspree.io/f/xzbnygev", data);
+      // await axios.post("https://formspree.io/f/xzbnygev", data);
       onSetPage();
     } catch (error) {
       if (error instanceof AxiosError) {
