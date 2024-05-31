@@ -73,7 +73,14 @@ export function ContactForm({ onSetPage }: { onSetPage: () => void }) {
 
     try {
       // await axios.post("https://formspree.io/f/xzbnygev", data);
-      onSetPage();
+      fetch("/api/sheet", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      // onSetPage();
     } catch (error) {
       if (error instanceof AxiosError) {
         const errorData = error.response?.data;
