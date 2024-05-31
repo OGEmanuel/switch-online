@@ -3,8 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Controller, useForm } from "react-hook-form";
 import { z } from "zod";
-import axios, { AxiosError } from "axios";
-
+import { format } from "date-fns";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -12,6 +11,7 @@ import {
   FormField,
   FormItem,
   FormLabel,
+  FormMessage,
 } from "@/components/ui/form";
 import { toast } from "@/components/ui/use-toast";
 import BriefIcon from "@/public/icons/brief-icon";
@@ -68,33 +68,32 @@ export function ContactForm({ onSetPage }: { onSetPage: () => void }) {
   };
 
   async function onSubmit(data: z.infer<typeof FormSchema>) {
+    const { companyName, name, phone, email, message } = data;
     setLoading(true);
     scrollToTop();
 
     try {
-      // await axios.post("https://formspree.io/f/xzbnygev", data);
-      fetch("/api/sheet", {
+      fetch("/api/submit", {
         method: "POST",
-        body: JSON.stringify(data),
+        body: JSON.stringify({
+          companyName,
+          name,
+          phone,
+          email,
+          message,
+          date: format(new Date(), "dd MMM yyyy, HH:mm"),
+        }),
         headers: {
           "Content-Type": "application/json",
         },
       });
-      // onSetPage();
+      onSetPage();
     } catch (error) {
-      if (error instanceof AxiosError) {
-        const errorData = error.response?.data;
-        toast({
-          variant: "destructive",
-          title: `${errorData.errors}!`,
-        });
-      } else {
-        toast({
-          title: "An Error Occurred!",
-          variant: "destructive",
-          description: "Something went wrong! Please try again.",
-        });
-      }
+      toast({
+        title: "An Error Occurred!",
+        variant: "destructive",
+        description: "Something went wrong! Please try again.",
+      });
     } finally {
       setLoading(false);
     }
@@ -238,6 +237,7 @@ export function ContactForm({ onSetPage }: { onSetPage: () => void }) {
                   {...field}
                 />
               </FormControl>
+              <FormMessage />
             </FormItem>
           )}
         />
