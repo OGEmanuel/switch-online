@@ -3,7 +3,6 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Controller, useForm } from "react-hook-form";
 import { z } from "zod";
-import { format } from "date-fns";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -19,13 +18,14 @@ import TextInput from "@/components/ui/text-input";
 import PersonIcon from "@/public/icons/person-icon";
 import PhoneIcon from "@/public/icons/phone-icon";
 import PhoneInput from "react-phone-input-2";
-import { useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import "react-phone-input-2/lib/style.css";
 import EnvelopeIcon from "@/public/icons/envelope-icon";
 import { Textarea } from "@/components/ui/textarea";
 import MessageIcon from "@/public/icons/message-icon";
 import { Loader2 } from "lucide-react";
 import { useThemeContext } from "@/context";
+import { time } from "console";
 
 const FormSchema = z.object({
   companyName: z.string().min(2, {
@@ -37,16 +37,22 @@ const FormSchema = z.object({
   phone: z.string().min(10, {
     message: "Phone number must be at least 10 characters.",
   }),
-  email: z.string().min(2, { message: "Invalid value in field" }).trim(),
+  email: z
+    .string()
+    .email({ message: "Please provide a valid email address." }) // Validates email format
+    .trim(),
   message: z
     .string()
-    .min(25, { message: "Message should be at least 25 characters long" })
+    .min(10, { message: "Message should be at least 10 characters long" })
     .trim(),
 });
 
-export function ContactForm({ onSetPage }: { onSetPage: () => void }) {
+export function ContactForm({
+  onSetPage,
+}: {
+  onSetPage: Dispatch<SetStateAction<number>>;
+}) {
   const { theme } = useThemeContext();
-
   const [loading, setLoading] = useState(false);
 
   const form = useForm<z.infer<typeof FormSchema>>({
@@ -70,10 +76,9 @@ export function ContactForm({ onSetPage }: { onSetPage: () => void }) {
   async function onSubmit(data: z.infer<typeof FormSchema>) {
     const { companyName, name, phone, email, message } = data;
     setLoading(true);
-    scrollToTop();
 
     try {
-      fetch("/api/submit", {
+      const res = await fetch("/api/emails", {
         method: "POST",
         body: JSON.stringify({
           companyName,
@@ -81,13 +86,11 @@ export function ContactForm({ onSetPage }: { onSetPage: () => void }) {
           phone,
           email,
           message,
-          date: format(new Date(), "dd MMM yyyy, HH:mm"),
+          timestamp: new Date().toISOString(),
         }),
-        headers: {
-          "Content-Type": "application/json",
-        },
       });
-      onSetPage();
+      scrollToTop();
+      onSetPage(1);
     } catch (error) {
       toast({
         title: "An Error Occurred!",
@@ -161,7 +164,7 @@ export function ContactForm({ onSetPage }: { onSetPage: () => void }) {
               <PhoneInput
                 inputClass={`!w-full !py-2 !rounded-xl !h-auto ${
                   theme === "dark"
-                    ? "!border-[#5B6464] !text-[#6C8585] !bg-[#FFFFFF1A]"
+                    ? "!border-[#5B6464] !text-[white] !bg-[#FFFFFF1A]"
                     : "!border-[#D7DBDB]"
                 }`}
                 dropdownClass="!rounded-xl"
@@ -223,7 +226,7 @@ export function ContactForm({ onSetPage }: { onSetPage: () => void }) {
                   rows={7}
                   placeholder="How can we help you?"
                   className={`border resize-none p-4 placeholder:text-[#98A2B3] rounded-xl
-                  ${theme === "dark" ? "!text-[#6C8585] !bg-[#FFFFFF1A]" : ""}
+                  ${theme === "dark" ? "!text-[white] !bg-[#FFFFFF1A]" : ""}
                   
                   ${
                     fieldState?.invalid

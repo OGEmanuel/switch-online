@@ -3,14 +3,27 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useRef } from "react";
+import { Dispatch, SetStateAction, useEffect, useRef } from "react";
 import { useThemeContext } from "@/context";
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
-const ThankYou = () => {
+const ThankYou = ({
+  onSetPage,
+}: {
+  onSetPage: Dispatch<SetStateAction<number>>;
+}) => {
   const revealRef = useRef<HTMLTableSectionElement | null>(null);
   const { theme } = useThemeContext();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      onSetPage(0);
+    }, 3000);
+
+    // Cleanup the timer when the component unmounts
+    return () => clearTimeout(timer);
+  }, []);
 
   useGSAP(() => {
     if (revealRef.current) {

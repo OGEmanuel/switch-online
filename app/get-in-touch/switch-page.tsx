@@ -8,17 +8,14 @@ import { ContactForm } from "./contact-form";
 const SwitchPage = () => {
   const [page, setPage] = useState(0);
 
-  const handleSetPage = () => {
-    setPage(1);
-  };
   return (
     <>
       {page < 1 ? (
         <FormPage>
-          <ContactForm onSetPage={handleSetPage} />
+          <ContactForm onSetPage={setPage} />
         </FormPage>
       ) : (
-        <ThankYou />
+        <ThankYou onSetPage={setPage} />
       )}
     </>
   );

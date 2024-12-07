@@ -53,7 +53,7 @@ export default function TextInput({
           placeholder={placeholder}
           type={type}
           className={`border focus:outline-none placeholder:text-[#98A2B3] rounded-xl ${
-            theme === "dark" ? "text-[#6C8585] bg-[#FFFFFF1A]" : ""
+            theme === "dark" ? "text-[white] bg-[#FFFFFF1A]" : ""
           } ${
             fieldState?.invalid
               ? "border-red-500"
