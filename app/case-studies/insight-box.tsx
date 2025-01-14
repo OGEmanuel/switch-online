@@ -57,6 +57,8 @@ const InsightBox = ({
         <Image
           src={src}
           alt="display img"
+          width={560}
+          height={560}
           placeholder="blur"
           className="rounded-3xl"
         />
