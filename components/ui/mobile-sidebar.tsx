@@ -73,6 +73,12 @@ export function SheetSide() {
           <NavLink onClick={() => setOpen(!open)} href={"/about-us"}>
             About us
           </NavLink>
+          <NavLink
+            onClick={() => setOpen(!open)}
+            href={"https://blog.switchonline.xyz"}
+          >
+            Blog
+          </NavLink>
         </div>
         <div className="w-max mx-auto mt-20">
           <Button asChild>

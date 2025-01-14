@@ -11,12 +11,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Switch Online",
   description: "Unlock Your Brand's Potential with Switch.",
-  // openGraph: {
-  //   images: "https://i.ibb.co/JzbCZ8q/switch-online-home.png",
-  // },
-  // twitter: {
-  //   images: "https://i.ibb.co/JzbCZ8q/switch-online-home.png",
-  // },
 };
 
 export default function RootLayout({
